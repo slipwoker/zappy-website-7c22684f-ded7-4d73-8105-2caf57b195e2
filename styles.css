@@ -8846,6 +8846,14 @@ body.accessibility-widget-visible ._access-menu {
   text-align: right !important;
 }
 
+.site-footer .footer-col:nth-child(3) .footer-contact li {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
 /* ========== EMPTY SUBMENU HIDING (Auto-added by Zappy) ========== */
 .sub-menu:empty,
 .dropdown-menu:empty,
