@@ -8893,6 +8893,430 @@ html[dir="rtl"] .footer-contact .contact-text { order: 1 !important; }
 html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 
 
+/* AI-generated section */
+/* ============================================
+   SF Tips Section — Shine Fresh
+   ============================================ */
+
+.sf-tips-section {
+  direction: rtl;
+  font-family: system-ui, sans-serif;
+  background: #f0fafa;
+  padding: 90px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle decorative background pattern */
+.sf-tips-section::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: -120px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.sf-tips-section::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.07) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* ---- Container ---- */
+.sf-tips-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Section Header ---- */
+.sf-tips-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.sf-tips-badge {
+  display: inline-block;
+  background: rgba(20, 184, 166, 0.12);
+  color: #0e9e8e;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 6px 18px;
+  border-radius: 50px;
+  border: 1px solid rgba(20, 184, 166, 0.25);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.sf-tips-main-title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: #0f2d2a;
+  margin: 0 0 14px 0;
+  line-height: 1.2;
+}
+
+.sf-tips-subtitle {
+  font-size: 1.05rem;
+  color: #4a6e6a;
+  margin: 0 auto;
+  max-width: 520px;
+  line-height: 1.7;
+}
+
+/* ---- Grid ---- */
+.sf-tips-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+/* ---- Card ---- */
+.sf-tips-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(20, 184, 166, 0.18);
+  box-shadow: 0 4px 24px rgba(20, 184, 166, 0.08), 0 1px 4px rgba(0,0,0,0.04);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sf-tips-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(20, 184, 166, 0.14), 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* ---- Card Header ---- */
+.sf-tips-card-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 28px 28px 24px 28px;
+  border-bottom: 1px solid rgba(20, 184, 166, 0.12);
+}
+
+.sf-tips-card-header--sofa {
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.07) 0%, rgba(14, 167, 183, 0.04) 100%);
+}
+
+.sf-tips-card-header--ac {
+  background: linear-gradient(135deg, rgba(14, 167, 183, 0.07) 0%, rgba(20, 184, 166, 0.04) 100%);
+}
+
+/* ---- Icon Wrap ---- */
+.sf-tips-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sf-tips-icon-wrap--sofa {
+  background: linear-gradient(135deg, #14B8A6 0%, #0EA7B7 100%);
+  box-shadow: 0 4px 16px rgba(20, 184, 166, 0.35);
+}
+
+.sf-tips-icon-wrap--ac {
+  background: linear-gradient(135deg, #0EA7B7 0%, #14B8A6 100%);
+  box-shadow: 0 4px 16px rgba(14, 167, 183, 0.35);
+}
+
+.sf-tips-icon {
+  width: 38px;
+  height: 38px;
+  color: #ffffff;
+  display: block;
+}
+
+/* ---- Card Title ---- */
+.sf-tips-card-title-wrap {
+  flex: 1;
+}
+
+.sf-tips-card-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0f2d2a;
+  margin: 0 0 4px 0;
+  line-height: 1.35;
+}
+
+.sf-tips-card-subtitle {
+  font-size: 0.85rem;
+  color: #5a8a85;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* ---- Tips List ---- */
+.sf-tips-list {
+  list-style: none;
+  padding: 22px 28px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ---- Tip Item ---- */
+.sf-tips-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(20, 184, 166, 0.08);
+  transition: background 0.2s ease;
+}
+
+.sf-tips-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.sf-tips-item:first-child {
+  padding-top: 0;
+}
+
+.sf-tips-item--highlight {
+  background: linear-gradient(90deg, rgba(20, 184, 166, 0.06) 0%, transparent 100%);
+  margin: 0 -28px;
+  padding-right: 28px;
+  padding-left: 28px;
+  border-radius: 10px;
+  border-bottom: none !important;
+}
+
+/* ---- Check Icon ---- */
+.sf-tips-check {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(20, 184, 166, 0.12);
+  color: #14B8A6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.sf-tips-check svg {
+  width: 14px;
+  height: 14px;
+}
+
+.sf-tips-item:hover .sf-tips-check {
+  background: rgba(20, 184, 166, 0.22);
+  transform: scale(1.1);
+}
+
+.sf-tips-check--star {
+  background: linear-gradient(135deg, #14B8A6 0%, #0EA7B7 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(20, 184, 166, 0.4);
+}
+
+.sf-tips-check--star svg {
+  width: 13px;
+  height: 13px;
+}
+
+.sf-tips-item:hover .sf-tips-check--star {
+  background: linear-gradient(135deg, #0EA7B7 0%, #14B8A6 100%);
+}
+
+/* ---- Item Content ---- */
+.sf-tips-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.sf-tips-item-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f2d2a;
+  line-height: 1.4;
+}
+
+.sf-tips-item-desc {
+  font-size: 0.845rem;
+  color: #5a7a77;
+  line-height: 1.55;
+}
+
+/* ---- Card Footer ---- */
+.sf-tips-card-footer {
+  padding: 20px 28px 24px 28px;
+  border-top: 1px solid rgba(20, 184, 166, 0.1);
+  background: rgba(20, 184, 166, 0.025);
+}
+
+.sf-tips-cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #14B8A6;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.sf-tips-cta-link svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.sf-tips-cta-link:hover {
+  color: #0e9e8e;
+  gap: 12px;
+}
+
+.sf-tips-cta-link:hover svg {
+  transform: translateX(-3px);
+}
+
+.sf-tips-cta-link:focus-visible {
+  outline: 2px solid #14B8A6;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---- Bottom Note ---- */
+.sf-tips-bottom-note {
+  margin-top: 48px;
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.1) 0%, rgba(14, 167, 183, 0.07) 100%);
+  border: 1px solid rgba(20, 184, 166, 0.22);
+  border-radius: 14px;
+  padding: 20px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-align: right;
+}
+
+.sf-tips-note-icon {
+  width: 28px;
+  height: 28px;
+  color: #14B8A6;
+  flex-shrink: 0;
+}
+
+.sf-tips-bottom-note p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #2a5a55;
+  line-height: 1.65;
+}
+
+.sf-tips-bottom-note strong {
+  color: #0e9e8e;
+  font-weight: 700;
+}
+
+/* ============================================
+   Responsive — Tablet
+   ============================================ */
+@media (max-width: 860px) {
+  .sf-tips-section {
+    padding: 70px 16px;
+  }
+
+  .sf-tips-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .sf-tips-main-title {
+    font-size: 2rem;
+  }
+
+  .sf-tips-header {
+    margin-bottom: 40px;
+  }
+}
+
+/* ============================================
+   Responsive — Mobile
+   ============================================ */
+@media (max-width: 520px) {
+  .sf-tips-section {
+    padding: 56px 14px;
+  }
+
+  .sf-tips-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 22px 20px 18px 20px;
+  }
+
+  .sf-tips-list {
+    padding: 18px 20px;
+  }
+
+  .sf-tips-item--highlight {
+    margin: 0 -20px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .sf-tips-card-footer {
+    padding: 16px 20px 20px 20px;
+  }
+
+  .sf-tips-card-title {
+    font-size: 1.05rem;
+  }
+
+  .sf-tips-main-title {
+    font-size: 1.75rem;
+  }
+
+  .sf-tips-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .sf-tips-bottom-note {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 18px 20px;
+    margin-top: 32px;
+  }
+
+  .sf-tips-icon-wrap {
+    width: 54px;
+    height: 54px;
+  }
+
+  .sf-tips-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 /* ========== EMPTY SUBMENU HIDING (Auto-added by Zappy) ========== */
 .sub-menu:empty,
 .dropdown-menu:empty,
