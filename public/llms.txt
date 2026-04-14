@@ -1,6 +1,4 @@
-# שיין פרש - Shine Fresh — Generative Engine Optimization Map
-
-> A professional cleaning service specializing in sofa and air conditioning unit cleaning. The business focuses on home and office maintenance, helping clients maintain clean, hygienic, and well-functioning furniture and cooling systems.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -40,22 +38,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About שיין פרש - Shine Fresh
-A professional cleaning service specializing in sofa and air conditioning unit cleaning. The business focuses on home and office maintenance, helping clients maintain clean, hygienic, and well-functioning furniture and cooling systems.
-
-## Services/Products
-- ניקוי ספות
-- ניקוי מזגנים
-
-## Target Audience
-- בעלי בתים ומשפחות
-- סוכני נדל"ן
-- בעלי נכסים להשכרה
-- דיירי דירות עירוניים
-
-## Industry
-שירותי ניקיון
-
+## About Business
 ---
 
 # Additional Resources
