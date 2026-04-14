@@ -5,33 +5,33 @@
 ## Pages
 
 ### בית
-https://www.shinefresh.co.il
+https://Shinefreshil.com
 גלו את הטוהר האמיתי של הבית שלכם! שיין פרש מתמחה בניקוי ספות ומזגנים ברמה מקצועית, עם תוצאות מדהימות שתרגישו מיד. הזמינו עכשיו!
 
 ### שירותים
-https://www.shinefresh.co.il/services
+https://Shinefreshil.com/services
 מניקוי ספות מעמיק ועד טיפול מקצועי במזגנים — חשפו את מגוון השירותים שלנו ובחרו את הפתרון המושלם לבית או למשרד שלכם. תוצאות מובטחות!
 
 ### אודות
-https://www.shinefresh.co.il/about
+https://Shinefreshil.com/about
 הכירו את הצוות המקצועי של שיין פרש — אנשים עם תשוקה לניקיון ספות ומזגנים, מחויבים לאיכות ולשביעות רצון מלאה של כל לקוח בכל ביקור. אנחנו כאן בשבילכם!
 
 ### צור קשר
-https://www.shinefresh.co.il/contact
+https://Shinefreshil.com/contact
 רוצים לקבוע תור לניקוי ספות או מזגנים? צוות שיין פרש זמין עבורכם — השאירו פרטים ונחזור אליכם במהירות עם הצעת מחיר משתלמת ומותאמת אישית!
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://www.shinefresh.co.il/privacy
+https://Shinefreshil.com/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://www.shinefresh.co.il/terms
+https://Shinefreshil.com/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://www.shinefresh.co.il/accessibility
+https://Shinefreshil.com/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -43,5 +43,5 @@ Information about WCAG compliance and accessibility features.
 
 # Additional Resources
 
-- **Sitemap**: https://www.shinefresh.co.il/sitemap.xml
-- **Robots.txt**: https://www.shinefresh.co.il/robots.txt
+- **Sitemap**: https://Shinefreshil.com/sitemap.xml
+- **Robots.txt**: https://Shinefreshil.com/robots.txt
