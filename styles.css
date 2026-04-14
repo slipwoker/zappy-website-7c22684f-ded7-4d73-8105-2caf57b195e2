@@ -9317,6 +9317,349 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   }
 }
 
+/* AI-generated section */
+/* ===== SERVICE AREAS SECTION ===== */
+.sa-service-areas {
+  background: #f0fdfc;
+  padding: 90px 20px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background decoration */
+.sa-service-areas::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: -120px;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.sa-service-areas::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  width: 360px;
+  height: 360px;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Container */
+.sa-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== HEADER ===== */
+.sa-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.sa-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(20, 184, 166, 0.12);
+  color: #0d9488;
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  border-radius: 50px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin-bottom: 18px;
+}
+
+.sa-badge-icon {
+  flex-shrink: 0;
+  color: #14B8A6;
+}
+
+.sa-title {
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+  font-weight: 800;
+  color: #0f3d3a;
+  margin: 0 0 14px 0;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.sa-subtitle {
+  font-size: clamp(1rem, 2vw, 1.18rem);
+  color: #4b7b78;
+  margin: 0;
+  line-height: 1.6;
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+/* ===== GRID ===== */
+.sa-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+/* ===== CARDS ===== */
+.sa-card {
+  background: #ffffff;
+  border: 1.5px solid rgba(20, 184, 166, 0.25);
+  border-radius: 14px;
+  padding: 22px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: default;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+  box-shadow: 0 2px 8px rgba(20, 184, 166, 0.07);
+  position: relative;
+  overflow: hidden;
+}
+
+.sa-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #14B8A6, #0EA7B7);
+  opacity: 0;
+  transition: opacity 0.22s ease;
+  border-radius: 14px 14px 0 0;
+}
+
+.sa-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(20, 184, 166, 0.18);
+  border-color: rgba(20, 184, 166, 0.55);
+  background: #f0fdfc;
+}
+
+.sa-card:hover::before {
+  opacity: 1;
+}
+
+/* Wide cards span 2 columns */
+.sa-card--wide {
+  grid-column: span 2;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 28px;
+  gap: 12px;
+}
+
+.sa-card-icon {
+  width: 46px;
+  height: 46px;
+  background: rgba(20, 184, 166, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #14B8A6;
+  flex-shrink: 0;
+  transition: background 0.22s ease, transform 0.22s ease;
+}
+
+.sa-card:hover .sa-card-icon {
+  background: rgba(20, 184, 166, 0.2);
+  transform: scale(1.08);
+}
+
+.sa-card-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a4a47;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.sa-card--wide .sa-card-name {
+  font-size: 16px;
+}
+
+.sa-card-tag {
+  font-size: 11px;
+  font-weight: 600;
+  color: #0d9488;
+  background: rgba(20, 184, 166, 0.12);
+  border-radius: 20px;
+  padding: 3px 10px;
+  white-space: nowrap;
+  border: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+/* ===== CTA STRIP ===== */
+.sa-cta {
+  background: linear-gradient(135deg, #0f3d3a 0%, #0d5c56 100%);
+  border-radius: 18px;
+  padding: 28px 36px;
+  box-shadow: 0 8px 32px rgba(14, 167, 183, 0.2);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+.sa-cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.sa-cta-text-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+  min-width: 240px;
+}
+
+.sa-cta-icon {
+  color: #14B8A6;
+  flex-shrink: 0;
+}
+
+.sa-cta-text {
+  font-size: 16px;
+  color: #cef2f0;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.sa-cta-text strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.sa-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: var(--gradient-primary, linear-gradient(180deg, #14BED0 0%, #0EA7B7 100%));
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 13px 28px;
+  border-radius: 50px;
+  white-space: nowrap;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 4px 16px rgba(20, 184, 166, 0.35);
+  flex-shrink: 0;
+}
+
+.sa-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(20, 184, 166, 0.5);
+  filter: brightness(1.08);
+}
+
+.sa-cta-btn:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .sa-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sa-card--wide {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .sa-service-areas {
+    padding: 64px 16px;
+  }
+
+  .sa-header {
+    margin-bottom: 40px;
+  }
+
+  .sa-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .sa-card--wide {
+    grid-column: span 2;
+    padding: 18px 20px;
+  }
+
+  .sa-cta {
+    padding: 24px 22px;
+    border-radius: 14px;
+  }
+
+  .sa-cta-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .sa-cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sa-cta-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sa-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .sa-card {
+    padding: 18px 12px;
+    gap: 8px;
+  }
+
+  .sa-card-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .sa-card-name {
+    font-size: 13.5px;
+  }
+
+  .sa-card--wide {
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 14px;
+  }
+
+  .sa-title {
+    font-size: 1.7rem;
+  }
+
+  .sa-subtitle {
+    font-size: 0.97rem;
+  }
+}
+
 /* ========== EMPTY SUBMENU HIDING (Auto-added by Zappy) ========== */
 .sub-menu:empty,
 .dropdown-menu:empty,
