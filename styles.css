@@ -8814,6 +8814,38 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
+.site-footer .footer-contact {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: right !important;
+}
+
+.site-footer .footer-contact li {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 8px !important;
+  margin-bottom: 8px !important;
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+.site-footer .footer-contact .contact-icon {
+  flex-shrink: 0 !important;
+  order: 0 !important;
+}
+
+.site-footer .footer-contact .contact-text {
+  text-align: right !important;
+  order: 1 !important;
+}
+
+.site-footer .footer-col h3.footer-heading {
+  text-align: right !important;
+}
+
 /* ========== EMPTY SUBMENU HIDING (Auto-added by Zappy) ========== */
 .sub-menu:empty,
 .dropdown-menu:empty,
