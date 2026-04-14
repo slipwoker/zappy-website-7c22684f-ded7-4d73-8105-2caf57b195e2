@@ -8880,8 +8880,14 @@ body.accessibility-widget-visible ._access-menu {
   text-align: right !important;
   direction: rtl !important;
 }
+
 /* RTL footer contact: icon on the right (start) side, text on the left */
-html[dir="rtl"] .footer-contact li { flex-direction: row !important; }
+html[dir="rtl"] .footer-contact li,
+html[dir="rtl"] .site-footer .footer-contact li,
+html[dir="rtl"] .site-footer .footer-col:nth-child(3) .footer-contact li {
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+}
 html[dir="rtl"] .footer-contact .contact-icon { order: 0 !important; }
 html[dir="rtl"] .footer-contact .contact-text { order: 1 !important; }
 html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
