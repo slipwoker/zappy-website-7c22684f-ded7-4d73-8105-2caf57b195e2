@@ -8814,6 +8814,25 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
+.site-footer .footer-contact li {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  justify-content: flex-end !important;
+  text-align: right !important;
+  gap: 8px !important;
+}
+
+.site-footer .footer-contact .contact-icon {
+  order: 2 !important;
+  flex-shrink: 0 !important;
+}
+
+.site-footer .footer-contact .contact-text {
+  order: 1 !important;
+  text-align: right !important;
+}
+
 /* ========== EMPTY SUBMENU HIDING (Auto-added by Zappy) ========== */
 .sub-menu:empty,
 .dropdown-menu:empty,
