@@ -5,33 +5,33 @@
 ## Pages
 
 ### בית
-https://shine-fresh.zappy5.app
+https://www.shinefresh.co.il
 גלו את הטוהר האמיתי של הבית שלכם! שיין פרש מתמחה בניקוי ספות ומזגנים ברמה מקצועית, עם תוצאות מדהימות שתרגישו מיד. הזמינו עכשיו!
 
 ### שירותים
-https://shine-fresh.zappy5.app/services
+https://www.shinefresh.co.il/services
 מניקוי ספות מעמיק ועד טיפול מקצועי במזגנים — חשפו את מגוון השירותים שלנו ובחרו את הפתרון המושלם לבית או למשרד שלכם. תוצאות מובטחות!
 
 ### אודות
-https://shine-fresh.zappy5.app/about
+https://www.shinefresh.co.il/about
 הכירו את הצוות המקצועי של שיין פרש — אנשים עם תשוקה לניקיון ספות ומזגנים, מחויבים לאיכות ולשביעות רצון מלאה של כל לקוח בכל ביקור. אנחנו כאן בשבילכם!
 
 ### צור קשר
-https://shine-fresh.zappy5.app/contact
+https://www.shinefresh.co.il/contact
 רוצים לקבוע תור לניקוי ספות או מזגנים? צוות שיין פרש זמין עבורכם — השאירו פרטים ונחזור אליכם במהירות עם הצעת מחיר משתלמת ומותאמת אישית!
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://shine-fresh.zappy5.app/privacy
+https://www.shinefresh.co.il/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://shine-fresh.zappy5.app/terms
+https://www.shinefresh.co.il/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://shine-fresh.zappy5.app/accessibility
+https://www.shinefresh.co.il/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -43,5 +43,5 @@ Information about WCAG compliance and accessibility features.
 
 # Additional Resources
 
-- **Sitemap**: https://shine-fresh.zappy5.app/sitemap.xml
-- **Robots.txt**: https://shine-fresh.zappy5.app/robots.txt
+- **Sitemap**: https://www.shinefresh.co.il/sitemap.xml
+- **Robots.txt**: https://www.shinefresh.co.il/robots.txt
