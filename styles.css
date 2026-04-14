@@ -8823,7 +8823,7 @@ body.accessibility-widget-visible ._access-menu {
 
 .site-footer .footer-contact li {
   display: flex !important;
-  flex-direction: row-reverse !important;
+  flex-direction: row !important;
   align-items: center !important;
   justify-content: flex-end !important;
   gap: 8px !important;
@@ -8834,12 +8834,12 @@ body.accessibility-widget-visible ._access-menu {
 
 .site-footer .footer-contact .contact-icon {
   flex-shrink: 0 !important;
-  order: 0 !important;
+  order: 1 !important;
 }
 
 .site-footer .footer-contact .contact-text {
   text-align: right !important;
-  order: 1 !important;
+  order: 0 !important;
 }
 
 .site-footer .footer-col h3.footer-heading {
@@ -8848,7 +8848,7 @@ body.accessibility-widget-visible ._access-menu {
 
 .site-footer .footer-col:nth-child(3) .footer-contact li {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   gap: 8px;

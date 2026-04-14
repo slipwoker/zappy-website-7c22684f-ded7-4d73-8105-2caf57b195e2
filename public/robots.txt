@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://Shinefreshil.com/sitemap.xml
+Sitemap: https://Shinefreshil.co.il/sitemap.xml
