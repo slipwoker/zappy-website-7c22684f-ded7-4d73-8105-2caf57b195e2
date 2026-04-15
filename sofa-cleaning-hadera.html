@@ -218,8 +218,7 @@
 })();
 </script>
 <!-- End Zappy Analytics -->
-    </meta></meta></meta>
-          <style id="zappy-cta-mobile-style">
+    <style id="zappy-cta-mobile-style">
             /* Hide CTA list item on desktop (tablets and up) */
             @media (min-width: 769px) {
               .nav-cta-item-mobile {
@@ -244,8 +243,8 @@
             }
             
             /* Menu Group styling (non-clickable parent) - TOP LEVEL ONLY with ultra-specific selector */
-            .nav-menu &gt; li &gt; .menu-group-title,
-            #navMenu &gt; li &gt; .menu-group-title {
+            .nav-menu > li > .menu-group-title,
+            #navMenu > li > .menu-group-title {
               display: inline-block !important;
               padding: 0.5rem 1rem !important;
               color: var(--nav-color) !important;
@@ -259,13 +258,13 @@
               transition: color 0.3s ease !important;
             }
             
-            .nav-menu &gt; li &gt; .menu-group-title:hover,
-            #navMenu &gt; li &gt; .menu-group-title:hover {
+            .nav-menu > li > .menu-group-title:hover,
+            #navMenu > li > .menu-group-title:hover {
               color: var(--nav-hover-color) !important;
             }
             
             /* Desktop: show submenu on Menu Group hover */
-            li:has(.menu-group-title):hover &gt; .sub-menu {
+            li:has(.menu-group-title):hover > .sub-menu {
               opacity: 1 !important;
               visibility: visible !important;
               transform: translateY(0) !important;
@@ -274,7 +273,7 @@
             
             /* Hide menu items marked as hidden (overrides hover states) */
             .zappy-hidden-menu-item,
-            li:has(.menu-group-title):hover &gt; .sub-menu .zappy-hidden-menu-item {
+            li:has(.menu-group-title):hover > .sub-menu .zappy-hidden-menu-item {
               display: none !important;
               opacity: 0 !important;
               visibility: hidden !important;
@@ -327,9 +326,9 @@
             }
             
             /* Show submenu on parent hover - more specific selectors */
-            .nav-menu li:hover &gt; .sub-menu,
-            nav li:hover &gt; .sub-menu,
-            .navbar li:hover &gt; .sub-menu {
+            .nav-menu li:hover > .sub-menu,
+            nav li:hover > .sub-menu,
+            .navbar li:hover > .sub-menu {
               opacity: 1 !important;
               visibility: visible !important;
               transform: translateY(0) !important;
@@ -367,8 +366,8 @@
             }
             
             /* CRITICAL: Override submenu styles for TOP-LEVEL Menu Groups only - must come AFTER submenu styles */
-            .nav-menu &gt; li &gt; .menu-group-title,
-            #navMenu &gt; li &gt; .menu-group-title {
+            .nav-menu > li > .menu-group-title,
+            #navMenu > li > .menu-group-title {
               display: inline-block !important;
               padding: 0.5rem 1rem !important;
               color: var(--nav-color) !important;
@@ -382,8 +381,8 @@
               transition: color 0.3s ease !important;
             }
             
-            .nav-menu &gt; li &gt; .menu-group-title:hover,
-            #navMenu &gt; li &gt; .menu-group-title:hover {
+            .nav-menu > li > .menu-group-title:hover,
+            #navMenu > li > .menu-group-title:hover {
               color: var(--nav-hover-color) !important;
               background-color: transparent !important;
             }
@@ -425,18 +424,18 @@
               }
               
               /* Disable hover behavior on mobile */
-              .nav-menu li:hover &gt; .sub-menu,
-              nav li:hover &gt; .sub-menu,
-              .navbar li:hover &gt; .sub-menu {
+              .nav-menu li:hover > .sub-menu,
+              nav li:hover > .sub-menu,
+              .navbar li:hover > .sub-menu {
                 opacity: 0;
                 visibility: hidden;
                 pointer-events: none;
               }
               
               /* Enable visibility for expanded submenus */
-              .nav-menu li &gt; .sub-menu.mobile-expanded,
-              nav li &gt; .sub-menu.mobile-expanded,
-              .navbar li &gt; .sub-menu.mobile-expanded {
+              .nav-menu li > .sub-menu.mobile-expanded,
+              nav li > .sub-menu.mobile-expanded,
+              .navbar li > .sub-menu.mobile-expanded {
                 opacity: 1 !important;
                 visibility: visible !important;
                 pointer-events: auto !important;
@@ -464,39 +463,39 @@
               }
               
               /* Parent link - takes full width since toggle is absolute (not a flex child) */
-              .nav-menu li:has(.sub-menu) &gt; a,
-              nav li:has(.sub-menu) &gt; a,
-              .navbar li:has(.sub-menu) &gt; a,
-              .nav-menu &gt; li &gt; .menu-group-title,
-              #navMenu &gt; li &gt; .menu-group-title {
+              .nav-menu li:has(.sub-menu) > a,
+              nav li:has(.sub-menu) > a,
+              .navbar li:has(.sub-menu) > a,
+              .nav-menu > li > .menu-group-title,
+              #navMenu > li > .menu-group-title {
                 flex: 1 !important;
                 min-width: 0 !important;
               }
               
               /* Normalize menu-group-title in mobile nav to match link alignment */
-              .nav-menu &gt; li &gt; .menu-group-title,
-              #navMenu &gt; li &gt; .menu-group-title {
+              .nav-menu > li > .menu-group-title,
+              #navMenu > li > .menu-group-title {
                 padding: 0 !important;
                 line-height: inherit !important;
               }
               
               /* Submenu takes full width below parent */
-              .nav-menu li:has(.sub-menu) &gt; .sub-menu,
-              nav li:has(.sub-menu) &gt; .sub-menu,
-              .navbar li:has(.sub-menu) &gt; .sub-menu {
+              .nav-menu li:has(.sub-menu) > .sub-menu,
+              nav li:has(.sub-menu) > .sub-menu,
+              .navbar li:has(.sub-menu) > .sub-menu {
                 flex-basis: 100% !important;
                 width: 100% !important;
               }
               
               /* HIDE EXISTING CHEVRONS/ARROWS from cloned sites to prevent duplicates */
-              .nav-menu li:has(.sub-menu) &gt; a .fa-chevron-down,
-              .nav-menu li:has(.sub-menu) &gt; a .fa-angle-down,
-              .nav-menu li:has(.sub-menu) &gt; a [class*="chevron"],
-              .nav-menu li:has(.sub-menu) &gt; a [class*="arrow"],
-              nav li:has(.sub-menu) &gt; a [class*="chevron"],
-              nav li:has(.sub-menu) &gt; a [class*="arrow"],
-              #navMenu li:has(.sub-menu) &gt; a [class*="chevron"],
-              #navMenu li:has(.sub-menu) &gt; a [class*="arrow"] {
+              .nav-menu li:has(.sub-menu) > a .fa-chevron-down,
+              .nav-menu li:has(.sub-menu) > a .fa-angle-down,
+              .nav-menu li:has(.sub-menu) > a [class*="chevron"],
+              .nav-menu li:has(.sub-menu) > a [class*="arrow"],
+              nav li:has(.sub-menu) > a [class*="chevron"],
+              nav li:has(.sub-menu) > a [class*="arrow"],
+              #navMenu li:has(.sub-menu) > a [class*="chevron"],
+              #navMenu li:has(.sub-menu) > a [class*="arrow"] {
                 display: none !important;
                 visibility: hidden !important;
               }
@@ -551,10 +550,10 @@
             (function() {
               function initMobileMenuToggles() {
                 // Only run on mobile
-                if (window.innerWidth &gt; 768) {
+                if (window.innerWidth > 768) {
                   // Remove any toggle buttons on desktop
-                  document.querySelectorAll('.mobile-submenu-toggle').forEach(btn =&gt; btn.remove());
-                  document.querySelectorAll('.sub-menu.mobile-expanded').forEach(menu =&gt; {
+                  document.querySelectorAll('.mobile-submenu-toggle').forEach(btn => btn.remove());
+                  document.querySelectorAll('.sub-menu.mobile-expanded').forEach(menu => {
                     menu.classList.remove('mobile-expanded');
                   });
                   console.log('[MOBILE MENU] Desktop mode - cleanup done');
@@ -577,7 +576,7 @@
                   }
                   
                   const submenu = li.querySelector('.sub-menu');
-                  const parentLink = li.querySelector(':scope &gt; a') || li.querySelector(':scope &gt; .menu-group-title');
+                  const parentLink = li.querySelector(':scope > a') || li.querySelector(':scope > .menu-group-title');
                   
                   if (!submenu || !parentLink) return;
                   
@@ -637,7 +636,7 @@
               // This handles cases where the mobile menu is hidden initially
               const observer = new MutationObserver(function(mutations) {
                 mutations.forEach(function(mutation) {
-                  if (mutation.type === 'attributes' &amp;&amp; mutation.attributeName === 'class') {
+                  if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
                     const target = mutation.target;
                     if (target.classList.contains('active') || target.style.display !== 'none') {
                       console.log('[MOBILE MENU] Mobile menu became visible, re-initializing...');
@@ -694,16 +693,16 @@
 <body>
 <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-    <svg class="hamburger-icon" width="24" height="24" viewbox="0 0 24 24" fill="none">
+    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="display: none;">
+    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
       <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
 
   <button class="phone-header-btn" data-phone="0533331306" aria-label="Call">
-    <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
@@ -711,7 +710,7 @@
   <div class="nav-container">
     <div class="nav-right-group"><div class="nav-brand">
       <a href="/" class="logo-link">
-        <img src="/assets/shine-fresh-logo.webp" alt="שיין פרש - Shine Fresh" class="logo"></img>
+        <img src="/assets/shine-fresh-logo.webp" alt="שיין פרש - Shine Fresh" class="logo">
       </a>
     </div><ul class="nav-menu" id="navMenu"><li><a href="/services">שירותים</a></li><li><a href="/about">אודות</a></li><li><a href="/sofa-cleaning-guide" class="">איך לנקות ספות לבד</a></li><li class="menu-group-item"><span class="menu-group-title">איזורי שירות</span></li><li><a href="/sofa-cleaning-netanya" class="">ניקוי ספות נתניה</a></li><li><a href="/contact">צור קשר</a></li><li><a href="/sofa-cleaning-hadera" class="">ניקוי ספות חדרה</a></li></ul></div>
 
@@ -758,12 +757,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -776,7 +775,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -912,7 +911,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -1103,7 +1102,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '9725333313';
         
@@ -1120,7 +1119,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -1152,12 +1151,325 @@
 </script>
   
   <main>
-      <section id="layout-1776253852319" class="py-16 md:py-24 bg-white layout-section zappy-removable" data-zappy-component="true" style="width: 100%; padding: 60px 0;">
-        <div class="container mx-auto px-4 md:px-8 text-center">
-          <h1 class="text-3xl md:text-4xl font-bold mb-4">ניקוי ספות חדרה</h1>
-          <p class="text-gray-600 text-lg">This page is ready for your content.</p>
+      <section id="layout-1776253852319" class="hadera-hero-section layout-section" data-zappy-component="true" dir="rtl">
+        <style>
+          .hadera-hero-section {
+            background: linear-gradient(135deg, #0f2027 0%, #1a3a4a 50%, #14B8A6 100%);
+            padding: 80px 0 70px;
+            position: relative;
+            overflow: hidden;
+          }
+          .hadera-hero-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2314B8A6' fill-opacity='0.06'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            pointer-events: none;
+          }
+          .hadera-hero-inner {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 24px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+          }
+          .hadera-hero-badge {
+            display: inline-block;
+            background: rgba(20,184,166,0.18);
+            color: #14B8A6;
+            border: 1px solid rgba(20,184,166,0.4);
+            border-radius: 50px;
+            padding: 6px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 22px;
+            letter-spacing: 0.3px;
+          }
+          .hadera-hero-section h1 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1.3;
+            margin-bottom: 20px;
+          }
+          .hadera-hero-section h1 span {
+            color: #14B8A6;
+          }
+          .hadera-hero-desc {
+            font-size: 1.15rem;
+            color: rgba(255,255,255,0.82);
+            line-height: 1.8;
+            margin-bottom: 36px;
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .hadera-hero-cta-row {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 44px;
+          }
+          .hadera-btn-primary {
+            background: #14B8A6;
+            color: #fff;
+            padding: 15px 32px;
+            border-radius: 10px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s, transform 0.2s;
+            box-shadow: 0 6px 20px rgba(20,184,166,0.35);
+          }
+          .hadera-btn-primary:hover { background: #0fa091; transform: translateY(-2px); }
+          .hadera-btn-secondary {
+            background: transparent;
+            color: #fff;
+            padding: 15px 32px;
+            border-radius: 10px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: 2px solid rgba(255,255,255,0.4);
+            transition: border-color 0.2s, transform 0.2s;
+          }
+          .hadera-btn-secondary:hover { border-color: #fff; transform: translateY(-2px); }
+          .hadera-hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+          }
+          .hadera-stat {
+            text-align: center;
+          }
+          .hadera-stat-num {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #14B8A6;
+            display: block;
+          }
+          .hadera-stat-label {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.65);
+          }
+        </style>
+        <div class="hadera-hero-inner">
+          <div class="hadera-hero-badge">✦ שירות מקצועי באזור חדרה והחוף הכרמלי</div>
+          <h1>ניקוי ספות חדרה — <span>מקצועי, מהיר ומשתלם</span></h1>
+          <p class="hadera-hero-desc">
+            שיין פרש מספקת שירות ניקוי ספות מקצועי לבתים ומשרדים בחדרה, אורנית, בנימינה, זיכרון יעקב ובכל אזור חוף הכרמל. ציוד תעשייתי מתקדם, חומרים בטוחים לילדים ולחיות מחמד, ותוצאות מובטחות — תוך שעות ספורות.
+          </p>
+          <div class="hadera-hero-cta-row">
+            <a href="https://wa.me/9720533331306" class="hadera-btn-primary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.853L.057 23.184a.75.75 0 0 0 .923.899l5.453-1.744A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.497-5.202-1.368l-.374-.214-3.876 1.239 1.188-3.768-.232-.377A9.961 9.961 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              שלחו הודעה בוואטסאפ
+            </a>
+            <a href="tel:0533331306" class="hadera-btn-secondary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              053-333-1306
+            </a>
+          </div>
+          <div class="hadera-hero-stats">
+            <div class="hadera-stat">
+              <span class="hadera-stat-num">300+</span>
+              <span class="hadera-stat-label">לקוחות מרוצים בחדרה</span>
+            </div>
+            <div class="hadera-stat">
+              <span class="hadera-stat-num">24 שע׳</span>
+              <span class="hadera-stat-label">זמן תגובה מהיר</span>
+            </div>
+            <div class="hadera-stat">
+              <span class="hadera-stat-num">100%</span>
+              <span class="hadera-stat-label">שביעות רצון מובטחת</span>
+            </div>
+          </div>
         </div>
       </section>
+
+<section class="sp-why-section" aria-labelledby="sp-why-hadera-title">
+  <div class="sp-why-container">
+    <div class="sp-why-header">
+      <span class="sp-why-badge">היתרונות שלנו</span>
+      <h2 class="sp-why-title" id="sp-why-hadera-title">למה לבחור בשיין פרש לניקוי ספות בחדרה?</h2>
+      <p class="sp-why-subtitle">אנחנו לא סתם מנקים — אנחנו מחזירים לכם ספה כמו חדשה, עם שירות שאפשר לסמוך עליו</p>
+    </div>
+    <div class="sp-why-grid" role="list">
+      <article class="sp-why-card" role="listitem">
+        <div class="sp-why-icon-wrap sp-icon-teal">
+          <svg class="sp-why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <circle cx="32" cy="32" r="30" fill="rgba(20,184,166,0.12)"/>
+            <path d="M20 38 Q32 20 44 38" stroke="#14B8A6" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <rect x="18" y="36" width="28" height="6" rx="3" fill="#14B8A6"/>
+            <line x1="32" y1="42" x2="32" y2="50" stroke="#14B8A6" stroke-width="3" stroke-linecap="round"/>
+            <ellipse cx="32" cy="51" rx="6" ry="2" fill="#0EA7B7" opacity="0.5"/>
+            <circle cx="26" cy="28" r="2" fill="#0EA7B7"/>
+            <circle cx="32" cy="24" r="2" fill="#0EA7B7"/>
+            <circle cx="38" cy="28" r="2" fill="#0EA7B7"/>
+          </svg>
+        </div>
+        <h3 class="sp-why-card-title">ציוד תעשייתי מתקדם</h3>
+        <p class="sp-why-card-desc">מכונות ניקוי בלחץ גבוה המסירות כתמים עמוקים שניקוי ביתי רגיל לא מצליח להתמודד איתם — תוצאות מקצועיות בכל פעם.</p>
+      </article>
+      <article class="sp-why-card" role="listitem">
+        <div class="sp-why-icon-wrap sp-icon-green">
+          <svg class="sp-why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <circle cx="32" cy="32" r="30" fill="rgba(20,184,166,0.12)"/>
+            <path d="M32 14 C20 14 14 22 14 30 C14 40 22 48 32 50 C42 48 50 40 50 30 C50 22 44 14 32 14Z" fill="none" stroke="#14B8A6" stroke-width="2.5"/>
+            <path d="M24 31 L29 36 L40 25" stroke="#14B8A6" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="22" cy="20" r="4" fill="#0EA7B7" opacity="0.6"/>
+            <circle cx="42" cy="20" r="3" fill="#0EA7B7" opacity="0.4"/>
+          </svg>
+        </div>
+        <h3 class="sp-why-card-title">בטוח לילדים ולחיות מחמד</h3>
+        <p class="sp-why-card-desc">חומרי ניקוי לא רעילים, מוסמכים ומאושרים — מתייבשים מהר ומשאירים את הבית נקי, בריא ובטוח לכל בני המשפחה.</p>
+      </article>
+      <article class="sp-why-card" role="listitem">
+        <div class="sp-why-icon-wrap sp-icon-blue">
+          <svg class="sp-why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <circle cx="32" cy="32" r="30" fill="rgba(20,184,166,0.12)"/>
+            <circle cx="32" cy="22" r="8" fill="none" stroke="#14B8A6" stroke-width="2.5"/>
+            <path d="M18 46 C18 38 46 38 46 46" fill="none" stroke="#14B8A6" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M38 16 L42 20 L50 12" stroke="#0EA7B7" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="sp-why-card-title">טכנאים מוסמכים ומנוסים</h3>
+        <p class="sp-why-card-desc">מעל 5 שנות ניסיון בניקוי מקצועי, עוברים הכשרה שוטפת ומתעדכנים בטכנולוגיות הניקוי החדישות ביותר.</p>
+      </article>
+      <article class="sp-why-card" role="listitem">
+        <div class="sp-why-icon-wrap sp-icon-orange">
+          <svg class="sp-why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <circle cx="32" cy="32" r="30" fill="rgba(20,184,166,0.12)"/>
+            <rect x="16" y="20" width="32" height="26" rx="4" fill="none" stroke="#14B8A6" stroke-width="2.5"/>
+            <line x1="16" y1="28" x2="48" y2="28" stroke="#14B8A6" stroke-width="2"/>
+            <line x1="24" y1="36" x2="40" y2="36" stroke="#0EA7B7" stroke-width="2" stroke-linecap="round"/>
+            <line x1="28" y1="41" x2="36" y2="41" stroke="#0EA7B7" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="32" cy="24" r="2" fill="#14B8A6"/>
+          </svg>
+        </div>
+        <h3 class="sp-why-card-title">מחיר שקוף ללא הפתעות</h3>
+        <p class="sp-why-card-desc">הצעת מחיר מפורטת לפני תחילת העבודה — ללא עלויות נסתרות, ללא תוספות מפתיעות. מה שסוכם — זה מה שמשלמים.</p>
+      </article>
+      <article class="sp-why-card" role="listitem">
+        <div class="sp-why-icon-wrap sp-icon-purple">
+          <svg class="sp-why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <circle cx="32" cy="32" r="30" fill="rgba(20,184,166,0.12)"/>
+            <circle cx="32" cy="32" r="12" fill="none" stroke="#14B8A6" stroke-width="2.5"/>
+            <line x1="32" y1="20" x2="32" y2="32" stroke="#14B8A6" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="32" y1="32" x2="40" y2="36" stroke="#0EA7B7" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M14 22 Q10 16 16 12" stroke="#14B8A6" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M50 22 Q54 16 48 12" stroke="#14B8A6" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="sp-why-card-title">שירות מהיר בחדרה</h3>
+        <p class="sp-why-card-desc">הגעה תוך 24–48 שעות לכל רחבי חדרה והסביבה — כי אנחנו יודעים שהזמן שלכם יקר ולא תמיד אפשר לחכות.</p>
+      </article>
+      <article class="sp-why-card sp-why-card--highlight" role="listitem">
+        <div class="sp-why-icon-wrap sp-icon-star">
+          <svg class="sp-why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <circle cx="32" cy="32" r="30" fill="rgba(20,184,166,0.18)"/>
+            <polygon points="32,14 36,26 50,26 39,34 43,46 32,38 21,46 25,34 14,26 28,26" fill="none" stroke="#14B8A6" stroke-width="2.5" stroke-linejoin="round"/>
+            <polygon points="32,19 35,28 44,28 37,33 40,42 32,37 24,42 27,33 20,28 29,28" fill="#14B8A6" opacity="0.25"/>
+          </svg>
+        </div>
+        <h3 class="sp-why-card-title">ערבות שביעות רצון</h3>
+        <p class="sp-why-card-desc">לא מרוצים מהתוצאה? נחזור לנקות שוב — בחינם, ללא שאלות. המחויבות שלנו לאיכות היא לא רק הבטחה, היא ערובה.</p>
+        <span class="sp-why-guarantee-badge" aria-label="ערבות מלאה">✓ ערבות מלאה</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="srv-areas-netanya" dir="rtl" lang="he" aria-labelledby="srv-areas-hadera-title" id="srv-areas-hadera">
+  <div class="srv-areas-container">
+    <div class="srv-areas-header">
+      <div class="srv-areas-icon" aria-hidden="true">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="var(--primary, #14B8A6)"/>
+        </svg>
+      </div>
+      <h2 class="srv-areas-title" id="srv-areas-hadera-title">מגיעים לכל שכונות חדרה והסביבה</h2>
+      <p class="srv-areas-subtitle">שירות ניקוי ספות מקצועי בכל אזורי העיר — בלי עלות נסיעה נוספת</p>
+    </div>
+    <div class="srv-areas-grid" role="list" aria-label="שכונות השירות בחדרה">
+      <span class="srv-badge srv-badge--main" role="listitem">
+        <span class="srv-badge-dot" aria-hidden="true"></span>
+        גבעת אולגה
+      </span>
+      <span class="srv-badge srv-badge--main" role="listitem">
+        <span class="srv-badge-dot" aria-hidden="true"></span>
+        מרכז העיר
+      </span>
+      <span class="srv-badge srv-badge--main" role="listitem">
+        <span class="srv-badge-dot" aria-hidden="true"></span>
+        שכונת הדר
+      </span>
+      <span class="srv-badge srv-badge--main" role="listitem">
+        <span class="srv-badge-dot" aria-hidden="true"></span>
+        שכונת נווה חיים
+      </span>
+      <span class="srv-badge srv-badge--main" role="listitem">
+        <span class="srv-badge-dot" aria-hidden="true"></span>
+        רמת הדר
+      </span>
+      <span class="srv-badge srv-badge--main" role="listitem">
+        <span class="srv-badge-dot" aria-hidden="true"></span>
+        שכונת רסקו
+      </span>
+      <span class="srv-badge srv-badge--main" role="listitem">
+        <span class="srv-badge-dot" aria-hidden="true"></span>
+        אחוזת נילי
+      </span>
+      <span class="srv-badge srv-badge--main" role="listitem">
+        <span class="srv-badge-dot" aria-hidden="true"></span>
+        שכונת ותיקים
+      </span>
+      <span class="srv-badge srv-badge--main" role="listitem">
+        <span class="srv-badge-dot" aria-hidden="true"></span>
+        נאות רבין
+      </span>
+      <span class="srv-badge srv-badge--main" role="listitem">
+        <span class="srv-badge-dot" aria-hidden="true"></span>
+        חוף הכרמל
+      </span>
+      <span class="srv-badge srv-badge--nearby" role="listitem" title="יישוב סמוך">
+        <span class="srv-badge-dot" aria-hidden="true"></span>
+        בנימינה
+        <span class="srv-badge-nearby-label">סמוכה</span>
+      </span>
+      <span class="srv-badge srv-badge--nearby" role="listitem" title="יישוב סמוך">
+        <span class="srv-badge-dot" aria-hidden="true"></span>
+        זיכרון יעקב
+        <span class="srv-badge-nearby-label">סמוכה</span>
+      </span>
+      <span class="srv-badge srv-badge--nearby" role="listitem" title="יישוב סמוך">
+        <span class="srv-badge-dot" aria-hidden="true"></span>
+        פרדס חנה
+        <span class="srv-badge-nearby-label">סמוכה</span>
+      </span>
+    </div>
+    <div class="srv-areas-divider" aria-hidden="true"></div>
+    <div class="srv-areas-footer">
+      <div class="srv-areas-footer-icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="var(--primary, #14B8A6)"/>
+        </svg>
+      </div>
+      <p class="srv-areas-footer-text">
+        לא רואים את השכונה שלכם?
+        <strong>התקשרו — אנחנו מגיעים לכל אזור חדרה וסביבותיה.</strong>
+      </p>
+    </div>
+  </div>
+</section>
     </main>
     <script src="/script.js"></script>
 
