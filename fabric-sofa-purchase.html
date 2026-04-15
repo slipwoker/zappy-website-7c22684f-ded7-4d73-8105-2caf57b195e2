@@ -309,16 +309,16 @@
 <body>
 <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-    <svg class="hamburger-icon" width="24" height="24" viewbox="0 0 24 24" fill="none">
+    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="display: none;">
+    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
       <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
 
   <button class="phone-header-btn" data-phone="0533331306" aria-label="Call">
-    <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
@@ -326,7 +326,7 @@
   <div class="nav-container">
     <div class="nav-right-group"><div class="nav-brand">
       <a href="/" class="logo-link">
-        <img src="/assets/shine-fresh-logo.webp" alt="שיין פרש - Shine Fresh" class="logo"></img>
+        <img src="/assets/shine-fresh-logo.webp" alt="שיין פרש - Shine Fresh" class="logo">
       </a>
     </div><ul class="nav-menu" id="navMenu"><li><a href="/services">שירותים</a></li><li><a href="/about">אודות</a></li><li class="menu-group-item"><span class="menu-group-title">איזורי השירות שלנו</span><ul class="sub-menu"><li><a href="/sofa-cleaning-netanya">ניקוי ספות נתניה</a></li><li><a href="/sofa-cleaning-hadera">ניקוי ספות חדרה</a></li><li><a href="/sofa-cleaning-herzliya">ניקוי ספות הרצליה</a></li><li><a href="/sofa-cleaning-services" class="">ניקוי ספות רעננה</a></li><li><a href="/sofa-cleaning-serviceskfarsaba" class="">ניקוי ספות כפר סבא</a></li><li><a href="/sofa-cleaning-serviceshodhashron" class="">ניקוי ספות הוד השרון</a></li><li><a href="/sofa-cleaning-servicesroshhain" class="">ניקוי ספות ראש העין</a></li><li><a href="/sofa-cleaning-servicespetahtikva" class="">ניקוי ספות פתח תקווה</a></li><li><a href="/sofa-cleaning-servicesorakiva" class="">ניקוי ספות אור עקיבא</a></li><li><a href="/sofa-cleaning-harish" class="">ניקוי ספות חריש</a></li></ul></li><li class="menu-group-item"><span class="menu-group-title">שאלות לניקוי ספות</span><ul class="sub-menu"><li><a href="/sofa-cleaning-guide">איך לנקות ספות לבד</a></li><li><a href="/sofa-cleaning-price">מחיר לניקוי ספות</a></li><li><a href="/sofa-cleaning-services1">מדוע חשוב לנקות ספות</a></li></ul></li><li><a href="/contact">צור קשר</a></li><li>איך מסירים ריח של שתן מספות?</li><li><a href="/sofa-cleaning-serviceclean" class="">מה מסתתר בתוך הספה שלכם?</a></li><li><a href="/fabric-sofa-purchase" class="">האם כדאי לקנות ספה מבד</a></li></ul></div>
 
@@ -373,12 +373,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -391,7 +391,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -527,7 +527,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -718,7 +718,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '9725333313';
         
@@ -735,7 +735,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -767,10 +767,105 @@
 </script>
   
   <main>
-      <section id="layout-1776285116027" class="py-16 md:py-24 bg-white layout-section zappy-removable" data-zappy-component="true" style="width: 100%; padding: 60px 0;">
-        <div class="container mx-auto px-4 md:px-8 text-center">
-          <h1 class="text-3xl md:text-4xl font-bold mb-4">האם כדאי לקנות ספה מבד</h1>
-          <p class="text-gray-600 text-lg">This page is ready for your content.</p>
+      <section id="layout-1776285116027" class="layout-section zappy-removable" data-zappy-component="true" style="width: 100%; padding: 0; background: #ffffff; direction: rtl; font-family: var(--font-body, 'Segoe UI', sans-serif);">
+
+        <!-- Hero Banner -->
+        <div style="background: linear-gradient(135deg, #1F2937 0%, #14B8A6 100%); padding: 70px 24px 60px; text-align: center;">
+          <h1 style="color: #ffffff; font-size: clamp(2rem, 5vw, 2.8rem); font-weight: 800; margin: 0 0 16px; line-height: 1.3;">האם כדאי לקנות ספה מבד?</h1>
+          <p style="color: rgba(255,255,255,0.85); font-size: 1.15rem; max-width: 680px; margin: 0 auto; line-height: 1.8;">המדריך המלא לפני שאתם מקבלים החלטה — יתרונות, חסרונות, ומה שיכול לפתור הרבה בעיות</p>
+        </div>
+
+        <!-- Article Body -->
+        <div style="max-width: 820px; margin: 0 auto; padding: 56px 24px 80px;">
+
+          <!-- Intro -->
+          <p style="color: #374151; font-size: 1.1rem; line-height: 1.9; margin-bottom: 32px;">
+            ספה מבד היא אחת הרהיטים הפופולריים ביותר בבתים ישראלים. היא נוחה, חמה, אסתטית — ומגיעה במגוון עצום של גוונים ועיצובים. אבל לפני שמשקיעים אלפי שקלים ברכישה, כדאי לשאול: האם ספה מבד היא באמת הבחירה הנכונה עבוריכם?
+          </p>
+
+          <!-- Section: יתרונות -->
+          <div style="background: #f0fdfa; border-right: 5px solid #14B8A6; border-radius: 12px; padding: 28px 28px 20px; margin-bottom: 36px;">
+            <h2 style="color: #0f766e; font-size: 1.5rem; font-weight: 700; margin: 0 0 18px;">✅ היתרונות של ספה מבד</h2>
+            <ul style="color: #374151; font-size: 1.05rem; line-height: 2; padding-right: 20px; margin: 0;">
+              <li><strong>נוחות גבוהה</strong> — בד רך ונעים למגע, מתאים לשהייה ממושכת</li>
+              <li><strong>מגוון עצום</strong> — מאות צבעים, מרקמים ועיצובים לבחירה</li>
+              <li><strong>מחיר אטרקטיבי</strong> — לרוב זולה יותר מספת עור בפרמיה דומה</li>
+              <li><strong>מתאימה לאקלים</strong> — לא קרה בחורף ולא דביקה בקיץ כמו עור</li>
+              <li><strong>אסתטיקה ביתית</strong> — נותנת תחושה חמה ומזמינה לסלון</li>
+              <li><strong>קלה לשדרוג</strong> — ניתן לרכוש כיסויים חלופיים ולחדש מראה</li>
+            </ul>
+          </div>
+
+          <!-- Section: חסרונות -->
+          <div style="background: #fef2f2; border-right: 5px solid #ef4444; border-radius: 12px; padding: 28px 28px 20px; margin-bottom: 36px;">
+            <h2 style="color: #b91c1c; font-size: 1.5rem; font-weight: 700; margin: 0 0 18px;">⚠️ החסרונות שחשוב להכיר</h2>
+            <ul style="color: #374151; font-size: 1.05rem; line-height: 2; padding-right: 20px; margin: 0;">
+              <li><strong>קולטת כתמים</strong> — קפה, יין, שמן ועוד — חודרים לסיבים בקלות</li>
+              <li><strong>קולטת ריחות</strong> — זיעה, חיות מחמד, אוכל — הריח "נשאר" בבד</li>
+              <li><strong>אבק וקרדיות</strong> — הבד מהווה קרקע פורייה לאלרגנים</li>
+              <li><strong>לא עמידה לשריטות</strong> — חיות מחמד עלולות לפגוע ברקמה</li>
+              <li><strong>דורשת תחזוקה</strong> — בלי טיפול קבוע, הספה מתבלה מהר</li>
+            </ul>
+          </div>
+
+          <!-- Section: האם לקנות? -->
+          <h2 style="color: #1F2937; font-size: 1.6rem; font-weight: 800; margin-bottom: 16px;">🤔 אז — כדאי לקנות ספה מבד?</h2>
+          <p style="color: #374151; font-size: 1.05rem; line-height: 1.9; margin-bottom: 16px;">
+            <strong>כן, בהחלט כדאי</strong> — אם תבחרו את הבד הנכון ותשמרו על תחזוקה בסיסית. ספת בד איכותית יכולה להחזיק שנים רבות ולהישאר יפה ונקייה — בתנאי שלא מזניחים אותה.
+          </p>
+          <p style="color: #374151; font-size: 1.05rem; line-height: 1.9; margin-bottom: 32px;">
+            עם זאת, אם יש בבית ילדים קטנים, חיות מחמד, או אנשים עם אלרגיות — כדאי לבחור בבד מיקרופייבר או בד בעל ציפוי נגד כתמים, ולהשקיע בניקוי מקצועי תקופתי.
+          </p>
+
+          <!-- Section: ניקוי מקצועי -->
+          <div style="background: linear-gradient(135deg, #ecfeff 0%, #f0fdfa 100%); border: 2px solid #14B8A6; border-radius: 16px; padding: 32px 28px; margin-bottom: 36px;">
+            <h2 style="color: #0f766e; font-size: 1.5rem; font-weight: 700; margin: 0 0 14px;">🧹 ניקוי מקצועי — לא תמיד חייב, אבל שווה לדעת מתי כן</h2>
+            <p style="color: #374151; font-size: 1.05rem; line-height: 1.9; margin-bottom: 16px;">
+              לא כל כתם או ריח דורש מיד קריאה למקצוענים. הרבה בעיות נפוצות ניתן לפתור בבית:
+            </p>
+            <ul style="color: #374151; font-size: 1.05rem; line-height: 2; padding-right: 20px; margin: 0 0 18px;">
+              <li>✔️ <strong>כתם טרי</strong> — הסירו מיד עם מטלית לחה ומעט נוזל כלים</li>
+              <li>✔️ <strong>ריח קל</strong> — פיזרו סודה לשתייה, המתינו שעה ושאבו אבק</li>
+              <li>✔️ <strong>אבק ופירורים</strong> — שאיבת אבק שבועית עם ראש ייעודי מספיקה</li>
+              <li>✔️ <strong>כתמי שתן קטנים</strong> — תמיסת חומץ לבן ומים עובדת מצוין</li>
+            </ul>
+            <p style="color: #374151; font-size: 1.05rem; line-height: 1.9; margin: 0;">
+              <strong>מתי כן כדאי לפנות לניקוי מקצועי?</strong> כשהכתמים עמוקים ועקשניים, כשיש ריח עז שלא עובר, כשחלפו יותר מ-12 חודשים מהניקוי האחרון, או כשאחד מבני הבית סובל מאלרגיות. ניקוי מקצועי אחת לשנה יכול להאריך את חיי הספה שלכם בשנים רבות.
+            </p>
+          </div>
+
+          <!-- Section: טיפים לבחירה -->
+          <h2 style="color: #1F2937; font-size: 1.5rem; font-weight: 800; margin-bottom: 16px;">💡 טיפים לבחירת ספת בד חכמה</h2>
+          <div style="--zappy-grid-cols: repeat(auto-fit, minmax(220px, 1fr)); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 40px;" data-zappy-explicit-columns="true">
+            <div style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center;">
+              <div style="font-size: 2rem; margin-bottom: 8px;">🎨</div>
+              <strong style="color: #1F2937;">בחרו צבע כהה יותר</strong>
+              <p style="color: #6B7280; font-size: 0.9rem; margin: 6px 0 0;">בגוון בז', אפור או חרדל — כתמים פחות בולטים</p>
+            </div>
+            <div style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center;">
+              <div style="font-size: 2rem; margin-bottom: 8px;">🛡️</div>
+              <strong style="color: #1F2937;">בד מיקרופייבר</strong>
+              <p style="color: #6B7280; font-size: 0.9rem; margin: 6px 0 0;">קל לניקוי, עמיד בפני כתמים ונעים למגע</p>
+            </div>
+            <div style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center;">
+              <div style="font-size: 2rem; margin-bottom: 8px;">🔄</div>
+              <strong style="color: #1F2937;">כיסויים נשלפים</strong>
+              <p style="color: #6B7280; font-size: 0.9rem; margin: 6px 0 0;">אפשרות לכביסה ביתית — יתרון משמעותי לאורך זמן</p>
+            </div>
+            <div style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; text-align: center;">
+              <div style="font-size: 2rem; margin-bottom: 8px;">🧴</div>
+              <strong style="color: #1F2937;">ציפוי נגד כתמים</strong>
+              <p style="color: #6B7280; font-size: 0.9rem; margin: 6px 0 0;">ניתן לרסס ספות ישנות ולקבל הגנה מצוינת</p>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div style="background: #1F2937; border-radius: 16px; padding: 40px 28px; text-align: center;">
+            <h2 style="color: #ffffff; font-size: 1.5rem; font-weight: 700; margin: 0 0 12px;">הספה שלכם צריכה ניקוי מקצועי?</h2>
+            <p style="color: rgba(255,255,255,0.8); font-size: 1rem; margin: 0 0 24px; line-height: 1.7;">שיין פרש מתמחים בניקוי ספות בד, מיקרופייבר ובד שמיים — עם ציוד מקצועי ותוצאות מדהימות</p>
+            <a href="tel:0533331306" style="display: inline-block; background: #14B8A6; color: #ffffff; font-size: 1.1rem; font-weight: 700; padding: 14px 36px; border-radius: 10px; text-decoration: none; transition: background 0.2s;">📞 התקשרו עכשיו</a>
+          </div>
+
         </div>
       </section>
     </main>
