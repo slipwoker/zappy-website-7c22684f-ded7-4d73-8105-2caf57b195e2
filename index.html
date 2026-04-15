@@ -1873,6 +1873,129 @@
 
 <!-- WA STRIP PLACEHOLDER -->
 
+<!-- Side Navigation Dots -->
+<nav id="side-nav-dots" aria-label="ניווט מהיר לאזורי הדף" style="position:fixed;left:20px;top:50%;transform:translateY(-50%);z-index:999;display:flex;flex-direction:column;gap:12px;align-items:center;"></nav>
+
+<style>
+#side-nav-dots .side-dot {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+#side-nav-dots .side-dot-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(31,41,55,0.35);
+  border: 2px solid #1F2937;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+  flex-shrink: 0;
+}
+#side-nav-dots .side-dot:hover .side-dot-circle,
+#side-nav-dots .side-dot.active .side-dot-circle {
+  background: #14B8A6;
+  border-color: #14B8A6;
+  transform: scale(1.4);
+  box-shadow: 0 0 0 3px rgba(20,184,166,0.35);
+}
+#side-nav-dots .side-dot-label {
+  position: absolute;
+  left: 20px;
+  background: #1F2937;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
+  padding: 5px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateX(-6px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+#side-nav-dots .side-dot-label::after {
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 5px solid transparent;
+  border-right-color: #1F2937;
+}
+#side-nav-dots .side-dot:hover .side-dot-label {
+  opacity: 1;
+  transform: translateX(0);
+}
+@media (max-width: 768px) {
+  #side-nav-dots { display: none !important; }
+}
+</style>
+
+<script>
+(function() {
+  var sections = [
+    { id: 'top', label: 'ראש הדף' },
+    { id: 'index-services-section', label: 'שירותים' },
+    { id: 'dry-info-section', label: 'זמן ייבוש' },
+    { id: 'index-showcase-section', label: 'תוצאות' },
+    { id: 'index-testimonials-section', label: 'המלצות' },
+    { id: 'index-cta-section', label: 'צרו קשר' }
+  ];
+
+  window.addEventListener('load', function() {
+    var nav = document.getElementById('side-nav-dots');
+    if (!nav) return;
+
+    // Make sure hero has id
+    var hero = document.querySelector('.index-hero-section');
+    if (hero && !document.getElementById('top')) {
+      hero.id = 'top';
+    }
+
+    sections.forEach(function(sec, i) {
+      var btn = document.createElement('button');
+      btn.className = 'side-dot';
+      btn.setAttribute('aria-label', sec.label);
+      btn.innerHTML = '<span class="side-dot-circle"></span><span class="side-dot-label">' + sec.label + '</span>';
+      btn.addEventListener('click', function() {
+        var target = document.getElementById(sec.id);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+      nav.appendChild(btn);
+    });
+
+    // Highlight active dot on scroll
+    function updateActive() {
+      var scrollY = window.scrollY + window.innerHeight / 3;
+      var dots = nav.querySelectorAll('.side-dot');
+      var active = 0;
+      sections.forEach(function(sec, i) {
+        var el = document.getElementById(sec.id);
+        if (el && el.getBoundingClientRect().top + window.scrollY <= scrollY) {
+          active = i;
+        }
+      });
+      dots.forEach(function(d, i) {
+        d.classList.toggle('active', i === active);
+      });
+    }
+
+    updateActive();
+    window.addEventListener('scroll', updateActive, { passive: true });
+  });
+})();
+</script>
+
 <footer class="site-footer" dir="rtl">
   <div class="footer-top">
     <div class="footer-container">
