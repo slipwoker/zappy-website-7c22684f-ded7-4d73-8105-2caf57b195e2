@@ -309,26 +309,26 @@
 <body>
 <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <svg class="hamburger-icon" width="24" height="24" viewbox="0 0 24 24" fill="none">
+      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
-      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <svg class="close-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="display: none;">
+      <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
 
   <button class="phone-header-btn" data-phone="0533331306" aria-label="Call">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+    <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
 
   <div class="nav-container">
     <div class="nav-right-group"><div class="nav-brand">
       <a href="/" class="logo-link">
-        <img src="/assets/shine-fresh-logo.webp" alt="שיין פרש - Shine Fresh" class="logo">
+        <img src="/assets/shine-fresh-logo.webp" alt="שיין פרש - Shine Fresh" class="logo"></img>
       </a>
-    </div><ul class="nav-menu" id="navMenu"><li><a href="/services">שירותים</a></li><li><a href="/about">אודות</a></li><li><a href="/sofa-cleaning-guide" class>איך לנקות ספות לבד</a></li><li class="menu-group-item"><span class="menu-group-title">איזורי שירות</span><ul class="sub-menu"><li><a href="/sofa-cleaning-netanya" class>ניקוי ספות נתניה</a></li><li><a href="/sofa-cleaning-hadera">ניקוי ספות חדרה</a></li><li><a href="/sofa-cleaning-herzliya">ניקוי ספות הרצליה</a></li><li><a href="/sofa-cleaning-servicesroshhain" class="nav-link">ניקוי ספות ראש העין</a></li></ul></li><li><a href="/contact">צור קשר</a></li><li><a href="/sofa-cleaning-services" class>ניקוי ספות רעננה</a></li><li><a href="/sofa-cleaning-serviceskfarsaba" class>ניקוי ספות כפר סבא</a></li><li><a href="/sofa-cleaning-serviceshodhashron" class>ניקוי ספות הוד השרון</a></li></ul></div>
+    </div><ul class="nav-menu" id="navMenu"><li><a href="/services">שירותים</a></li><li><a href="/about">אודות</a></li><li><a href="/sofa-cleaning-guide" class="">איך לנקות ספות לבד</a></li><li class="menu-group-item"><span class="menu-group-title">איזורי שירות</span><ul class="sub-menu"><li><a href="/sofa-cleaning-netanya" class="">ניקוי ספות נתניה</a></li><li><a href="/sofa-cleaning-hadera">ניקוי ספות חדרה</a></li><li><a href="/sofa-cleaning-herzliya">ניקוי ספות הרצליה</a></li></ul></li><li><a href="/contact">צור קשר</a></li><li><a href="/sofa-cleaning-services" class="">ניקוי ספות רעננה</a></li><li><a href="/sofa-cleaning-serviceskfarsaba" class="">ניקוי ספות כפר סבא</a></li><li><a href="/sofa-cleaning-serviceshodhashron" class="">ניקוי ספות הוד השרון</a></li><li><a href="/sofa-cleaning-servicesroshhain" class="">ניקוי ספות ראש העין</a></li></ul></div>
 
     
 
@@ -373,12 +373,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage && bgImage !== 'none') {
+      if (bgImage &amp;&amp; bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -391,7 +391,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb && rgb.length >= 3) {
+    if (rgb &amp;&amp; rgb.length &gt;= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -527,7 +527,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth <= 768;
+      const isMobileViewport = window.innerWidth &lt;= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -718,7 +718,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length > 0 
+        const phoneNumber = phoneLinks.length &gt; 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '9725333313';
         
@@ -735,7 +735,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth >= 769;
+        const isDesktop = window.innerWidth &gt;= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -767,364 +767,12 @@
 </script>
   
   <main>
-      <section id="layout-1776253196111" class="netanya-hero-section layout-section" data-zappy-component="true" dir="rtl">
-        <style>
-          .netanya-hero-section {
-            background: linear-gradient(135deg, #0f2027 0%, #1a3a4a 50%, #14B8A6 100%);
-            padding: 80px 0 70px;
-            position: relative;
-            overflow: hidden;
-          }
-          .netanya-hero-section::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2314B8A6' fill-opacity='0.06'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            pointer-events: none;
-          }
-          .netanya-hero-inner {
-            max-width: 860px;
-            margin: 0 auto;
-            padding: 0 24px;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-          }
-          .netanya-hero-badge {
-            display: inline-block;
-            background: rgba(20,184,166,0.18);
-            color: #14B8A6;
-            border: 1px solid rgba(20,184,166,0.4);
-            border-radius: 50px;
-            padding: 6px 20px;
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 22px;
-            letter-spacing: 0.3px;
-          }
-          .netanya-hero-section h1 {
-            font-size: clamp(2rem, 5vw, 3.2rem);
-            font-weight: 800;
-            color: #ffffff;
-            line-height: 1.3;
-            margin-bottom: 20px;
-          }
-          .netanya-hero-section h1 span {
-            color: #14B8A6;
-          }
-          .netanya-hero-desc {
-            font-size: 1.15rem;
-            color: rgba(255,255,255,0.82);
-            line-height: 1.8;
-            margin-bottom: 36px;
-            max-width: 680px;
-            margin-left: auto;
-            margin-right: auto;
-          }
-          .netanya-hero-cta-row {
-            display: flex;
-            gap: 14px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 44px;
-          }
-          .netanya-btn-primary {
-            background: #14B8A6;
-            color: #fff;
-            padding: 15px 32px;
-            border-radius: 10px;
-            font-size: 1.05rem;
-            font-weight: 700;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: background 0.2s, transform 0.2s;
-            box-shadow: 0 6px 20px rgba(20,184,166,0.35);
-          }
-          .netanya-btn-primary:hover { background: #0fa091; transform: translateY(-2px); }
-          .netanya-btn-secondary {
-            background: transparent;
-            color: #fff;
-            padding: 15px 32px;
-            border-radius: 10px;
-            font-size: 1.05rem;
-            font-weight: 700;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            border: 2px solid rgba(255,255,255,0.4);
-            transition: border-color 0.2s, transform 0.2s;
-          }
-          .netanya-btn-secondary:hover { border-color: #fff; transform: translateY(-2px); }
-          .netanya-hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-          }
-          .netanya-stat {
-            text-align: center;
-          }
-          .netanya-stat-num {
-            font-size: 2rem;
-            font-weight: 800;
-            color: #14B8A6;
-            display: block;
-          }
-          .netanya-stat-label {
-            font-size: 0.85rem;
-            color: rgba(255,255,255,0.65);
-          }
-        </style>
-        <div class="netanya-hero-inner">
-          <div class="netanya-hero-badge">✦ שירות מקצועי באזור נתניה והשרון</div>
-          <h1>ניקוי ספות נתניה — <span>מקצועי, מהיר ומשתלם</span></h1>
-          <p class="netanya-hero-desc">
-            מחפשים ניקוי ספות איכותי בנתניה? שיין פרש כאן בשבילכם — מנתניה הירוקה ועד עיר ימים, קריית השרון ורמות פולג. אנחנו מביאים אתנו ציוד תעשייתי מהשורה הראשונה, חומרים לא רעילים ובטוחים לכל המשפחה, ועובדים עד שהתוצאה מדהימה — בזמן קצר ובמחיר הוגן.
-          </p>
-          <div class="netanya-hero-cta-row" style>
-            <a href="https://wa.me/9720533331306" class="netanya-btn-primary" data-element-type="button" data-element-id="btn-1776253463660-etkhgakjo" data-native-element="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="outline: currentcolor; cursor: pointer;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.853L.057 23.184a.75.75 0 0 0 .923.899l5.453-1.744A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.497-5.202-1.368l-.374-.214-3.876 1.239 1.188-3.768-.232-.377A9.961 9.961 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-              שלחו הודעה בוואטסאפ
-            </a>
-            <a href="tel:0533331306" class="netanya-btn-secondary" data-element-type="button" data-element-id="btn-1776253463660-7aem26dpy" data-native-element="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="cursor: pointer;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              053-333-1306
-            </a>
-          </div>
-          <div class="netanya-hero-stats">
-            <div class="netanya-stat">
-              <span class="netanya-stat-num">500+</span>
-              <span class="netanya-stat-label">לקוחות מרוצים בנתניה</span>
-            </div>
-            <div class="netanya-stat">
-              <span class="netanya-stat-num">24 שע׳</span>
-              <span class="netanya-stat-label">זמן תגובה מהיר</span>
-            </div>
-            <div class="netanya-stat">
-              <span class="netanya-stat-num">100%</span>
-              <span class="netanya-stat-label">שביעות רצון מובטחת</span>
-            </div>
-          </div>
+      <section id="layout-1776265316659" class="py-16 md:py-24 bg-white layout-section zappy-removable" data-zappy-component="true" style="width: 100%; padding: 60px 0;">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+          <h1 class="text-3xl md:text-4xl font-bold mb-4">ניקוי ספות ראש העין</h1>
+          <p class="text-gray-600 text-lg">This page is ready for your content.</p>
         </div>
       </section>
-
-<section class="sp-why-section" aria-labelledby="sp-why-title">
-  <div class="sp-why-container">
-    <!-- Section Header -->
-    <div class="sp-why-header">
-      <span class="sp-why-badge">היתרונות שלנו</span>
-      <h2 class="sp-why-title" id="sp-why-title">למה לבחור בשיין פרש לניקוי ספות בנתניה?</h2>
-      <p class="sp-why-subtitle">בנתניה אנחנו כבר מוכרים — מאות משפחות סמכו עלינו, ואנחנו לא מאכזבים</p>
-    </div>
-
-    <!-- Cards Grid -->
-    <div class="sp-why-grid" role="list">
-
-      <!-- Card 1 -->
-      <article class="sp-why-card" role="listitem">
-        <div class="sp-why-icon-wrap sp-icon-teal">
-          <svg class="sp-why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-            <circle cx="32" cy="32" r="30" fill="rgba(20,184,166,0.12)"/>
-            <path d="M20 38 Q32 20 44 38" stroke="#14B8A6" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <rect x="18" y="36" width="28" height="6" rx="3" fill="#14B8A6"/>
-            <line x1="32" y1="42" x2="32" y2="50" stroke="#14B8A6" stroke-width="3" stroke-linecap="round"/>
-            <ellipse cx="32" cy="51" rx="6" ry="2" fill="#0EA7B7" opacity="0.5"/>
-            <circle cx="26" cy="28" r="2" fill="#0EA7B7"/>
-            <circle cx="32" cy="24" r="2" fill="#0EA7B7"/>
-            <circle cx="38" cy="28" r="2" fill="#0EA7B7"/>
-          </svg>
-        </div>
-        <h3 class="sp-why-card-title">ציוד תעשייתי מתקדם</h3>
-        <p class="sp-why-card-desc">מכונות ניקוי בלחץ גבוה המסירות כתמים עמוקים שניקוי ביתי רגיל לא מצליח להתמודד איתם — תוצאות מקצועיות בכל פעם.</p>
-      </article>
-
-      <!-- Card 2 -->
-      <article class="sp-why-card" role="listitem">
-        <div class="sp-why-icon-wrap sp-icon-green">
-          <svg class="sp-why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-            <circle cx="32" cy="32" r="30" fill="rgba(20,184,166,0.12)"/>
-            <path d="M32 14 C20 14 14 22 14 30 C14 40 22 48 32 50 C42 48 50 40 50 30 C50 22 44 14 32 14Z" fill="none" stroke="#14B8A6" stroke-width="2.5"/>
-            <path d="M24 31 L29 36 L40 25" stroke="#14B8A6" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="22" cy="20" r="4" fill="#0EA7B7" opacity="0.6"/>
-            <circle cx="42" cy="20" r="3" fill="#0EA7B7" opacity="0.4"/>
-          </svg>
-        </div>
-        <h3 class="sp-why-card-title">בטוח לילדים ולחיות מחמד</h3>
-        <p class="sp-why-card-desc">חומרי ניקוי לא רעילים, מוסמכים ומאושרים — מתייבשים מהר ומשאירים את הבית נקי, בריא ובטוח לכל בני המשפחה.</p>
-      </article>
-
-      <!-- Card 3 -->
-      <article class="sp-why-card" role="listitem">
-        <div class="sp-why-icon-wrap sp-icon-blue">
-          <svg class="sp-why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-            <circle cx="32" cy="32" r="30" fill="rgba(20,184,166,0.12)"/>
-            <circle cx="32" cy="22" r="8" fill="none" stroke="#14B8A6" stroke-width="2.5"/>
-            <path d="M18 46 C18 38 46 38 46 46" fill="none" stroke="#14B8A6" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M38 16 L42 20 L50 12" stroke="#0EA7B7" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <h3 class="sp-why-card-title">טכנאים מוסמכים ומנוסים</h3>
-        <p class="sp-why-card-desc">מעל 5 שנות ניסיון בניקוי מקצועי, עוברים הכשרה שוטפת ומתעדכנים בטכנולוגיות הניקוי החדישות ביותר.</p>
-      </article>
-
-      <!-- Card 4 -->
-      <article class="sp-why-card" role="listitem">
-        <div class="sp-why-icon-wrap sp-icon-orange">
-          <svg class="sp-why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-            <circle cx="32" cy="32" r="30" fill="rgba(20,184,166,0.12)"/>
-            <rect x="16" y="20" width="32" height="26" rx="4" fill="none" stroke="#14B8A6" stroke-width="2.5"/>
-            <line x1="16" y1="28" x2="48" y2="28" stroke="#14B8A6" stroke-width="2"/>
-            <line x1="24" y1="36" x2="40" y2="36" stroke="#0EA7B7" stroke-width="2" stroke-linecap="round"/>
-            <line x1="28" y1="41" x2="36" y2="41" stroke="#0EA7B7" stroke-width="2" stroke-linecap="round"/>
-            <circle cx="32" cy="24" r="2" fill="#14B8A6"/>
-          </svg>
-        </div>
-        <h3 class="sp-why-card-title">מחיר שקוף ללא הפתעות</h3>
-        <p class="sp-why-card-desc">הצעת מחיר מפורטת לפני תחילת העבודה — ללא עלויות נסתרות, ללא תוספות מפתיעות. מה שסוכם — זה מה שמשלמים.</p>
-      </article>
-
-      <!-- Card 5 -->
-      <article class="sp-why-card" role="listitem">
-        <div class="sp-why-icon-wrap sp-icon-purple">
-          <svg class="sp-why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-            <circle cx="32" cy="32" r="30" fill="rgba(20,184,166,0.12)"/>
-            <circle cx="32" cy="32" r="12" fill="none" stroke="#14B8A6" stroke-width="2.5"/>
-            <line x1="32" y1="20" x2="32" y2="32" stroke="#14B8A6" stroke-width="2.5" stroke-linecap="round"/>
-            <line x1="32" y1="32" x2="40" y2="36" stroke="#0EA7B7" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M14 22 Q10 16 16 12" stroke="#14B8A6" stroke-width="2" fill="none" stroke-linecap="round"/>
-            <path d="M50 22 Q54 16 48 12" stroke="#14B8A6" stroke-width="2" fill="none" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <h3 class="sp-why-card-title">שירות מהיר בנתניה</h3>
-        <p class="sp-why-card-desc">נתניה היא אחד מאזורי הליבה שלנו — ולכן אנחנו מגיעים בתוך 24 שעות לרוב הפניות. גמישות מקסימלית בזמנים, גם בסופי שבוע.</p>
-      </article>
-
-      <!-- Card 6 -->
-      <article class="sp-why-card sp-why-card--highlight" role="listitem">
-        <div class="sp-why-icon-wrap sp-icon-star">
-          <svg class="sp-why-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-            <circle cx="32" cy="32" r="30" fill="rgba(20,184,166,0.18)"/>
-            <polygon points="32,14 36,26 50,26 39,34 43,46 32,38 21,46 25,34 14,26 28,26" fill="none" stroke="#14B8A6" stroke-width="2.5" stroke-linejoin="round"/>
-            <polygon points="32,19 35,28 44,28 37,33 40,42 32,37 24,42 27,33 20,28 29,28" fill="#14B8A6" opacity="0.25"/>
-          </svg>
-        </div>
-        <h3 class="sp-why-card-title">ערבות שביעות רצון</h3>
-        <p class="sp-why-card-desc">לא מרוצים מהתוצאה? נחזור לנקות שוב — בחינם, ללא שאלות. המחויבות שלנו לאיכות היא לא רק הבטחה, היא ערובה.</p>
-        <span class="sp-why-guarantee-badge" aria-label="ערבות מלאה">✓ ערבות מלאה</span>
-      </article>
-
-    </div>
-    <!-- End Grid -->
-  </div>
-</section>
-
-<section class="srv-areas-netanya" dir="rtl" lang="he" aria-labelledby="srv-areas-title" id="srv-areas-netanya">
-  <div class="srv-areas-container">
-
-    <!-- Header -->
-    <div class="srv-areas-header">
-      <div class="srv-areas-icon" aria-hidden="true">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="var(--primary, #14B8A6)"/>
-        </svg>
-      </div>
-      <h2 class="srv-areas-title" id="srv-areas-title">מגיעים לכל שכונות נתניה</h2>
-      <p class="srv-areas-subtitle">שירות ניקוי ספות מקצועי בכל אזורי העיר — בלי עלות נסיעה נוספת</p>
-    </div>
-
-    <!-- Badges Grid -->
-    <div class="srv-areas-grid" role="list" aria-label="שכונות השירות בנתניה">
-
-      <!-- Main neighborhoods -->
-      <span class="srv-badge srv-badge--main" role="listitem">
-        <span class="srv-badge-dot" aria-hidden="true"></span>
-        נתניה הירוקה
-      </span>
-      <span class="srv-badge srv-badge--main" role="listitem">
-        <span class="srv-badge-dot" aria-hidden="true"></span>
-        קריית השרון
-      </span>
-      <span class="srv-badge srv-badge--main" role="listitem">
-        <span class="srv-badge-dot" aria-hidden="true"></span>
-        אם המושבות
-      </span>
-      <span class="srv-badge srv-badge--main" role="listitem">
-        <span class="srv-badge-dot" aria-hidden="true"></span>
-        שכונת הרצל
-      </span>
-      <span class="srv-badge srv-badge--main" role="listitem">
-        <span class="srv-badge-dot" aria-hidden="true"></span>
-        קריית נורדאו
-      </span>
-      <span class="srv-badge srv-badge--main" role="listitem">
-        <span class="srv-badge-dot" aria-hidden="true"></span>
-        שיכון ותיקים
-      </span>
-      <span class="srv-badge srv-badge--main" role="listitem">
-        <span class="srv-badge-dot" aria-hidden="true"></span>
-        רמות פולג
-      </span>
-      <span class="srv-badge srv-badge--main" role="listitem">
-        <span class="srv-badge-dot" aria-hidden="true"></span>
-        שכונת פולג
-      </span>
-      <span class="srv-badge srv-badge--main" role="listitem">
-        <span class="srv-badge-dot" aria-hidden="true"></span>
-        הדר
-      </span>
-      <span class="srv-badge srv-badge--main" role="listitem">
-        <span class="srv-badge-dot" aria-hidden="true"></span>
-        עיר ימים
-      </span>
-      <span class="srv-badge srv-badge--main" role="listitem">
-        <span class="srv-badge-dot" aria-hidden="true"></span>
-        נווה גנים
-      </span>
-
-      <!-- Nearby areas -->
-      <span class="srv-badge srv-badge--nearby" role="listitem" title="יישוב סמוך">
-        <span class="srv-badge-dot" aria-hidden="true"></span>
-        כפר יונה
-        <span class="srv-badge-nearby-label">סמוכה</span>
-      </span>
-      <span class="srv-badge srv-badge--nearby" role="listitem" title="יישוב סמוך">
-        <span class="srv-badge-dot" aria-hidden="true"></span>
-        אבן יהודה
-        <span class="srv-badge-nearby-label">סמוכה</span>
-      </span>
-      <span class="srv-badge srv-badge--nearby" role="listitem" title="יישוב סמוך">
-        <span class="srv-badge-dot" aria-hidden="true"></span>
-        פרדסיה
-        <span class="srv-badge-nearby-label">סמוכה</span>
-      </span>
-
-    </div>
-
-    <!-- Divider -->
-    <div class="srv-areas-divider" aria-hidden="true"></div>
-
-    <!-- Footer note -->
-    <div class="srv-areas-footer">
-      <div class="srv-areas-footer-icon" aria-hidden="true">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="var(--primary, #14B8A6)"/>
-        </svg>
-      </div>
-      <p class="srv-areas-footer-text">
-        לא רואים את השכונה שלכם?
-        <strong>התקשרו — אנחנו מגיעים לכל אזור נתניה וסביבותיה.</strong>
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-
-
     </main>
     <script src="/script.js"></script>
 
