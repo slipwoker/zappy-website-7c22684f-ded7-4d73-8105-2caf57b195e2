@@ -10469,6 +10469,386 @@ body .whatsapp-float {
   }
 }
 
+/* AI-generated section */
+/* =============================================
+   SERVICE AREAS SECTION
+   ============================================= */
+
+.srv-areas-section {
+  background: linear-gradient(160deg, #0d2a35 0%, #0f3a47 50%, #0d2a35 100%);
+  padding: 90px 20px 80px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  text-align: right;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative background blobs */
+.srv-areas-section::before,
+.srv-areas-section::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.srv-areas-section::before {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.12) 0%, transparent 70%);
+  top: -150px;
+  left: -150px;
+}
+
+.srv-areas-section::after {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(14, 167, 183, 0.1) 0%, transparent 70%);
+  bottom: -100px;
+  right: -100px;
+}
+
+/* Container */
+.srv-areas-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* =============================================
+   HEADER
+   ============================================= */
+
+.srv-areas-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.srv-areas-badge {
+  display: inline-block;
+  background: rgba(20, 184, 166, 0.18);
+  border: 1px solid rgba(20, 184, 166, 0.45);
+  color: #5ee8d8;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 6px 18px;
+  border-radius: 50px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.srv-areas-title {
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 14px;
+  line-height: 1.25;
+}
+
+.srv-areas-subtitle {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* =============================================
+   CITY CARDS GRID
+   ============================================= */
+
+.srv-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 36px;
+}
+
+/* Base Card */
+.srv-city-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(20, 184, 166, 0.25);
+  border-radius: 16px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, background 0.28s ease, border-color 0.28s ease;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+}
+
+.srv-city-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 0;
+  background: var(--gradient-primary, linear-gradient(180deg, #14BED0 0%, #0EA7B7 100%));
+  border-radius: 0 16px 16px 0;
+  transition: height 0.35s ease;
+}
+
+.srv-city-card:hover::before {
+  height: 100%;
+}
+
+.srv-city-card:hover {
+  transform: translateY(-5px);
+  background: rgba(20, 184, 166, 0.1);
+  border-color: rgba(20, 184, 166, 0.55);
+  box-shadow: 0 16px 40px rgba(20, 184, 166, 0.2);
+}
+
+/* Featured Cards (first two) */
+.srv-city-featured {
+  background: rgba(20, 184, 166, 0.1);
+  border-color: rgba(20, 184, 166, 0.45);
+  box-shadow: 0 8px 24px rgba(20, 184, 166, 0.15);
+}
+
+.srv-city-featured:hover {
+  background: rgba(20, 184, 166, 0.18);
+  border-color: rgba(20, 184, 166, 0.7);
+  box-shadow: 0 20px 48px rgba(20, 184, 166, 0.28);
+}
+
+/* City Icon */
+.srv-city-icon {
+  width: 58px;
+  height: 58px;
+  background: rgba(20, 184, 166, 0.15);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary, #14B8A6);
+  flex-shrink: 0;
+  transition: background 0.28s ease, transform 0.28s ease;
+}
+
+.srv-city-card:hover .srv-city-icon {
+  background: rgba(20, 184, 166, 0.28);
+  transform: scale(1.08);
+}
+
+.srv-city-featured .srv-city-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(20, 184, 166, 0.2);
+}
+
+/* City Content */
+.srv-city-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.srv-city-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.srv-city-featured .srv-city-name {
+  font-size: 1.35rem;
+}
+
+.srv-city-desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* City Tag */
+.srv-city-tag {
+  display: inline-block;
+  background: rgba(20, 184, 166, 0.2);
+  border: 1px solid rgba(20, 184, 166, 0.4);
+  color: #5ee8d8;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 50px;
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+/* =============================================
+   COVERAGE BANNER
+   ============================================= */
+
+.srv-coverage-banner {
+  background: rgba(20, 184, 166, 0.08);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  border-radius: 14px;
+  padding: 18px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.srv-coverage-icon {
+  color: var(--primary, #14B8A6);
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.srv-coverage-text {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.srv-coverage-text strong {
+  color: #5ee8d8;
+  font-weight: 700;
+}
+
+/* =============================================
+   CTA SECTION
+   ============================================= */
+
+.srv-cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.srv-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gradient-primary, linear-gradient(180deg, #14BED0 0%, #0EA7B7 100%));
+  color: #ffffff;
+  font-family: system-ui, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 17px 44px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 28px rgba(20, 184, 166, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+  letter-spacing: 0.01em;
+}
+
+.srv-cta-btn:hover,
+.srv-cta-btn:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 40px rgba(20, 184, 166, 0.55);
+  filter: brightness(1.08);
+  outline: none;
+}
+
+.srv-cta-btn:focus-visible {
+  outline: 3px solid rgba(94, 232, 216, 0.7);
+  outline-offset: 3px;
+}
+
+.srv-cta-btn:active {
+  transform: translateY(-1px);
+}
+
+.srv-cta-icon {
+  flex-shrink: 0;
+}
+
+.srv-cta-note {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  text-align: center;
+}
+
+/* =============================================
+   RESPONSIVE — TABLET
+   ============================================= */
+
+@media (max-width: 900px) {
+  .srv-areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .srv-city-featured {
+    grid-column: span 1;
+  }
+}
+
+/* =============================================
+   RESPONSIVE — MOBILE
+   ============================================= */
+
+@media (max-width: 600px) {
+  .srv-areas-section {
+    padding: 64px 16px 60px;
+  }
+
+  .srv-areas-header {
+    margin-bottom: 40px;
+  }
+
+  .srv-areas-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .srv-city-card {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 18px;
+    gap: 16px;
+  }
+
+  .srv-city-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+  }
+
+  .srv-city-featured .srv-city-icon {
+    width: 54px;
+    height: 54px;
+  }
+
+  .srv-city-name {
+    font-size: 1.1rem;
+  }
+
+  .srv-city-featured .srv-city-name {
+    font-size: 1.15rem;
+  }
+
+  .srv-coverage-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 18px 20px;
+  }
+
+  .srv-cta-btn {
+    font-size: 1rem;
+    padding: 15px 32px;
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+}
+
 /* ========== EMPTY SUBMENU HIDING (Auto-added by Zappy) ========== */
 .sub-menu:empty,
 .dropdown-menu:empty,
