@@ -14650,6 +14650,33 @@ body .whatsapp-float {
   }
 }
 
+.index-services-section .index-services-price-tag {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.12), rgba(56, 189, 248, 0.10));
+  border: 1.5px solid rgba(20, 184, 166, 0.35);
+  border-radius: 10px;
+  padding: 10px 16px;
+  margin-bottom: 4px;
+}
+
+.index-services-section .index-services-price-amount {
+  font-family: 'Rubik', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.index-services-section .index-services-price-note {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
 /* zappy-nav-child-indent */
 .zappy-products-dropdown .zappy-nav-child > a,
 .sub-menu .zappy-nav-child > a {
