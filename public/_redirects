@@ -1,5 +1,5 @@
 # Clean URL redirects for Render static hosting
-# Generated: 2026-04-15T23:14:45.520Z
+# Generated: 2026-04-15T23:15:50.309Z
 # NOTE: Render uses render.yaml for routing, not _redirects (that is Netlify)
 # This file is kept for reference only
 
@@ -9,7 +9,6 @@
 /accessibility  /accessibility.html  200!
 /terms  /terms.html  200!
 /thank-you  /thank-you.html  200!
-/couch-cleaning-frequency  /couch-cleaning-frequency.html  200!
 /menu-group-1776262797673  /menu-group-1776262797673.html  200!
 /sofa-cleaning-netanya  /sofa-cleaning-netanya.html  200!
 /sofa-cleaning-hadera  /sofa-cleaning-hadera.html  200!
@@ -25,11 +24,12 @@
 /sofa-cleaning-guide  /sofa-cleaning-guide.html  200!
 /sofa-cleaning-price  /sofa-cleaning-price.html  200!
 /sofa-cleaning-services1  /sofa-cleaning-services1.html  200!
+/couch-cleaning-frequency  /couch-cleaning-frequency.html  200!
 /dust-mite-bacteria-sofas  /dust-mite-bacteria-sofas.html  200!
 /odor-removal-servicesd  /odor-removal-servicesd.html  200!
 /sofa-cleaning-serviceclean  /sofa-cleaning-serviceclean.html  200!
-/fabric-sofa-purchase  /fabric-sofa-purchase.html  200!
 /new-page-1776294782640  /new-page-1776294782640.html  200!
+/fabric-sofa-purchase  /fabric-sofa-purchase.html  200!
 /contact  /contact.html  200!
 
 # Legal pages - redirect old .html URLs to friendly URLs
