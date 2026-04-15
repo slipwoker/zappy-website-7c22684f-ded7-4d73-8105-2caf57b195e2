@@ -12993,6 +12993,384 @@ body .whatsapp-float {
   }
 }
 
+/* AI-generated section */
+/* =============================================
+   CTA SOFA SECTION — Full Styles
+   ============================================= */
+
+.cta-sofa-section {
+  position: relative;
+  background: var(--gradient-primary, linear-gradient(180deg, #14BED0 0%, #0EA7B7 100%));
+  padding: 90px 24px;
+  overflow: hidden;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  text-align: center;
+}
+
+/* --- Decorative Background Shapes --- */
+.cta-sofa-bg-shape {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cta-sofa-bg-shape--1 {
+  width: 420px;
+  height: 420px;
+  background: rgba(255, 255, 255, 0.07);
+  top: -120px;
+  left: -100px;
+}
+
+.cta-sofa-bg-shape--2 {
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  bottom: -80px;
+  right: -60px;
+}
+
+.cta-sofa-bg-shape--3 {
+  width: 180px;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.06);
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* --- Container --- */
+.cta-sofa-container {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+/* --- Icon --- */
+.cta-sofa-icon {
+  width: 88px;
+  height: 88px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.cta-sofa-icon svg {
+  width: 52px;
+  height: 52px;
+}
+
+/* --- Badge --- */
+.cta-sofa-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 6px 16px;
+  border-radius: 100px;
+  margin-bottom: 22px;
+  backdrop-filter: blur(4px);
+  text-transform: uppercase;
+}
+
+.cta-sofa-badge-dot {
+  width: 8px;
+  height: 8px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  animation: cta-sofa-pulse 1.8s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes cta-sofa-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(1.4); }
+}
+
+/* --- Heading --- */
+.cta-sofa-heading {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  letter-spacing: -0.02em;
+}
+
+/* --- Subheading --- */
+.cta-sofa-subheading {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.75;
+  margin: 0 0 36px 0;
+  max-width: 560px;
+  font-weight: 400;
+}
+
+.cta-sofa-br {
+  display: block;
+}
+
+/* --- Features Row --- */
+.cta-sofa-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 24px;
+}
+
+.cta-sofa-feature {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 14px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  padding: 7px 16px;
+  backdrop-filter: blur(3px);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.cta-sofa-feature:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateY(-2px);
+}
+
+.cta-sofa-feature-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* --- Buttons Group --- */
+.cta-sofa-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+/* --- Base Button --- */
+.cta-sofa-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 28px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-family: system-ui, sans-serif;
+  font-weight: 700;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+  cursor: pointer;
+  min-width: 220px;
+  justify-content: center;
+  border: 2px solid transparent;
+}
+
+.cta-sofa-btn:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.cta-sofa-btn-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.25;
+}
+
+.cta-sofa-btn-label {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cta-sofa-btn-number {
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  direction: ltr;
+  display: block;
+}
+
+.cta-sofa-btn-sublabel {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.85;
+  display: block;
+}
+
+/* --- Primary Button (Phone) --- */
+.cta-sofa-btn--primary {
+  background: #ffffff;
+  color: #0d9aaa;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18), 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-sofa-btn--primary:hover,
+.cta-sofa-btn--primary:focus-visible {
+  background: #f0fffe;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.22), 0 4px 12px rgba(0, 0, 0, 0.12);
+  color: #0b8898;
+}
+
+.cta-sofa-btn--primary:active {
+  transform: translateY(-1px) scale(1.00);
+}
+
+.cta-sofa-btn--primary .cta-sofa-btn-icon {
+  color: var(--primary, #14B8A6);
+}
+
+/* --- Secondary Button (Contact) --- */
+.cta-sofa-btn--secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+}
+
+.cta-sofa-btn--secondary:hover,
+.cta-sofa-btn--secondary:focus-visible {
+  background: rgba(255, 255, 255, 0.28);
+  border-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.16);
+  color: #ffffff;
+}
+
+.cta-sofa-btn--secondary:active {
+  transform: translateY(-1px) scale(1.00);
+}
+
+.cta-sofa-btn--secondary .cta-sofa-btn-icon {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* --- Trust Line --- */
+.cta-sofa-trust {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+/* =============================================
+   RESPONSIVE — Tablet
+   ============================================= */
+@media (max-width: 768px) {
+  .cta-sofa-section {
+    padding: 70px 20px;
+  }
+
+  .cta-sofa-heading {
+    font-size: 1.9rem;
+  }
+
+  .cta-sofa-subheading {
+    font-size: 1rem;
+  }
+
+  .cta-sofa-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-sofa-btn {
+    width: 100%;
+    max-width: 340px;
+    min-width: unset;
+  }
+
+  .cta-sofa-features {
+    gap: 10px 14px;
+  }
+
+  .cta-sofa-bg-shape--1 {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+/* =============================================
+   RESPONSIVE — Mobile
+   ============================================= */
+@media (max-width: 480px) {
+  .cta-sofa-section {
+    padding: 56px 16px;
+  }
+
+  .cta-sofa-heading {
+    font-size: 1.65rem;
+  }
+
+  .cta-sofa-icon {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 18px;
+  }
+
+  .cta-sofa-icon svg {
+    width: 42px;
+    height: 42px;
+  }
+
+  .cta-sofa-feature {
+    font-size: 13px;
+    padding: 6px 13px;
+  }
+
+  .cta-sofa-btn {
+    padding: 14px 22px;
+  }
+
+  .cta-sofa-btn-number {
+    font-size: 15px;
+  }
+
+  .cta-sofa-br {
+    display: none;
+  }
+
+  .cta-sofa-bg-shape--3 {
+    display: none;
+  }
+}
+
 /* zappy-nav-child-indent */
 .zappy-products-dropdown .zappy-nav-child > a,
 .sub-menu .zappy-nav-child > a {
