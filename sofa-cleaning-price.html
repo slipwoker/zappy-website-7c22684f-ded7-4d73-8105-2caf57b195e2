@@ -309,16 +309,16 @@
 <body>
 <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-    <svg class="hamburger-icon" width="24" height="24" viewbox="0 0 24 24" fill="none">
+    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="display: none;">
+    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
       <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
 
   <button class="phone-header-btn" data-phone="0533331306" aria-label="Call">
-    <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
@@ -326,7 +326,7 @@
   <div class="nav-container">
     <div class="nav-right-group"><div class="nav-brand">
       <a href="/" class="logo-link">
-        <img src="/assets/shine-fresh-logo.webp" alt="שיין פרש - Shine Fresh" class="logo"></img>
+        <img src="/assets/shine-fresh-logo.webp" alt="שיין פרש - Shine Fresh" class="logo">
       </a>
     </div><ul class="nav-menu" id="navMenu"><li><a href="/services">שירותים</a></li><li><a href="/about">אודות</a></li><li><a href="/sofa-cleaning-guide" class="">איך לנקות ספות לבד</a></li><li class="menu-group-item"><span class="menu-group-title">איזורי שירות</span><ul class="sub-menu"><li><a href="/sofa-cleaning-netanya" class="">ניקוי ספות נתניה</a></li><li><a href="/sofa-cleaning-hadera">ניקוי ספות חדרה</a></li><li><a href="/sofa-cleaning-herzliya">ניקוי ספות הרצליה</a></li></ul></li><li><a href="/contact">צור קשר</a></li><li><a href="/sofa-cleaning-services" class="">ניקוי ספות רעננה</a></li><li><a href="/sofa-cleaning-serviceskfarsaba" class="">ניקוי ספות כפר סבא</a></li><li><a href="/sofa-cleaning-serviceshodhashron" class="">ניקוי ספות הוד השרון</a></li><li><a href="/sofa-cleaning-servicesroshhain" class="">ניקוי ספות ראש העין</a></li><li><a href="/sofa-cleaning-servicespetahtikva" class="">ניקוי ספות פתח תקווה</a></li><li><a href="/sofa-cleaning-servicesorakiva" class="">ניקוי ספות אור עקיבא</a></li><li><a href="/sofa-cleaning-harish" class="">ניקוי ספות חריש</a></li><li><a href="/sofa-cleaning-price" class="">מחיר לניקוי ספות</a></li></ul></div>
 
@@ -373,12 +373,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -391,7 +391,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -527,7 +527,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -718,7 +718,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '9725333313';
         
@@ -735,7 +735,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -766,14 +766,460 @@
 
 </script>
   
-  <main>
-      <section id="layout-1776266589424" class="py-16 md:py-24 bg-white layout-section zappy-removable" data-zappy-component="true" style="width: 100%; padding: 60px 0;">
-        <div class="container mx-auto px-4 md:px-8 text-center">
-          <h1 class="text-3xl md:text-4xl font-bold mb-4">מחיר לניקוי ספות</h1>
-          <p class="text-gray-600 text-lg">This page is ready for your content.</p>
+  <main dir="rtl">
+
+    <!-- HERO SECTION -->
+    <section id="layout-1776266589424" class="price-hero-section layout-section zappy-removable" data-zappy-component="true">
+      <div class="price-hero-overlay"></div>
+      <div class="price-hero-content">
+        <span class="price-badge">מחירון 2025</span>
+        <h1>מחיר לניקוי ספות</h1>
+        <p>כל מה שצריך לדעת על עלויות ניקוי ספות מקצועי – שקיפות מלאה, ללא הפתעות</p>
+        <div class="price-hero-cta">
+          <a href="tel:0533331306" class="price-btn-primary">📞 קבל הצעת מחיר עכשיו</a>
+          <a href="/contact" class="price-btn-secondary">השאר פרטים</a>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <!-- PRICE TABLE SECTION -->
+    <section class="price-table-section">
+      <div class="price-container">
+        <div class="price-section-header">
+          <h2>טבלת מחירים לניקוי ספות</h2>
+          <p>המחירים המוצגים הם מחירי מינימום – המחיר הסופי נקבע לאחר בדיקת הספה בפועל</p>
+        </div>
+
+        <div class="price-cards-grid">
+          <div class="price-card price-card-highlight">
+            <div class="price-card-icon">🛋️</div>
+            <h3>ספה קטנה / כורסה</h3>
+            <p class="price-card-desc">עד 2 מושבים, כורסאות, פוטון</p>
+            <div class="price-amount">
+              <span class="price-from">החל מ-</span>
+              <span class="price-number">249 ₪</span>
+            </div>
+            <ul class="price-includes">
+              <li>✓ ניקוי עמוק בקיטור</li>
+              <li>✓ טיפול בכתמים</li>
+              <li>✓ ריענון וניחוח</li>
+            </ul>
+          </div>
+
+          <div class="price-card">
+            <div class="price-card-icon">🛋️🛋️</div>
+            <h3>ספה 2–3 מושבים</h3>
+            <p class="price-card-desc">ספה סטנדרטית לסלון</p>
+            <div class="price-amount">
+              <span class="price-from">החל מ-</span>
+              <span class="price-number">349 ₪</span>
+            </div>
+            <ul class="price-includes">
+              <li>✓ ניקוי עמוק בקיטור</li>
+              <li>✓ טיפול בכתמים</li>
+              <li>✓ ריענון וניחוח</li>
+            </ul>
+          </div>
+
+          <div class="price-card">
+            <div class="price-card-icon">🛋️🛋️🛋️</div>
+            <h3>ספה פינתית / גדולה</h3>
+            <p class="price-card-desc">L-Shape, ספה גדולה, מיטת ספה</p>
+            <div class="price-amount">
+              <span class="price-from">החל מ-</span>
+              <span class="price-number">499 ₪</span>
+            </div>
+            <ul class="price-includes">
+              <li>✓ ניקוי עמוק בקיטור</li>
+              <li>✓ טיפול בכתמים</li>
+              <li>✓ ריענון וניחוח</li>
+            </ul>
+          </div>
+
+          <div class="price-card">
+            <div class="price-card-icon">🏢</div>
+            <h3>ספות משרד / מסחרי</h3>
+            <p class="price-card-desc">חבילות לעסקים, פינות ישיבה</p>
+            <div class="price-amount">
+              <span class="price-from">מחיר</span>
+              <span class="price-number">בהתאמה</span>
+            </div>
+            <ul class="price-includes">
+              <li>✓ הצעת מחיר מיוחדת לעסקים</li>
+              <li>✓ טיפול בכמויות גדולות</li>
+              <li>✓ זמינות מהירה</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="price-note">
+          <span>⚠️</span>
+          <p>המחירים הם מחירי מינימום. העלות הסופית תלויה בגודל הספה, סוג הבד, רמת הלכלוך וסוג הטיפול הנדרש. יש לתאם הערכה לפני הטיפול.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACTORS SECTION -->
+    <section class="price-factors-section">
+      <div class="price-container">
+        <div class="price-section-header light">
+          <h2>מה משפיע על מחיר ניקוי הספה?</h2>
+          <p>מספר גורמים קובעים את העלות הסופית של הטיפול</p>
+        </div>
+
+        <div class="factors-grid">
+          <div class="factor-item">
+            <div class="factor-icon">📐</div>
+            <h3>גודל הספה</h3>
+            <p>ספה גדולה יותר דורשת יותר זמן עבודה, חומרי ניקוי וציוד – ולכן עולה יותר. ספה פינתית גדולה תעלה יותר מכורסה קטנה.</p>
+          </div>
+          <div class="factor-item">
+            <div class="factor-icon">🧵</div>
+            <h3>סוג הבד</h3>
+            <p>בד מיקרופייבר, קטיפה, עור, או בד אקולוגי – לכל חומר יש שיטת ניקוי שונה ועלות שונה. בדים עדינים דורשים טיפול מיוחד.</p>
+          </div>
+          <div class="factor-item">
+            <div class="factor-icon">🧹</div>
+            <h3>רמת הלכלוך</h3>
+            <p>ספה עם כתמים עמוקים, ריחות, שיער חיות מחמד או לכלוך מצטבר מחייבת טיפול ממושך יותר ועלולה להעלות את המחיר.</p>
+          </div>
+          <div class="factor-item">
+            <div class="factor-icon">🔬</div>
+            <h3>סוג הטיפול</h3>
+            <p>ניקוי בסיסי בקיטור, טיפול נגד קנה חיות, ציפוי הגנה, או טיפול אנטי-בקטריאלי – כל תוספת משפיעה על המחיר הסופי.</p>
+          </div>
+          <div class="factor-item">
+            <div class="factor-icon">📍</div>
+            <h3>אזור גיאוגרפי</h3>
+            <p>עלויות הגעה לאזורים מרוחקים עשויות להשפיע על המחיר. אנחנו פעילים באזור השרון, נתניה, חדרה, הרצליה ועוד.</p>
+          </div>
+          <div class="factor-item">
+            <div class="factor-icon">⏰</div>
+            <h3>דחיפות הביצוע</h3>
+            <p>שירות בהתראה קצרה או ביצוע מחוץ לשעות הרגילות עשוי לכלול תוספת מחיר. שירות רגיל זמין תוך 1-3 ימי עסקים.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="price-faq-section">
+      <div class="price-container">
+        <div class="price-section-header">
+          <h2>שאלות נפוצות על מחיר ניקוי ספות</h2>
+          <p>תשובות לשאלות הנפוצות ביותר שאנו מקבלים מלקוחותינו</p>
+        </div>
+
+        <div class="price-faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>האם המחיר כולל הגעה לבית?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>כן! המחיר כולל הגעה לבית הלקוח באזורי הפעילות שלנו – השרון, נתניה, חדרה, הרצליה ועוד. לאזורים מרוחקים יותר ייתכן תוספת נסיעה.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>האם המחיר סופי מראש?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>אנו מספקים הצעת מחיר לאחר הערכת הספה. המחירים המוצגים הם מחירי מינימום – המחיר הסופי ייקבע בהתאם לגודל, סוג הבד ורמת הלכלוך. אין הפתעות!</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>כמה זמן לוקח הניקוי?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>ניקוי ספה רגילה לוקח בין 45 דקות לשעה וחצי, תלוי בגודל ורמת הלכלוך. ספה פינתית גדולה עשויה לקחת עד שעתיים. הספה מתייבשת תוך 2-4 שעות נוספות.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>האם ניתן לנקות ספת עור?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>בהחלט! ספות עור מנוקות בשיטה מיוחדת המותאמת לחומר. הטיפול כולל ניקוי, הזנה והגנה על העור. מחיר הטיפול בספת עור מתחיל מ-399 ₪.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>האם אתם מטפלים בכתמים קשים?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>כן, אנו מתמחים בהסרת כתמים עיקשים כמו קפה, יין, שמן, שיער חיות מחמד ועוד. לא ניתן להבטיח הסרה של 100% מכל כתם ישן, אך אנו עושים הכל על מנת להשיג את התוצאה הטובה ביותר.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>כמה פעמים בשנה כדאי לנקות ספה?</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>מומלץ לנקות ספה מקצועית לפחות פעם עד פעמיים בשנה. אם יש בבית ילדים קטנים, חיות מחמד, או אנשים הסובלים מאלרגיות – מומלץ ניקוי מקצועי כל 3-4 חודשים.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="price-cta-section">
+      <div class="price-container">
+        <div class="price-cta-box">
+          <h2>רוצים לדעת בדיוק כמה יעלה הניקוי שלכם?</h2>
+          <p>צרו איתנו קשר עכשיו לקבלת הצעת מחיר מותאמת אישית – ללא התחייבות</p>
+          <div class="price-cta-buttons">
+            <a href="tel:0533331306" class="price-btn-primary large">📞 053-333-1306</a>
+            <a href="/contact" class="price-btn-secondary large">השאר פרטים ונחזור אליך</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <style>
+    /* === PRICE PAGE STYLES === */
+    .price-hero-section {
+      position: relative;
+      background: linear-gradient(135deg, #0f766e 0%, #14B8A6 50%, #38BDF8 100%);
+      padding: 100px 24px 80px;
+      text-align: center;
+      overflow: hidden;
+      direction: rtl;
+    }
+    .price-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(15, 118, 110, 0.3);
+      pointer-events: none;
+    }
+    .price-hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .price-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 50px;
+      padding: 6px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+    .price-hero-content h1 {
+      color: #fff;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    .price-hero-content p {
+      color: rgba(255,255,255,0.9);
+      font-size: 1.15rem;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+    .price-hero-cta {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .price-btn-primary {
+      background: #fff;
+      color: #0f766e;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    }
+    .price-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(0,0,0,0.2); }
+    .price-btn-primary.large { font-size: 1.1rem; padding: 16px 32px; }
+    .price-btn-secondary {
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.7);
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .price-btn-secondary:hover { background: rgba(255,255,255,0.15); }
+    .price-btn-secondary.large { font-size: 1.1rem; padding: 16px 32px; }
+
+    /* CONTAINER */
+    .price-container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .price-section-header { text-align: center; margin-bottom: 48px; }
+    .price-section-header h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; color: #1F2937; margin-bottom: 12px; }
+    .price-section-header p { color: #6B7280; font-size: 1.05rem; max-width: 600px; margin: 0 auto; }
+    .price-section-header.light h2 { color: #fff; }
+    .price-section-header.light p { color: rgba(255,255,255,0.8); }
+
+    /* PRICE TABLE */
+    .price-table-section { padding: 80px 0; background: #f8fafc; direction: rtl; }
+    .price-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    .price-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 4px 16px rgba(31,41,55,0.08);
+      border: 2px solid #E5E7EB;
+      transition: all 0.25s ease;
+    }
+    .price-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(20,184,166,0.15); border-color: #14B8A6; }
+    .price-card-highlight {
+      border-color: #14B8A6;
+      background: linear-gradient(135deg, #f0fdfa 0%, #fff 100%);
+      position: relative;
+    }
+    .price-card-highlight::before {
+      content: '⭐ הכי פופולרי';
+      position: absolute;
+      top: -14px;
+      right: 50%;
+      transform: translateX(50%);
+      background: #14B8A6;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 50px;
+      white-space: nowrap;
+    }
+    .price-card-icon { font-size: 2rem; margin-bottom: 12px; }
+    .price-card h3 { font-size: 1.1rem; font-weight: 700; color: #1F2937; margin-bottom: 6px; }
+    .price-card-desc { font-size: 0.88rem; color: #6B7280; margin-bottom: 20px; }
+    .price-amount { margin-bottom: 20px; }
+    .price-from { display: block; font-size: 0.85rem; color: #6B7280; margin-bottom: 4px; }
+    .price-number { font-size: 2rem; font-weight: 800; color: #14B8A6; }
+    .price-includes { list-style: none; padding: 0; margin: 0; text-align: right; }
+    .price-includes li { font-size: 0.9rem; color: #374151; padding: 4px 0; border-bottom: 1px solid #f3f4f6; }
+    .price-includes li:last-child { border-bottom: none; }
+    .price-note {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: #fff8e1;
+      border: 1px solid #f59e0b;
+      border-radius: 10px;
+      padding: 16px 20px;
+      direction: rtl;
+    }
+    .price-note span { font-size: 1.3rem; flex-shrink: 0; }
+    .price-note p { font-size: 0.95rem; color: #92400e; margin: 0; line-height: 1.6; }
+
+    /* FACTORS */
+    .price-factors-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #0f766e 0%, #14B8A6 100%);
+      direction: rtl;
+    }
+    .factors-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .factor-item {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 14px;
+      padding: 28px 24px;
+      transition: all 0.25s ease;
+    }
+    .factor-item:hover { background: rgba(255,255,255,0.18); transform: translateY(-3px); }
+    .factor-icon { font-size: 2rem; margin-bottom: 12px; }
+    .factor-item h3 { color: #fff; font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
+    .factor-item p { color: rgba(255,255,255,0.85); font-size: 0.92rem; line-height: 1.6; margin: 0; }
+
+    /* FAQ */
+    .price-faq-section { padding: 80px 0; background: #fff; direction: rtl; }
+    .price-faq-list { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+    .faq-item {
+      background: #fff;
+      border: 1px solid #E5E7EB;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(31,41,55,0.05);
+      transition: box-shadow 0.2s ease;
+    }
+    .faq-item:hover { box-shadow: 0 6px 20px rgba(20,184,166,0.12); }
+    .faq-item.active { border-color: #14B8A6; }
+    .faq-question {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 22px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      text-align: right;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1F2937;
+      gap: 12px;
+    }
+    .faq-question span:first-child { flex: 1; }
+    .faq-arrow { font-size: 0.75rem; color: #14B8A6; transition: transform 0.3s ease; flex-shrink: 0; }
+    .faq-item.active .faq-arrow { transform: rotate(180deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.2s ease; padding: 0 22px; }
+    .faq-item.active .faq-answer { max-height: 300px; padding: 0 22px 20px; }
+    .faq-answer p { color: #4B5563; font-size: 0.95rem; line-height: 1.7; margin: 0; }
+
+    /* CTA */
+    .price-cta-section { padding: 80px 0; background: #f8fafc; direction: rtl; }
+    .price-cta-box {
+      background: linear-gradient(135deg, #1F2937 0%, #374151 100%);
+      border-radius: 20px;
+      padding: 60px 40px;
+      text-align: center;
+    }
+    .price-cta-box h2 { color: #fff; font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; margin-bottom: 14px; }
+    .price-cta-box p { color: rgba(255,255,255,0.8); font-size: 1.05rem; margin-bottom: 36px; }
+    .price-cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .price-hero-section { padding: 80px 20px 60px; }
+      .price-table-section, .price-factors-section, .price-faq-section, .price-cta-section { padding: 56px 0; }
+      .price-cards-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+      .factors-grid { grid-template-columns: 1fr; }
+      .price-cta-box { padding: 40px 24px; }
+      .price-cta-buttons { flex-direction: column; align-items: center; }
+    }
+    @media (max-width: 480px) {
+      .price-cards-grid { grid-template-columns: 1fr; }
+    }
+  </style>
     <script src="/script.js"></script>
 
     <script id="zappy-mobile-submenu-script">

@@ -13371,6 +13371,15 @@ body .whatsapp-float {
   }
 }
 
+#layout-1776266589424 ~ * .price-card .price-number {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+#layout-1776266589424 ~ * .price-card-highlight .price-number {
+  font-size: 2rem;
+}
+
 /* zappy-nav-child-indent */
 .zappy-products-dropdown .zappy-nav-child > a,
 .sub-menu .zappy-nav-child > a {
