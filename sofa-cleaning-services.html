@@ -373,12 +373,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -391,7 +391,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -527,7 +527,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -718,7 +718,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '9725333313';
         
@@ -735,7 +735,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -767,10 +767,15 @@
 </script>
   
   <main>
-      <section id="layout-1776262865668" class="py-16 md:py-24 bg-white layout-section zappy-removable" data-zappy-component="true" style="width: 100%; padding: 60px 0;">
-        <div class="container mx-auto px-4 md:px-8 text-center">
-          <h1 class="text-3xl md:text-4xl font-bold mb-4">ניקוי ספות</h1>
-          <p class="text-gray-600 text-lg">This page is ready for your content.</p>
+      <section id="layout-1776262865668" class="layout-section zappy-removable sofa-cleaning-hero-section" data-zappy-component="true" style="width: 100%; padding: 80px 0 60px; background: linear-gradient(135deg, #1F2937 0%, #14B8A6 100%); color: #fff; text-align: center; direction: rtl;">
+        <div class="container mx-auto px-4 md:px-8">
+          <span style="display: inline-block; background: rgba(20,184,166,0.25); color: #38BDF8; border: 1px solid rgba(56,189,248,0.4); border-radius: 20px; padding: 6px 18px; font-size: 14px; font-weight: 600; margin-bottom: 18px; letter-spacing: 0.5px;">שירות מקצועי באזור רעננה</span>
+          <h1 style="font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; margin-bottom: 20px; line-height: 1.2;">ניקוי ספות ברעננה והסביבה</h1>
+          <p style="font-size: 1.2rem; color: rgba(255,255,255,0.85); max-width: 620px; margin: 0 auto 32px; line-height: 1.7;">שיין פרש מספקת שירות ניקוי ספות מקצועי, יסודי ואמין לבתים ומשרדים ברעננה, כפר סבא, הוד השרון, רמת השרון ועוד. תוצאות מרהיבות — עד הבית שלך.</p>
+          <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a href="tel:0533331306" style="display: inline-block; background: #14B8A6; color: #fff; padding: 14px 32px; border-radius: 8px; font-weight: 700; font-size: 1rem; text-decoration: none;">📞 התקשר עכשיו</a>
+            <a href="/contact" style="display: inline-block; background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.5); padding: 14px 32px; border-radius: 8px; font-weight: 700; font-size: 1rem; text-decoration: none;">השאר פרטים לחזרה</a>
+          </div>
         </div>
       </section>
     </main>
