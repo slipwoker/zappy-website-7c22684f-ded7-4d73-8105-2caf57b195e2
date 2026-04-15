@@ -12186,6 +12186,307 @@ body .whatsapp-float {
   }
 }
 
+/* AI-generated section */
+/* ============================================
+   SF Why Choose Section — שיין פרש הרצליה
+   ============================================ */
+
+.sf-why-choose {
+  background: linear-gradient(160deg, #0f1f2e 0%, #1F2937 55%, #0f2030 100%);
+  padding: 90px 20px 80px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative background blobs */
+.sf-why-choose::before,
+.sf-why-choose::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.sf-why-choose::before {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(20,184,166,0.08) 0%, transparent 70%);
+  top: -120px;
+  left: -100px;
+}
+
+.sf-why-choose::after {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(14,167,183,0.07) 0%, transparent 70%);
+  bottom: -80px;
+  right: -80px;
+}
+
+/* Container */
+.sf-why-choose__container {
+  max-width: 1160px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Header ---- */
+.sf-why-choose__header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.sf-why-choose__badge {
+  display: inline-block;
+  background: rgba(20,184,166,0.15);
+  border: 1px solid rgba(20,184,166,0.4);
+  color: #14B8A6;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 6px 18px;
+  border-radius: 50px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.sf-why-choose__title {
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.35;
+  margin: 0 0 18px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+
+.sf-why-choose__subtitle {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  color: rgba(255,255,255,0.72);
+  line-height: 1.7;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ---- Grid ---- */
+.sf-why-choose__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ---- Card ---- */
+.sf-why-choose__card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(20,184,166,0.25);
+  border-radius: 16px;
+  padding: 32px 28px 28px;
+  position: relative;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, background 0.28s ease, border-color 0.28s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  cursor: default;
+  overflow: hidden;
+}
+
+.sf-why-choose__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(20,184,166,0.5), transparent);
+  border-radius: 16px 16px 0 0;
+  opacity: 0;
+  transition: opacity 0.28s ease;
+}
+
+.sf-why-choose__card:hover {
+  transform: translateY(-6px);
+  background: rgba(20,184,166,0.09);
+  border-color: rgba(20,184,166,0.55);
+  box-shadow: 0 12px 36px rgba(20,184,166,0.18), 0 4px 16px rgba(0,0,0,0.25);
+}
+
+.sf-why-choose__card:hover::before {
+  opacity: 1;
+}
+
+/* Featured card (Card 6) */
+.sf-why-choose__card--featured {
+  background: rgba(20,184,166,0.1);
+  border-color: rgba(20,184,166,0.45);
+  box-shadow: 0 6px 28px rgba(20,184,166,0.15), 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.sf-why-choose__card--featured::before {
+  opacity: 1;
+  background: linear-gradient(90deg, transparent, #14B8A6, transparent);
+}
+
+.sf-why-choose__card--featured:hover {
+  background: rgba(20,184,166,0.16);
+  border-color: rgba(20,184,166,0.7);
+  box-shadow: 0 16px 44px rgba(20,184,166,0.25), 0 4px 16px rgba(0,0,0,0.25);
+}
+
+/* Guarantee Badge */
+.sf-why-choose__guarantee-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: linear-gradient(135deg, #14B8A6, #0EA7B7);
+  color: #ffffff;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 50px;
+  letter-spacing: 0.04em;
+  box-shadow: 0 3px 10px rgba(20,184,166,0.4);
+  white-space: nowrap;
+}
+
+/* Icon wrap */
+.sf-why-choose__card-icon-wrap {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+
+.sf-why-choose__icon {
+  width: 64px;
+  height: 64px;
+  display: block;
+  transition: transform 0.28s ease;
+}
+
+.sf-why-choose__card:hover .sf-why-choose__icon {
+  transform: scale(1.08) rotate(-3deg);
+}
+
+/* Card Title */
+.sf-why-choose__card-title {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+
+/* Card Text */
+.sf-why-choose__card-text {
+  font-size: 0.92rem;
+  color: rgba(255,255,255,0.68);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ---- CTA ---- */
+.sf-why-choose__cta-wrap {
+  text-align: center;
+  margin-top: 52px;
+}
+
+.sf-why-choose__cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(180deg, #14BED0 0%, #0EA7B7 100%);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 16px 36px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+  box-shadow: 0 6px 24px rgba(20,184,166,0.35);
+  letter-spacing: 0.02em;
+}
+
+.sf-why-choose__cta-btn svg {
+  flex-shrink: 0;
+  transform: rotate(180deg);
+  transition: transform 0.25s ease;
+}
+
+.sf-why-choose__cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(20,184,166,0.5);
+  filter: brightness(1.08);
+}
+
+.sf-why-choose__cta-btn:hover svg {
+  transform: rotate(180deg) translateX(4px);
+}
+
+.sf-why-choose__cta-btn:focus-visible {
+  outline: 3px solid #14B8A6;
+  outline-offset: 4px;
+}
+
+/* ============================================
+   Responsive — Tablet (2 columns)
+   ============================================ */
+@media (max-width: 900px) {
+  .sf-why-choose {
+    padding: 70px 16px 60px;
+  }
+
+  .sf-why-choose__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .sf-why-choose__header {
+    margin-bottom: 40px;
+  }
+}
+
+/* ============================================
+   Responsive — Mobile (1 column)
+   ============================================ */
+@media (max-width: 560px) {
+  .sf-why-choose {
+    padding: 56px 14px 48px;
+  }
+
+  .sf-why-choose__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .sf-why-choose__card {
+    padding: 26px 22px 22px;
+  }
+
+  .sf-why-choose__title {
+    font-size: 1.5rem;
+  }
+
+  .sf-why-choose__subtitle {
+    font-size: 0.92rem;
+  }
+
+  .sf-why-choose__cta-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 15px 24px;
+  }
+
+  .sf-why-choose__card-icon-wrap,
+  .sf-why-choose__icon {
+    width: 54px;
+    height: 54px;
+  }
+}
+
 /* zappy-nav-child-indent */
 .zappy-products-dropdown .zappy-nav-child > a,
 .sub-menu .zappy-nav-child > a {
