@@ -309,16 +309,16 @@
 <body>
 <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-    <svg class="hamburger-icon" width="24" height="24" viewbox="0 0 24 24" fill="none">
+    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="display: none;">
+    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
       <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
 
   <button class="phone-header-btn" data-phone="0533331306" aria-label="Call">
-    <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
@@ -326,7 +326,7 @@
   <div class="nav-container">
     <div class="nav-right-group"><div class="nav-brand">
       <a href="/" class="logo-link">
-        <img src="/assets/shine-fresh-logo.webp" alt="שיין פרש - Shine Fresh" class="logo"></img>
+        <img src="/assets/shine-fresh-logo.webp" alt="שיין פרש - Shine Fresh" class="logo">
       </a>
     </div><ul class="nav-menu" id="navMenu"><li><a href="/services">שירותים</a></li><li><a href="/about">אודות</a></li><li class="menu-group-item"><span class="menu-group-title">איזורי השירות שלנו</span><ul class="sub-menu"><li><a href="/sofa-cleaning-netanya">ניקוי ספות נתניה</a></li><li><a href="/sofa-cleaning-hadera">ניקוי ספות חדרה</a></li><li><a href="/sofa-cleaning-herzliya">ניקוי ספות הרצליה</a></li><li><a href="/sofa-cleaning-services" class="">ניקוי ספות רעננה</a></li><li><a href="/sofa-cleaning-serviceskfarsaba" class="">ניקוי ספות כפר סבא</a></li><li><a href="/sofa-cleaning-serviceshodhashron" class="">ניקוי ספות הוד השרון</a></li><li><a href="/sofa-cleaning-servicesroshhain" class="">ניקוי ספות ראש העין</a></li><li><a href="/sofa-cleaning-servicespetahtikva" class="">ניקוי ספות פתח תקווה</a></li><li><a href="/sofa-cleaning-servicesorakiva" class="">ניקוי ספות אור עקיבא</a></li><li><a href="/sofa-cleaning-harish" class="">ניקוי ספות חריש</a></li></ul></li><li class="menu-group-item"><span class="menu-group-title">שאלות לניקוי ספות</span><ul class="sub-menu"><li><a href="/sofa-cleaning-guide">איך לנקות ספות לבד</a></li><li><a href="/sofa-cleaning-price">מחיר לניקוי ספות</a></li><li><a href="/sofa-cleaning-services1">מדוע חשוב לנקות ספות</a></li></ul></li><li><a href="/contact">צור קשר</a></li><li>איך מסירים ריח של שתן מספות?</li><li><a href="/sofa-cleaning-serviceclean" class="">מה מסתתר בתוך הספה שלכם?</a></li><li><a href="/fabric-sofa-purchase" class="">האם כדאי לקנות ספה מבד</a></li><li><a href="/dust-mite-bacteria-sofas" class="">קרדית האבק וחיידקים בספות</a></li></ul></div>
 
@@ -373,12 +373,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') &amp;&amp; bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage &amp;&amp; bgImage !== 'none') {
+      if (bgImage && bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -391,7 +391,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb &amp;&amp; rgb.length &gt;= 3) {
+    if (rgb && rgb.length >= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -527,7 +527,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth &lt;= 768;
+      const isMobileViewport = window.innerWidth <= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -718,7 +718,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length &gt; 0 
+        const phoneNumber = phoneLinks.length > 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '9725333313';
         
@@ -735,7 +735,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth &gt;= 769;
+        const isDesktop = window.innerWidth >= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -767,10 +767,389 @@
 </script>
   
   <main>
-      <section id="layout-1776285549820" class="py-16 md:py-24 bg-white layout-section zappy-removable" data-zappy-component="true" style="width: 100%; padding: 60px 0;">
-        <div class="container mx-auto px-4 md:px-8 text-center">
-          <h1 class="text-3xl md:text-4xl font-bold mb-4">קרדית האבק וחיידקים בספות</h1>
-          <p class="text-gray-600 text-lg">This page is ready for your content.</p>
+      <style>
+        .article-hero-section {
+          background: linear-gradient(135deg, #1F2937 0%, #14B8A6 100%);
+          padding: 80px 0 60px;
+          text-align: center;
+          color: #fff;
+          direction: rtl;
+        }
+        .article-hero-section .badge {
+          display: inline-block;
+          background: rgba(20,184,166,0.25);
+          color: #14B8A6;
+          border: 1px solid #14B8A6;
+          border-radius: 30px;
+          padding: 6px 20px;
+          font-size: 0.85rem;
+          font-weight: 600;
+          margin-bottom: 20px;
+          letter-spacing: 0.5px;
+        }
+        .article-hero-section h1 {
+          font-size: 2.6rem;
+          font-weight: 800;
+          color: #fff;
+          margin-bottom: 18px;
+          line-height: 1.3;
+        }
+        .article-hero-section .subtitle {
+          font-size: 1.15rem;
+          color: rgba(255,255,255,0.85);
+          max-width: 680px;
+          margin: 0 auto 30px;
+          line-height: 1.7;
+        }
+        .article-hero-section .meta-bar {
+          display: flex;
+          justify-content: center;
+          gap: 24px;
+          flex-wrap: wrap;
+          font-size: 0.88rem;
+          color: rgba(255,255,255,0.65);
+        }
+        .article-hero-section .meta-bar span {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+        }
+        @media (max-width: 768px) {
+          .article-hero-section h1 { font-size: 1.8rem; }
+        }
+
+        .article-main-section {
+          background: #fff;
+          padding: 64px 0;
+          direction: rtl;
+        }
+        .article-layout {
+          max-width: 860px;
+          margin: 0 auto;
+          padding: 0 24px;
+        }
+        .article-intro {
+          font-size: 1.1rem;
+          color: #374151;
+          line-height: 1.85;
+          margin-bottom: 40px;
+          padding: 24px 28px;
+          background: #F0FDFA;
+          border-right: 4px solid #14B8A6;
+          border-radius: 10px;
+        }
+        .article-h2 {
+          font-size: 1.55rem;
+          font-weight: 700;
+          color: #1F2937;
+          margin: 44px 0 16px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #E5E7EB;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        .article-h2 .icon-circle {
+          width: 38px;
+          height: 38px;
+          background: linear-gradient(135deg, #14B8A6, #38BDF8);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.1rem;
+          flex-shrink: 0;
+        }
+        .article-p {
+          font-size: 1rem;
+          color: #4B5563;
+          line-height: 1.85;
+          margin-bottom: 18px;
+        }
+        .article-ul {
+          list-style: none;
+          padding: 0;
+          margin: 18px 0 24px;
+        }
+        .article-ul li {
+          padding: 10px 0 10px 0;
+          padding-right: 28px;
+          border-bottom: 1px solid #F3F4F6;
+          color: #374151;
+          font-size: 0.98rem;
+          line-height: 1.7;
+          position: relative;
+        }
+        .article-ul li::before {
+          content: '✓';
+          position: absolute;
+          right: 0;
+          color: #14B8A6;
+          font-weight: 700;
+          font-size: 1rem;
+        }
+        .article-ul li:last-child { border-bottom: none; }
+
+        .stat-cards-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 18px;
+          margin: 28px 0;
+        }
+        .stat-card {
+          background: linear-gradient(135deg, #1F2937, #374151);
+          border-radius: 14px;
+          padding: 24px 18px;
+          text-align: center;
+          color: #fff;
+        }
+        .stat-card .stat-num {
+          font-size: 2rem;
+          font-weight: 800;
+          color: #14B8A6;
+          line-height: 1;
+          margin-bottom: 8px;
+        }
+        .stat-card .stat-label {
+          font-size: 0.82rem;
+          color: rgba(255,255,255,0.75);
+          line-height: 1.5;
+        }
+        @media (max-width: 640px) {
+          .stat-cards-grid { grid-template-columns: 1fr; }
+        }
+
+        .warning-box {
+          background: #FFF7ED;
+          border: 1px solid #FED7AA;
+          border-right: 4px solid #F97316;
+          border-radius: 10px;
+          padding: 20px 24px;
+          margin: 28px 0;
+          color: #7C2D12;
+          font-size: 0.97rem;
+          line-height: 1.7;
+        }
+        .warning-box strong { color: #C2410C; }
+
+        .tip-box {
+          background: #F0FDFA;
+          border: 1px solid #99F6E4;
+          border-right: 4px solid #14B8A6;
+          border-radius: 10px;
+          padding: 20px 24px;
+          margin: 28px 0;
+          color: #134E4A;
+          font-size: 0.97rem;
+          line-height: 1.7;
+        }
+        .tip-box strong { color: #0F766E; }
+
+        .symptom-cards {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+          margin: 24px 0;
+        }
+        .symptom-card {
+          background: #F9FAFB;
+          border: 1px solid #E5E7EB;
+          border-radius: 12px;
+          padding: 20px;
+        }
+        .symptom-card .sym-title {
+          font-weight: 700;
+          color: #1F2937;
+          font-size: 0.97rem;
+          margin-bottom: 8px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .symptom-card .sym-emoji { font-size: 1.3rem; }
+        .symptom-card p {
+          font-size: 0.88rem;
+          color: #6B7280;
+          line-height: 1.6;
+          margin: 0;
+        }
+        @media (max-width: 640px) {
+          .symptom-cards { grid-template-columns: 1fr; }
+        }
+
+        .article-conclusion {
+          background: linear-gradient(135deg, #1F2937, #14B8A6);
+          border-radius: 16px;
+          padding: 36px 32px;
+          text-align: center;
+          color: #fff;
+          margin-top: 48px;
+        }
+        .article-conclusion h3 {
+          font-size: 1.4rem;
+          font-weight: 700;
+          margin-bottom: 12px;
+          color: #fff;
+        }
+        .article-conclusion p {
+          font-size: 0.97rem;
+          color: rgba(255,255,255,0.85);
+          line-height: 1.7;
+          margin-bottom: 24px;
+        }
+        .cta-buttons-row {
+          display: flex;
+          gap: 14px;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        .cta-btn-phone {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: #14B8A6;
+          color: #fff;
+          font-weight: 700;
+          font-size: 1rem;
+          padding: 13px 26px;
+          border-radius: 10px;
+          text-decoration: none;
+          transition: all 0.22s;
+        }
+        .cta-btn-phone:hover { background: #0F9E8E; transform: translateY(-2px); }
+        .cta-btn-whatsapp {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: #25D366;
+          color: #fff;
+          font-weight: 700;
+          font-size: 1rem;
+          padding: 13px 26px;
+          border-radius: 10px;
+          text-decoration: none;
+          transition: all 0.22s;
+        }
+        .cta-btn-whatsapp:hover { background: #1fbc5a; transform: translateY(-2px); }
+      </style>
+
+      <!-- HERO -->
+      <section class="article-hero-section" id="layout-1776285549820">
+        <div style="max-width:860px;margin:0 auto;padding:0 24px;">
+          <div class="badge">🔬 מדריך מקצועי | שיין פרש - Shine Fresh</div>
+          <h1>קרדית האבק וחיידקים בספות — האמת שלא סיפרו לכם</h1>
+          <p class="subtitle">הספה שלכם נראית נקייה? מחקרים מראים שספה ממוצעת מכילה מיליוני יצורים מיקרוסקופיים. כל מה שצריך לדעת — ואיך להגן על הבריאות שלכם.</p>
+          <div class="meta-bar">
+            <span>📅 עודכן 2025</span>
+            <span>⏱ זמן קריאה: 5 דקות</span>
+            <span>👨‍🔬 נכתב ע"י מומחי שיין פרש</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ARTICLE BODY -->
+      <section class="article-main-section">
+        <div class="article-layout">
+
+          <p class="article-intro">
+            💡 <strong>מה שלא רואים עלול לפגוע בבריאות:</strong> הספה היא אחד הפריטים הנפוצים ביותר בבית — אנחנו יושבים עליה שעות בכל יום. אך מתחת לפני השטח מתקיים עולם שלם של קרדיות, חיידקים, פטריות ואלרגנים שעלולים לגרום לתגובות אלרגיות, בעיות נשימתיות ועוד.
+          </p>
+
+          <!-- STATS -->
+          <div class="stat-cards-grid">
+            <div class="stat-card">
+              <div class="stat-num">85%</div>
+              <div class="stat-label">מהסובלים מאלרגיות מגיבים לקרדית האבק</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">1.5M</div>
+              <div class="stat-label">קרדיות אבק בממוצע בכל מטר רבוע של ספה</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">7X</div>
+              <div class="stat-label">יותר חיידקים בספה לעומת אסלת שירותים ממוצעת</div>
+            </div>
+          </div>
+
+          <h2 class="article-h2"><span class="icon-circle">🦠</span> מה הן קרדיות האבק?</h2>
+          <p class="article-p">קרדית האבק (Dermatophagoides pteronyssinus) היא יצור מיקרוסקופי בן 0.3 מ"מ השייך למשפחת העכבישים. היא בלתי נראית לעין בלתי מזוינת, אינה נושכת ואינה מעבירה מחלות ישירות — אך ה<strong>צואה והשרידים שהיא מפרישה</strong> הם מקור אלרגני עוצמתי מאוד.</p>
+          <p class="article-p">קרדיות אבק ניזונות בעיקר מתאי עור מתים שנשרים מגופנו. הספה — שבה אנחנו יושבים ונוגעים שעות רבות — היא גן עדן לקרדיות: טמפרטורה חמה, לחות, וכמויות עצומות של תאי עור. מחקרים קליניים מצאו ריכוזי קרדיות גבוהים בהרבה בספות לעומת מזרונים.</p>
+
+          <div class="warning-box">
+            ⚠️ <strong>חשוב לדעת:</strong> שנה אחת שלא ניקיתם את הספה מקצועית יכולה להכפיל את כמות הקרדיות בה. ספה בת 5 שנים שלא עברה ניקוי עמוק עשויה לשקול <strong>עד 20% יותר</strong> ממשקלה המקורי — בשל הצטברות תאי עור, קרדיות וצואתן.
+          </div>
+
+          <h2 class="article-h2"><span class="icon-circle">🤧</span> תסמינים של אלרגיה לקרדיות האבק</h2>
+          <div class="symptom-cards">
+            <div class="symptom-card">
+              <div class="sym-title"><span class="sym-emoji">👃</span> תגובות נשימתיות</div>
+              <p>נזלת אלרגית, התעטשויות חוזרות, גירוי בגרון ותחושת "אף סתום" — במיוחד בבית.</p>
+            </div>
+            <div class="symptom-card">
+              <div class="sym-title"><span class="sym-emoji">👁️</span> גירוי עיניים</div>
+              <p>עיניים אדומות, דומעות, מגרדות. לרוב מחמירות לאחר ישיבה ממושכת על הספה.</p>
+            </div>
+            <div class="symptom-card">
+              <div class="sym-title"><span class="sym-emoji">🫁</span> אסתמה ונשימה קשה</div>
+              <p>אצל אסתמטיים, חשיפה לאלרגני קרדיות עלולה לעורר התקפי קוצר נשימה חמורים.</p>
+            </div>
+            <div class="symptom-card">
+              <div class="sym-title"><span class="sym-emoji">🩺</span> גירוי עור</div>
+              <p>אקזמה, גירוד בעור ופריחות — בעיקר אצל ילדים ואנשים בעלי עור רגיש.</p>
+            </div>
+          </div>
+
+          <h2 class="article-h2"><span class="icon-circle">🦠</span> חיידקים ופטריות בספה</h2>
+          <p class="article-p">מחוץ לעולם הקרדיות, הספה מארחת גם <strong>חיידקים</strong> כמו סטפילוקוקוס, סטרפטוקוקוס, ואף ה-E. coli — שמגיעים מידיים, בגדים, מזון שנאכל על הספה ובעלי חיים. ספות בד בולעות את כל אלו כמו ספוג.</p>
+          <p class="article-p">בנוסף, בנוכחות לחות (שתייה שנשפכה, זיעה) מתפתחות <strong>פטריות עובש</strong> שמפרישות ספורות לאוויר — מה שעלול לגרום לתסמינים נשימתיים, ריח עובש ובמקרים חמורים — נזק לריאות.</p>
+          <ul class="article-ul">
+            <li>חיידקי סטפילוקוקוס — מגיעים מעור הגוף ועלולים לגרום לדלקות עור</li>
+            <li>E. coli — מגיע לרוב מידיים לא נקיות לאחר שימוש בשירותים</li>
+            <li>שמרים ופטריות — מתפתחים באזורים לחים של הספה</li>
+            <li>נגיפים ווירוסים — שורדים על הספה עד 48 שעות לאחר מגע</li>
+            <li>אבקני פרחים וחלקיקי אוויר — מצטברים בחריצים ובתפרים</li>
+          </ul>
+
+          <h2 class="article-h2"><span class="icon-circle">🧹</span> מתי לנקות את הספה?</h2>
+          <p class="article-p">ניקוי מקצועי מומלץ לפחות <strong>פעם בשנה</strong> — ובמקרים הבאים גם יותר:</p>
+          <ul class="article-ul">
+            <li>ילדים קטנים או תינוקות שמשחקים על הספה</li>
+            <li>בעלי חיים (כלב, חתול) שישנים או שוהים על הספה</li>
+            <li>מישהו בבית הסובל מאסתמה, אלרגיה או בעיות נשימה</li>
+            <li>הספה נושאת ריחות לא נעימים</li>
+            <li>עברו יותר מ-12 חודשים מהניקוי האחרון</li>
+          </ul>
+
+          <div class="tip-box">
+            💡 <strong>טיפ מקצועי מצוות שיין פרש:</strong> שאיבת אבק רגילה מסירה רק כ-30% מהקרדיות. ניקוי מקצועי עם ציוד אדים בלחץ גבוה ותמיסות ייעודיות מחסל עד 99.9% מהקרדיות, חיידקים ופטריות — ומחזיר לספה ריח ומראה כמו חדשה.
+          </div>
+
+          <h2 class="article-h2"><span class="icon-circle">🛡️</span> איך למנוע הצטברות קרדיות וחיידקים?</h2>
+          <ul class="article-ul">
+            <li>שאבו אבק מהספה לפחות פעם בשבוע עם מיכל HEPA</li>
+            <li>שמרו על אוורור טוב בחדר ולחות מתחת ל-50%</li>
+            <li>הימנעו מאכילה ושתייה על הספה</li>
+            <li>השתמשו בכיסויים ניתנים לכביסה ושטפו ב-60° לפחות</li>
+            <li>הרחיקו בעלי חיים מהספה ככל האפשר</li>
+            <li>בצעו ניקוי מקצועי לפחות פעם בשנה</li>
+          </ul>
+
+          <!-- CONCLUSION CTA -->
+          <div class="article-conclusion">
+            <h3>🌿 הספה שלכם מגיעה לניקוי מקצועי?</h3>
+            <p>צוות שיין פרש - Shine Fresh מתמחה בניקוי ספות מקצועי עם ציוד מתקדם ותמיסות בטוחות לכל הבית. אנחנו מחסלים קרדיות, חיידקים וריחות — ומחזירים לכם ספה נקייה, בריאה ורעננה.</p>
+            <div class="cta-buttons-row">
+              <a href="tel:0533331306" class="cta-btn-phone">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                התקשרו: 053-3331306
+              </a>
+              <a href="https://wa.me/9720533331306?text=שלום%2C%20אשמח%20לקבל%20פרטים%20על%20ניקוי%20ספות%20מקצועי" target="_blank" class="cta-btn-whatsapp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                ווטסאפ עכשיו
+              </a>
+            </div>
+          </div>
+
         </div>
       </section>
     </main>
