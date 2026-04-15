@@ -16479,6 +16479,356 @@ body .whatsapp-float {
   }
 }
 
+/* AI-generated section */
+/* ===== CTA NETANYA SECTION ===== */
+.cta-netanya {
+  position: relative;
+  background: linear-gradient(135deg, #0a1628 0%, #0d2340 40%, #0a2a3a 70%, #062030 100%);
+  padding: 90px 24px 80px;
+  overflow: hidden;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  text-align: center;
+}
+
+/* --- Decorative Background Orbs --- */
+.cta-netanya__bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(60px);
+  opacity: 0.18;
+}
+
+.cta-netanya__bg-orb--1 {
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, #14B8A6 0%, transparent 70%);
+  top: -120px;
+  right: -80px;
+}
+
+.cta-netanya__bg-orb--2 {
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, #0EA7B7 0%, transparent 70%);
+  bottom: -100px;
+  left: -60px;
+  opacity: 0.15;
+}
+
+.cta-netanya__bg-orb--3 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #14BED0 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.08;
+}
+
+/* --- Decorative Lines --- */
+.cta-netanya__bg-lines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 40px,
+      rgba(20, 184, 166, 0.03) 40px,
+      rgba(20, 184, 166, 0.03) 41px
+    );
+}
+
+/* --- Container --- */
+.cta-netanya__container {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+/* --- Badge --- */
+.cta-netanya__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(20, 184, 166, 0.15);
+  border: 1px solid rgba(20, 184, 166, 0.35);
+  color: #5ee8da;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 7px 18px;
+  border-radius: 50px;
+  margin-bottom: 28px;
+}
+
+.cta-netanya__badge-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #14B8A6;
+  border-radius: 50%;
+  animation: cta-pulse 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes cta-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+/* --- Main Heading --- */
+.cta-netanya__heading {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 22px;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Sub-heading --- */
+.cta-netanya__subheading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 6px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: clamp(14px, 2.5vw, 17px);
+  font-weight: 500;
+  margin: 0 0 44px;
+  line-height: 1.6;
+}
+
+.cta-netanya__sub-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.cta-netanya__sub-icon {
+  font-size: 16px;
+}
+
+.cta-netanya__sub-divider {
+  color: rgba(20, 184, 166, 0.6);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* --- Buttons Group --- */
+.cta-netanya__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 36px;
+  width: 100%;
+}
+
+/* --- Base Button --- */
+.cta-netanya__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-family: system-ui, sans-serif;
+  font-size: clamp(15px, 2.5vw, 17px);
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease, opacity 0.22s ease;
+  white-space: nowrap;
+  min-width: 220px;
+}
+
+.cta-netanya__btn:focus-visible {
+  outline: 3px solid #14B8A6;
+  outline-offset: 4px;
+}
+
+.cta-netanya__btn-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+/* --- WhatsApp Button --- */
+.cta-netanya__btn--whatsapp {
+  background: linear-gradient(135deg, #25D366 0%, #1ebe5d 100%);
+  color: #ffffff;
+  box-shadow: 0 6px 28px rgba(37, 211, 102, 0.4), 0 2px 8px rgba(0,0,0,0.2);
+  border: 2px solid transparent;
+}
+
+.cta-netanya__btn--whatsapp:hover,
+.cta-netanya__btn--whatsapp:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(37, 211, 102, 0.55), 0 4px 12px rgba(0,0,0,0.25);
+  background: linear-gradient(135deg, #2de070 0%, #22cc65 100%);
+}
+
+.cta-netanya__btn--whatsapp:active {
+  transform: translateY(-1px);
+}
+
+/* --- Phone Button --- */
+.cta-netanya__btn--phone {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.08), inset 0 0 0 0 rgba(255,255,255,0);
+}
+
+.cta-netanya__btn--phone:hover,
+.cta-netanya__btn--phone:focus-visible {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
+}
+
+.cta-netanya__btn--phone:active {
+  transform: translateY(-1px);
+}
+
+/* --- Trust Indicators --- */
+.cta-netanya__trust {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px 0;
+}
+
+.cta-netanya__trust-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 18px;
+  white-space: nowrap;
+}
+
+.cta-netanya__trust-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: rgba(20, 184, 166, 0.2);
+  border: 1px solid rgba(20, 184, 166, 0.4);
+  border-radius: 50%;
+  color: #14B8A6;
+  font-size: 11px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.cta-netanya__trust-divider {
+  width: 1px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .cta-netanya {
+    padding: 70px 20px 64px;
+  }
+
+  .cta-netanya__heading {
+    font-size: 1.9rem;
+  }
+
+  .cta-netanya__subheading {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cta-netanya__sub-divider {
+    display: none;
+  }
+
+  .cta-netanya__buttons {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .cta-netanya__btn {
+    width: 100%;
+    max-width: 360px;
+    min-width: unset;
+    padding: 16px 24px;
+  }
+
+  .cta-netanya__trust {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta-netanya__trust-divider {
+    display: none;
+  }
+
+  .cta-netanya__trust-item {
+    padding: 0;
+  }
+
+  .cta-netanya__bg-orb--1 {
+    width: 280px;
+    height: 280px;
+    top: -80px;
+    right: -60px;
+  }
+
+  .cta-netanya__bg-orb--2 {
+    width: 220px;
+    height: 220px;
+    bottom: -70px;
+    left: -40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-netanya {
+    padding: 56px 16px 52px;
+  }
+
+  .cta-netanya__heading {
+    font-size: 1.65rem;
+  }
+
+  .cta-netanya__badge {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+
+  .cta-netanya__btn {
+    font-size: 15px;
+    padding: 15px 20px;
+  }
+}
+
 /* zappy-nav-child-indent */
 .zappy-products-dropdown .zappy-nav-child > a,
 .sub-menu .zappy-nav-child > a {
