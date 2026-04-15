@@ -9660,6 +9660,27 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   }
 }
 
+body .whatsapp-float {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  position: fixed !important;
+  bottom: 24px !important;
+  left: 24px !important;
+  z-index: 9999 !important;
+  background-color: #25D366 !important;
+  color: #fff !important;
+  width: 56px !important;
+  height: 56px !important;
+  border-radius: 50% !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 28px !important;
+  box-shadow: 0 4px 16px rgba(37,211,102,0.4) !important;
+  text-decoration: none !important;
+}
+
 /* ========== EMPTY SUBMENU HIDING (Auto-added by Zappy) ========== */
 .sub-menu:empty,
 .dropdown-menu:empty,
