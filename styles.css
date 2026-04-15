@@ -15457,6 +15457,337 @@ body .whatsapp-float {
   color: #FFFFFF !important;
 }
 
+/* AI-generated section */
+/* =============================================
+   TESTIMONIALS SECTION — ניקוי ספות נתניה
+   ============================================= */
+
+.testi-section {
+  background: #f0fafa;
+  padding: 90px 20px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background decoration */
+.testi-section::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: -120px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.testi-section::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(14, 167, 183, 0.07) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Container */
+.testi-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Header ---- */
+.testi-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.testi-badge {
+  display: inline-block;
+  background: rgba(20, 184, 166, 0.12);
+  color: #0d9488;
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  border-radius: 50px;
+  padding: 6px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.testi-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: #0f2d3a;
+  margin: 0 0 16px 0;
+  line-height: 1.25;
+}
+
+.testi-subtitle {
+  font-size: 1.05rem;
+  color: #4a6572;
+  max-width: 540px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ---- Grid ---- */
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+/* ---- Card ---- */
+.testi-card {
+  background: #ffffff;
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  border-radius: 18px;
+  padding: 28px 24px 24px;
+  box-shadow: 0 4px 20px rgba(20, 184, 166, 0.08), 0 1px 4px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.testi-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--gradient-primary, linear-gradient(180deg, #14BED0 0%, #0EA7B7 100%));
+  border-radius: 0 18px 0 4px;
+}
+
+.testi-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(20, 184, 166, 0.16), 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: rgba(20, 184, 166, 0.45);
+}
+
+/* Card Top Row */
+.testi-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Stars */
+.testi-stars {
+  display: flex;
+  gap: 3px;
+}
+
+.testi-star {
+  color: #f59e0b;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* Quote Decoration */
+.testi-quote-icon {
+  font-size: 52px;
+  line-height: 1;
+  color: rgba(20, 184, 166, 0.18);
+  font-family: Georgia, serif;
+  font-weight: 700;
+  margin-top: -8px;
+  user-select: none;
+}
+
+/* Quote Text */
+.testi-quote {
+  margin: 0;
+  flex: 1;
+}
+
+.testi-quote p {
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.75;
+  margin: 0;
+  border-right: 3px solid var(--primary, #14B8A6);
+  padding-right: 12px;
+}
+
+/* Footer */
+.testi-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(20, 184, 166, 0.12);
+}
+
+/* Avatar */
+.testi-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--gradient-primary, linear-gradient(180deg, #14BED0 0%, #0EA7B7 100%));
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(20, 184, 166, 0.35);
+}
+
+.testi-avatar--blue {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.35);
+}
+
+.testi-avatar--teal {
+  background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+  box-shadow: 0 2px 8px rgba(6, 182, 212, 0.35);
+}
+
+.testi-avatar--green {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.35);
+}
+
+/* Info */
+.testi-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.testi-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f2d3a;
+  font-style: normal;
+}
+
+.testi-location {
+  font-size: 0.82rem;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.testi-location-icon {
+  font-size: 12px;
+}
+
+/* ---- Trust Bar ---- */
+.testi-trust-bar {
+  background: #ffffff;
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  border-radius: 16px;
+  padding: 28px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  box-shadow: 0 4px 16px rgba(20, 184, 166, 0.08);
+}
+
+.testi-trust-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  text-align: center;
+}
+
+.testi-trust-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary, #14B8A6);
+  line-height: 1;
+}
+
+.testi-trust-label {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.testi-trust-divider {
+  width: 1px;
+  height: 48px;
+  background: rgba(20, 184, 166, 0.2);
+  flex-shrink: 0;
+}
+
+/* =============================================
+   RESPONSIVE — TABLET (2 columns)
+   ============================================= */
+@media (max-width: 1024px) {
+  .testi-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* =============================================
+   RESPONSIVE — MOBILE (1 column)
+   ============================================= */
+@media (max-width: 600px) {
+  .testi-section {
+    padding: 60px 16px;
+  }
+
+  .testi-header {
+    margin-bottom: 36px;
+  }
+
+  .testi-title {
+    font-size: 1.6rem;
+  }
+
+  .testi-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .testi-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .testi-card {
+    padding: 22px 18px 20px;
+  }
+
+  .testi-trust-bar {
+    flex-direction: column;
+    padding: 24px 20px;
+    gap: 20px;
+  }
+
+  .testi-trust-divider {
+    width: 60px;
+    height: 1px;
+  }
+
+  .testi-trust-number {
+    font-size: 1.6rem;
+  }
+}
+
 /* zappy-nav-child-indent */
 .zappy-products-dropdown .zappy-nav-child > a,
 .sub-menu .zappy-nav-child > a {
