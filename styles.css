@@ -14249,6 +14249,15 @@ body .whatsapp-float {
   }
 }
 
+#layout-1776283750765 .container > div[style*="background: #f0fdfa"] p {
+  line-height: 1.8;
+}
+
+#layout-1776283750765 .container > div[style*="background: #f0fdfa"] {
+  text-align: right;
+  direction: rtl;
+}
+
 /* zappy-nav-child-indent */
 .zappy-products-dropdown .zappy-nav-child > a,
 .sub-menu .zappy-nav-child > a {
