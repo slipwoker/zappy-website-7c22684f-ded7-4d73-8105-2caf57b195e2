@@ -9681,6 +9681,394 @@ body .whatsapp-float {
   text-decoration: none !important;
 }
 
+/* AI-generated section */
+/* =============================================
+   SERVICE AREAS SECTION
+   ============================================= */
+
+.srv-areas-section {
+  background: linear-gradient(160deg, #0d1f2d 0%, #0a2a2a 50%, #0d1f2d 100%);
+  padding: 90px 20px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  text-align: right;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative background elements */
+.srv-areas-section::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: -120px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.12) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.srv-areas-section::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(14, 167, 183, 0.10) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Container */
+.srv-areas-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Header ---- */
+.srv-areas-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.srv-areas-badge {
+  display: inline-block;
+  background: rgba(20, 184, 166, 0.18);
+  color: #14B8A6;
+  border: 1px solid rgba(20, 184, 166, 0.4);
+  border-radius: 50px;
+  padding: 6px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.srv-areas-title {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 18px 0;
+  line-height: 1.35;
+}
+
+.srv-areas-subtitle {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+/* ---- City Cards Grid ---- */
+.srv-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 48px;
+}
+
+/* Base Card */
+.srv-city-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(20, 184, 166, 0.22);
+  border-radius: 16px;
+  padding: 28px 22px 24px;
+  position: relative;
+  cursor: default;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, background 0.28s ease, border-color 0.28s ease;
+  overflow: hidden;
+}
+
+.srv-city-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(20, 184, 166, 0.5), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.srv-city-card:hover {
+  transform: translateY(-5px);
+  background: rgba(20, 184, 166, 0.08);
+  border-color: rgba(20, 184, 166, 0.55);
+  box-shadow: 0 12px 36px rgba(20, 184, 166, 0.18), 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.srv-city-card:hover::before {
+  opacity: 1;
+}
+
+/* Main City Card (נתניה) */
+.srv-city-card--main {
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.18) 0%, rgba(14, 167, 183, 0.10) 100%);
+  border-color: rgba(20, 184, 166, 0.5);
+  box-shadow: 0 8px 28px rgba(20, 184, 166, 0.15);
+  grid-column: span 1;
+}
+
+.srv-city-card--main::before {
+  opacity: 1;
+  background: linear-gradient(90deg, transparent, rgba(20, 184, 166, 0.8), transparent);
+}
+
+.srv-city-card--main:hover {
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.28) 0%, rgba(14, 167, 183, 0.18) 100%);
+  border-color: rgba(20, 184, 166, 0.8);
+  box-shadow: 0 16px 44px rgba(20, 184, 166, 0.28), 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+/* City Icon */
+.srv-city-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(20, 184, 166, 0.15);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  color: #14B8A6;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.srv-city-card:hover .srv-city-icon {
+  background: rgba(20, 184, 166, 0.25);
+  transform: scale(1.08);
+}
+
+/* Star badge for main card */
+.srv-city-star {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  color: #14B8A6;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* City Name */
+.srv-city-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+}
+
+.srv-city-card--main .srv-city-name {
+  font-size: 1.35rem;
+  color: #7ffff4;
+}
+
+/* City Description */
+.srv-city-desc {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.58);
+  margin: 0 0 12px 0;
+  line-height: 1.6;
+}
+
+.srv-city-card--main .srv-city-desc {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* Tag */
+.srv-city-tag {
+  display: inline-block;
+  background: rgba(20, 184, 166, 0.2);
+  color: #14B8A6;
+  border: 1px solid rgba(20, 184, 166, 0.4);
+  border-radius: 20px;
+  padding: 3px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* ---- CTA Wrapper ---- */
+.srv-areas-cta-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(20, 184, 166, 0.25);
+  border-radius: 16px;
+  padding: 24px 32px;
+  flex-wrap: wrap;
+}
+
+.srv-areas-cta-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.srv-areas-cta-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(20, 184, 166, 0.15);
+  border: 1px solid rgba(20, 184, 166, 0.35);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #14B8A6;
+  flex-shrink: 0;
+}
+
+.srv-areas-cta-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.srv-areas-cta-text strong {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.srv-areas-cta-text span {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.58);
+}
+
+/* CTA Button */
+.srv-areas-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gradient-primary, linear-gradient(180deg, #14BED0 0%, #0EA7B7 100%));
+  color: #ffffff;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+  box-shadow: 0 6px 24px rgba(20, 184, 166, 0.35);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.srv-areas-cta-btn svg {
+  transition: transform 0.25s ease;
+  /* Flip arrow for RTL */
+  transform: scaleX(-1);
+}
+
+.srv-areas-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(20, 184, 166, 0.5);
+  filter: brightness(1.08);
+}
+
+.srv-areas-cta-btn:hover svg {
+  transform: scaleX(-1) translateX(3px);
+}
+
+.srv-areas-cta-btn:focus-visible {
+  outline: 3px solid #14B8A6;
+  outline-offset: 3px;
+}
+
+/* =============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================= */
+
+/* Large tablets */
+@media (max-width: 1024px) {
+  .srv-areas-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .srv-areas-section {
+    padding: 64px 16px;
+  }
+
+  .srv-areas-header {
+    margin-bottom: 40px;
+  }
+
+  .srv-areas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .srv-areas-cta-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 22px;
+    gap: 20px;
+  }
+
+  .srv-areas-cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .srv-areas-title {
+    font-size: 1.6rem;
+  }
+
+  .srv-areas-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .srv-city-card {
+    padding: 20px 16px 18px;
+  }
+
+  .srv-city-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .srv-city-name {
+    font-size: 1.05rem;
+  }
+
+  .srv-city-desc {
+    font-size: 0.8rem;
+  }
+
+  .srv-areas-cta-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 360px) {
+  .srv-areas-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ========== EMPTY SUBMENU HIDING (Auto-added by Zappy) ========== */
 .sub-menu:empty,
 .dropdown-menu:empty,
