@@ -19775,6 +19775,516 @@ body .whatsapp-float {
     font-size: 12px;
   }
 }
+
+/* AI-generated section */
+/* =============================================
+   SOFA ARTICLE SECTION — OR AKIVA
+   ============================================= */
+
+.sofa-article-or-ekiva {
+  background: #f7fafa;
+  padding: 72px 20px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  text-align: right;
+  color: #1a2e2d;
+}
+
+/* Container */
+.sofa-article-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ---- Header ---- */
+.sofa-article-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.sofa-article-badge {
+  display: inline-block;
+  background: var(--primary, #14B8A6);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 5px 16px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.sofa-article-title {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 800;
+  color: #0d2626;
+  line-height: 1.35;
+  margin: 0 0 20px 0;
+}
+
+.sofa-article-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 14px;
+  color: #5a7a78;
+}
+
+.sofa-meta-item {
+  font-weight: 500;
+}
+
+.sofa-meta-divider {
+  color: #c0d8d6;
+}
+
+/* ---- Intro Layout ---- */
+.sofa-article-intro-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: center;
+  margin-bottom: 48px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px;
+  box-shadow: 0 4px 24px rgba(20, 184, 166, 0.08);
+  border: 1px solid rgba(20, 184, 166, 0.12);
+}
+
+.sofa-article-intro-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sofa-article-lead {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #2d4a48;
+  margin: 0;
+}
+
+.sofa-article-intro-image {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(20, 184, 166, 0.15);
+}
+
+.sofa-article-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.sofa-article-img:hover {
+  transform: scale(1.02);
+}
+
+/* ---- Article Body ---- */
+.sofa-article-body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ---- Article Section ---- */
+.sofa-article-section {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 40px;
+  box-shadow: 0 4px 20px rgba(20, 184, 166, 0.07);
+  border: 1px solid rgba(20, 184, 166, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.sofa-article-section:hover {
+  box-shadow: 0 8px 32px rgba(20, 184, 166, 0.14);
+  transform: translateY(-2px);
+}
+
+/* ---- Alt Section Layout (text + image) ---- */
+.sofa-section-alt-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: center;
+}
+
+.sofa-section-alt-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.sofa-section-alt-image {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(20, 184, 166, 0.12);
+}
+
+/* ---- H2 Headings ---- */
+.sofa-article-h2 {
+  font-size: clamp(1.2rem, 3vw, 1.55rem);
+  font-weight: 700;
+  color: #0d2626;
+  margin: 0 0 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid rgba(20, 184, 166, 0.2);
+}
+
+.sofa-h2-icon {
+  font-size: 1.3em;
+  flex-shrink: 0;
+}
+
+/* ---- Paragraph ---- */
+.sofa-article-p {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: #2d4a48;
+  margin: 0 0 16px 0;
+}
+
+.sofa-article-p:last-child {
+  margin-bottom: 0;
+}
+
+.sofa-highlight-p {
+  background: rgba(20, 184, 166, 0.07);
+  border-right: 4px solid var(--primary, #14B8A6);
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+  font-weight: 600;
+  color: #0d3332;
+  margin-top: 16px;
+}
+
+/* ---- Bullet List ---- */
+.sofa-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sofa-bullet-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #2d4a48;
+}
+
+.sofa-bullet-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--primary, #14B8A6);
+  border-radius: 50%;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+/* ---- Numbered List ---- */
+.sofa-numbered-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sofa-numbered-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: #2d4a48;
+}
+
+.sofa-number-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: var(--gradient-primary, linear-gradient(180deg, #14BED0 0%, #0EA7B7 100%));
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(20, 184, 166, 0.3);
+}
+
+/* ---- Checkmark List ---- */
+.sofa-checkmark-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sofa-check-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a2e2d;
+  background: #f0fafa;
+  border-radius: 10px;
+  padding: 13px 18px;
+  border: 1px solid rgba(20, 184, 166, 0.15);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.sofa-check-item:hover {
+  background: rgba(20, 184, 166, 0.1);
+  transform: translateX(-4px);
+}
+
+.sofa-check-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background: var(--primary, #14B8A6);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ---- Services Section ---- */
+.sofa-services-section {
+  background: linear-gradient(135deg, #f0fafa 0%, #e8f7f6 100%);
+  border-color: rgba(20, 184, 166, 0.2);
+}
+
+.sofa-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 20px 0 24px 0;
+}
+
+.sofa-service-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 22px 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(20, 184, 166, 0.18);
+  box-shadow: 0 2px 12px rgba(20, 184, 166, 0.08);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.sofa-service-card:hover {
+  box-shadow: 0 6px 20px rgba(20, 184, 166, 0.18);
+  transform: translateY(-3px);
+}
+
+.sofa-service-icon {
+  font-size: 2rem;
+  display: block;
+}
+
+.sofa-service-label {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #0d2626;
+  line-height: 1.4;
+}
+
+/* ---- CTA Section ---- */
+.sofa-article-cta-section {
+  border-radius: 20px;
+  background: var(--gradient-primary, linear-gradient(180deg, #14BED0 0%, #0EA7B7 100%));
+  padding: 48px 40px;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(20, 184, 166, 0.35);
+  position: relative;
+  overflow: hidden;
+}
+
+.sofa-article-cta-section::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.sofa-article-cta-section::after {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  right: -30px;
+  width: 260px;
+  height: 260px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.sofa-cta-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.sofa-cta-title {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 16px 0;
+  line-height: 1.4;
+}
+
+.sofa-cta-text {
+  font-size: 16px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0 0 28px 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sofa-cta-btn {
+  display: inline-block;
+  background: #fff;
+  color: #0a8c80;
+  font-size: 16.5px;
+  font-weight: 700;
+  padding: 16px 36px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  border: 2px solid transparent;
+}
+
+.sofa-cta-btn:hover,
+.sofa-cta-btn:focus {
+  background: #0d2626;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.sofa-cta-btn:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+/* =============================================
+   RESPONSIVE — TABLET
+   ============================================= */
+@media (max-width: 768px) {
+  .sofa-article-or-ekiva {
+    padding: 48px 16px;
+  }
+
+  .sofa-article-intro-layout {
+    grid-template-columns: 1fr;
+    padding: 24px 20px;
+    gap: 24px;
+  }
+
+  .sofa-section-alt-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .sofa-section-alt-image {
+    order: -1;
+  }
+
+  .sofa-article-section {
+    padding: 28px 24px;
+  }
+
+  .sofa-services-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .sofa-article-cta-section {
+    padding: 36px 24px;
+  }
+
+  .sofa-cta-btn {
+    font-size: 15px;
+    padding: 14px 28px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sofa-check-item {
+    font-size: 15px;
+    padding: 11px 14px;
+  }
+}
+
+/* =============================================
+   RESPONSIVE — MOBILE
+   ============================================= */
+@media (max-width: 480px) {
+  .sofa-article-title {
+    font-size: 1.45rem;
+  }
+
+  .sofa-article-h2 {
+    font-size: 1.15rem;
+  }
+
+  .sofa-article-section {
+    padding: 22px 18px;
+  }
+
+  .sofa-article-meta {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .sofa-meta-divider {
+    display: none;
+  }
+
+  .sofa-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sofa-services-grid .sofa-service-card:last-child {
+    grid-column: 1 / -1;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
