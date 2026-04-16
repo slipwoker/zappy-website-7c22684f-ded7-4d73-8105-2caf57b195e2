@@ -18271,6 +18271,297 @@ body .whatsapp-float {
     font-size: 2.4rem;
   }
 }
+
+/* AI-generated section */
+/* ===== SOFA ARTICLE SECTION — כפר סבא ===== */
+
+.sofa-article-kfarsaba {
+  background: #f4f8f8;
+  padding: 80px 20px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+/* Container */
+.sofa-article-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+.sofa-article-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.sofa-article-badge {
+  display: inline-block;
+  background: rgba(20, 184, 166, 0.12);
+  color: #0d9488;
+  border: 1px solid rgba(20, 184, 166, 0.35);
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 6px 18px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.sofa-article-title {
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
+  font-weight: 800;
+  color: #1a2e2c;
+  line-height: 1.35;
+  margin: 0 0 22px 0;
+}
+
+.sofa-article-intro {
+  font-size: 1.08rem;
+  color: #3d5552;
+  line-height: 1.85;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* ===== CARDS GRID ===== */
+.sofa-article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+/* ===== INDIVIDUAL CARD ===== */
+.sofa-card {
+  background: #ffffff;
+  border: 1px solid rgba(20, 184, 166, 0.22);
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 2px 12px rgba(20, 184, 166, 0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sofa-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(20, 184, 166, 0.15);
+  border-color: rgba(20, 184, 166, 0.5);
+}
+
+.sofa-card:focus-within {
+  outline: 2px solid var(--primary, #14B8A6);
+  outline-offset: 3px;
+}
+
+/* Highlighted card (card 6) */
+.sofa-card--highlight {
+  background: linear-gradient(145deg, #f0fdfb 0%, #e6faf7 100%);
+  border-color: rgba(20, 184, 166, 0.45);
+  border-width: 2px;
+}
+
+.sofa-card--highlight:hover {
+  border-color: var(--primary, #14B8A6);
+}
+
+/* Icon */
+.sofa-card-icon {
+  font-size: 2.4rem;
+  line-height: 1;
+  display: block;
+}
+
+/* Card Title */
+.sofa-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a2e2c;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Card Description */
+.sofa-card-desc {
+  font-size: 0.97rem;
+  color: #4a6361;
+  line-height: 1.8;
+  margin: 0;
+  flex: 1;
+}
+
+/* ===== CHECKLIST (Card 6) ===== */
+.sofa-card-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sofa-card-checklist li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.97rem;
+  color: #1a2e2c;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.sofa-check {
+  color: var(--primary, #14B8A6);
+  font-size: 1.05rem;
+  flex-shrink: 0;
+}
+
+/* ===== CTA BANNER ===== */
+.sofa-cta-banner {
+  background: var(--gradient-primary, linear-gradient(180deg, #14BED0 0%, #0EA7B7 100%));
+  border-radius: 20px;
+  padding: 48px 40px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(14, 167, 183, 0.28);
+  position: relative;
+  overflow: hidden;
+}
+
+.sofa-cta-banner::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 180px;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.sofa-cta-banner::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  right: -30px;
+  width: 220px;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.sofa-cta-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.sofa-cta-text {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.7;
+  max-width: 640px;
+  margin: 0;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.sofa-cta-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #0d9488;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.13);
+  transition: background 0.22s ease, color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+  font-family: system-ui, sans-serif;
+}
+
+.sofa-cta-btn:hover {
+  background: #1a2e2c;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.2);
+}
+
+.sofa-cta-btn:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablet: 2 columns */
+@media (max-width: 900px) {
+  .sofa-article-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .sofa-article-kfarsaba {
+    padding: 60px 18px;
+  }
+
+  .sofa-cta-banner {
+    padding: 40px 28px;
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 580px) {
+  .sofa-article-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .sofa-article-title {
+    font-size: 1.55rem;
+  }
+
+  .sofa-article-intro {
+    font-size: 1rem;
+  }
+
+  .sofa-article-header {
+    margin-bottom: 36px;
+  }
+
+  .sofa-card {
+    padding: 24px 22px;
+  }
+
+  .sofa-cta-banner {
+    padding: 36px 20px;
+    border-radius: 16px;
+  }
+
+  .sofa-cta-text {
+    font-size: 1.05rem;
+  }
+
+  .sofa-cta-btn {
+    padding: 14px 32px;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .sofa-article-kfarsaba {
+    padding: 48px 16px;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
