@@ -16828,6 +16828,544 @@ body .whatsapp-float {
     padding: 15px 20px;
   }
 }
+
+/* AI-generated section */
+/* ===== HADERA ARTICLE SECTION ===== */
+.hadera-article-section {
+  background: #f0fdfc;
+  padding: 70px 20px 80px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  color: #1a3a3a;
+}
+
+.hadera-article-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ---- Hero ---- */
+.hadera-article-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hadera-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  border: 1.5px solid #14B8A6;
+  color: #0e7c72;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 7px 18px;
+  border-radius: 50px;
+  margin-bottom: 22px;
+  letter-spacing: 0.3px;
+}
+
+.hadera-wave-icon {
+  font-size: 18px;
+}
+
+.hadera-article-title {
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
+  font-weight: 800;
+  color: #0d3b3b;
+  line-height: 1.3;
+  margin: 0 0 18px;
+}
+
+.hadera-article-subtitle {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: #3a6060;
+  line-height: 1.8;
+  max-width: 750px;
+  margin: 0 auto 32px;
+}
+
+.hadera-hero-image-wrap {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(20, 184, 166, 0.18);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hadera-hero-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.hadera-hero-img:hover {
+  transform: scale(1.02);
+}
+
+/* ---- Intro Block ---- */
+.hadera-intro-block {
+  background: #ffffff;
+  border-right: 5px solid var(--primary, #14B8A6);
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-bottom: 48px;
+  box-shadow: 0 4px 18px rgba(20, 184, 166, 0.09);
+}
+
+.hadera-intro-text {
+  font-size: 1.08rem;
+  color: #2a4f4f;
+  line-height: 1.85;
+  margin: 0;
+}
+
+/* ---- Cards Grid ---- */
+.hadera-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.hadera-info-card {
+  background: #ffffff;
+  border: 1.5px solid rgba(20, 184, 166, 0.28);
+  border-radius: 16px;
+  padding: 28px 26px 24px;
+  box-shadow: 0 4px 20px rgba(20, 184, 166, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hadera-info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 32px rgba(20, 184, 166, 0.18);
+}
+
+.hadera-card-icon-wrap {
+  width: 54px;
+  height: 54px;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hadera-card-icon {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.hadera-card-title {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: #0d3b3b;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.hadera-card-text {
+  font-size: 0.97rem;
+  color: #3a5f5f;
+  line-height: 1.8;
+  margin: 0;
+  flex: 1;
+}
+
+.hadera-card-fact {
+  background: linear-gradient(135deg, #e0faf7, #d0f5f0);
+  border-right: 3px solid var(--primary, #14B8A6);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 0.88rem;
+  color: #0e5f58;
+  line-height: 1.65;
+}
+
+.hadera-fact-label {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* ---- Frequency Block ---- */
+.hadera-frequency-block {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1.5px solid rgba(20, 184, 166, 0.22);
+  box-shadow: 0 6px 30px rgba(20, 184, 166, 0.1);
+  margin-bottom: 56px;
+  overflow: hidden;
+}
+
+.hadera-frequency-inner {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 0;
+  align-items: stretch;
+}
+
+.hadera-frequency-text-col {
+  padding: 40px 36px;
+}
+
+.hadera-section-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #14B8A6, #0ea5a5);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 5px 16px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+  letter-spacing: 0.3px;
+}
+
+.hadera-frequency-title {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-weight: 800;
+  color: #0d3b3b;
+  line-height: 1.35;
+  margin: 0 0 16px;
+}
+
+.hadera-frequency-text {
+  font-size: 1rem;
+  color: #3a5f5f;
+  line-height: 1.8;
+  margin: 0 0 22px;
+}
+
+.hadera-frequency-text strong {
+  color: var(--primary, #14B8A6);
+  font-weight: 700;
+}
+
+.hadera-frequency-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hadera-freq-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.97rem;
+  color: #2a4f4f;
+  line-height: 1.6;
+}
+
+.hadera-freq-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.hadera-frequency-img-col {
+  background: linear-gradient(180deg, #e0f7fa 0%, #b2ebf2 100%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hadera-frequency-img {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.hadera-frequency-img:hover {
+  transform: scale(1.04);
+}
+
+/* ---- Comparison Table ---- */
+.hadera-compare-block {
+  margin-bottom: 56px;
+}
+
+.hadera-compare-title {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: 800;
+  color: #0d3b3b;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.hadera-table-wrap {
+  overflow-x: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(20, 184, 166, 0.1);
+}
+
+.hadera-compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  font-size: 0.97rem;
+}
+
+.hadera-compare-table thead {
+  background: linear-gradient(135deg, #14B8A6, #0ea5a5);
+}
+
+.hadera-compare-table thead th {
+  color: #ffffff;
+  font-weight: 700;
+  padding: 16px 22px;
+  text-align: right;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+}
+
+.hadera-compare-table tbody tr {
+  border-bottom: 1px solid rgba(20, 184, 166, 0.15);
+  transition: background 0.2s ease;
+}
+
+.hadera-compare-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.hadera-compare-table tbody tr:hover {
+  background: #f0fdfc;
+}
+
+.hadera-compare-table tbody td {
+  padding: 15px 22px;
+  color: #2a4f4f;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.hadera-compare-table tbody tr:nth-child(even) {
+  background: #f8fffe;
+}
+
+.hadera-compare-table tbody tr:nth-child(even):hover {
+  background: #e8faf8;
+}
+
+.hadera-td-high {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.hadera-td-low {
+  color: #166534;
+  font-weight: 600;
+}
+
+/* ---- CTA Block ---- */
+.hadera-cta-block {
+  background: var(--gradient-primary, linear-gradient(180deg, #14BED0 0%, #0EA7B7 100%));
+  border-radius: 24px;
+  padding: 56px 40px;
+  text-align: center;
+  box-shadow: 0 12px 48px rgba(20, 184, 166, 0.28);
+  position: relative;
+  overflow: hidden;
+}
+
+.hadera-cta-block::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: 220px;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+}
+
+.hadera-cta-block::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  right: -40px;
+  width: 280px;
+  height: 280px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+}
+
+.hadera-cta-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.hadera-cta-emoji {
+  font-size: 52px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.hadera-cta-title {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 16px;
+  line-height: 1.3;
+}
+
+.hadera-cta-text {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.8;
+  max-width: 640px;
+  margin: 0 auto 32px;
+}
+
+.hadera-cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.hadera-cta-btn-primary {
+  background: #ffffff;
+  color: #0e7c72;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 15px 34px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+.hadera-cta-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
+  background: #f0fdfc;
+}
+
+.hadera-cta-btn-primary:focus {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.hadera-cta-btn-secondary {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 15px 34px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  transition: transform 0.22s ease, background 0.22s ease, box-shadow 0.22s ease;
+}
+
+.hadera-cta-btn-secondary:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.15);
+}
+
+.hadera-cta-btn-secondary:focus {
+  outline: 3px solid rgba(255, 255, 255, 0.8);
+  outline-offset: 3px;
+}
+
+.hadera-cta-note {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.82);
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .hadera-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .hadera-frequency-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hadera-frequency-img-col {
+    min-height: 220px;
+  }
+
+  .hadera-frequency-img {
+    min-height: 220px;
+  }
+
+  .hadera-frequency-text-col {
+    padding: 30px 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hadera-article-section {
+    padding: 48px 16px 60px;
+  }
+
+  .hadera-hero-img {
+    height: 200px;
+  }
+
+  .hadera-info-card {
+    padding: 22px 18px;
+  }
+
+  .hadera-cta-block {
+    padding: 40px 22px;
+  }
+
+  .hadera-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hadera-cta-btn-primary,
+  .hadera-cta-btn-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 24px;
+  }
+
+  .hadera-compare-table thead th,
+  .hadera-compare-table tbody td {
+    padding: 12px 14px;
+    font-size: 0.88rem;
+  }
+
+  .hadera-frequency-text-col {
+    padding: 24px 18px;
+  }
+
+  .hadera-intro-block {
+    padding: 18px 18px;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
