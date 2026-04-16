@@ -17366,6 +17366,478 @@ body .whatsapp-float {
     padding: 18px 18px;
   }
 }
+
+/* AI-generated section */
+/* =========================================
+   HRZ INFO SECTION — Herzliya Sofa Cleaning
+   ========================================= */
+
+.hrz-info-section {
+  background: #f4fbfa;
+  padding: 80px 20px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  position: relative;
+  overflow: hidden;
+}
+
+.hrz-info-section::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: -120px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hrz-info-section::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Container */
+.hrz-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Header ---- */
+.hrz-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.hrz-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(20, 184, 166, 0.12);
+  border: 1px solid rgba(20, 184, 166, 0.3);
+  border-radius: 50px;
+  padding: 6px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0d9488;
+  margin-bottom: 18px;
+  letter-spacing: 0.02em;
+}
+
+.hrz-badge-icon {
+  font-size: 15px;
+}
+
+.hrz-title {
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: #1a2e2c;
+  line-height: 1.3;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.02em;
+}
+
+.hrz-subtitle {
+  font-size: 1.05rem;
+  color: #4a6b68;
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ---- Cards Grid ---- */
+.hrz-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-bottom: 52px;
+}
+
+/* ---- Card ---- */
+.hrz-card {
+  background: #ffffff;
+  border: 1px solid rgba(20, 184, 166, 0.22);
+  border-radius: 16px;
+  padding: 28px 26px 28px 26px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(20, 184, 166, 0.07), 0 1px 4px rgba(0,0,0,0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.hrz-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(20, 184, 166, 0.14), 0 2px 8px rgba(0,0,0,0.06);
+  border-color: rgba(20, 184, 166, 0.45);
+}
+
+/* Card accent stripe at top */
+.hrz-card-accent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 4px;
+  background: var(--gradient-primary, linear-gradient(180deg, #14BED0 0%, #0EA7B7 100%));
+  border-radius: 16px 16px 0 0;
+  opacity: 0.75;
+  transition: opacity 0.25s ease;
+}
+
+.hrz-card:hover .hrz-card-accent {
+  opacity: 1;
+}
+
+/* Card Icon Wrapper */
+.hrz-card-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  flex-shrink: 0;
+}
+
+.hrz-icon-construction {
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px solid rgba(251, 191, 36, 0.25);
+}
+
+.hrz-icon-pollution {
+  background: rgba(99, 102, 241, 0.10);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.hrz-icon-family {
+  background: rgba(236, 72, 153, 0.10);
+  border: 1px solid rgba(236, 72, 153, 0.2);
+}
+
+.hrz-icon-sea {
+  background: rgba(20, 184, 166, 0.10);
+  border: 1px solid rgba(20, 184, 166, 0.25);
+}
+
+.hrz-card-icon {
+  font-size: 26px;
+  line-height: 1;
+}
+
+/* Card Content */
+.hrz-card-content {
+  flex: 1;
+}
+
+.hrz-card-title {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #1a2e2c;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+}
+
+.hrz-card-text {
+  font-size: 0.93rem;
+  color: #4a6b68;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* ---- Visual Row ---- */
+.hrz-visual-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  border-radius: 20px;
+  padding: 36px 36px;
+  margin-bottom: 52px;
+  box-shadow: 0 2px 16px rgba(20, 184, 166, 0.07);
+}
+
+.hrz-visual-image-wrap {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.hrz-visual-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: transform 0.35s ease;
+  max-height: 280px;
+}
+
+.hrz-visual-image:hover {
+  transform: scale(1.02);
+}
+
+.hrz-visual-text {
+  padding-right: 8px;
+}
+
+.hrz-visual-heading {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1a2e2c;
+  margin: 0 0 20px 0;
+  line-height: 1.35;
+}
+
+.hrz-visual-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hrz-visual-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #2d4a48;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.hrz-list-icon {
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ---- CTA Block ---- */
+.hrz-cta-block {
+  background: linear-gradient(135deg, #0d9488 0%, #14B8A6 50%, #0EA7B7 100%);
+  border-radius: 20px;
+  padding: 4px;
+  box-shadow: 0 8px 40px rgba(20, 184, 166, 0.3);
+}
+
+.hrz-cta-inner {
+  background: linear-gradient(135deg, #0c8a7f 0%, #12a396 100%);
+  border-radius: 17px;
+  padding: 48px 36px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hrz-cta-inner::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hrz-cta-inner::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+  width: 160px;
+  height: 160px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hrz-cta-emoji {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  display: block;
+  line-height: 1;
+}
+
+.hrz-cta-title {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 12px 0;
+  line-height: 1.35;
+}
+
+.hrz-cta-text {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 0 28px 0;
+  line-height: 1.7;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hrz-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  color: #0d9488;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  font-family: system-ui, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.hrz-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  background: #f0fdfb;
+}
+
+.hrz-cta-btn:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.hrz-btn-arrow {
+  font-size: 1.1rem;
+  transition: transform 0.22s ease;
+}
+
+.hrz-cta-btn:hover .hrz-btn-arrow {
+  transform: translateX(-4px);
+}
+
+/* =========================================
+   RESPONSIVE — Tablet
+   ========================================= */
+@media (max-width: 900px) {
+  .hrz-info-section {
+    padding: 60px 16px;
+  }
+
+  .hrz-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .hrz-visual-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 28px 24px;
+  }
+
+  .hrz-visual-image-wrap {
+    order: -1;
+  }
+
+  .hrz-visual-text {
+    padding-right: 0;
+  }
+}
+
+/* =========================================
+   RESPONSIVE — Mobile
+   ========================================= */
+@media (max-width: 600px) {
+  .hrz-info-section {
+    padding: 48px 14px;
+  }
+
+  .hrz-header {
+    margin-bottom: 36px;
+  }
+
+  .hrz-title {
+    font-size: 1.45rem;
+  }
+
+  .hrz-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hrz-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-bottom: 36px;
+  }
+
+  .hrz-card {
+    padding: 22px 20px;
+  }
+
+  .hrz-card-icon-wrap {
+    width: 48px;
+    height: 48px;
+  }
+
+  .hrz-card-icon {
+    font-size: 22px;
+  }
+
+  .hrz-card-title {
+    font-size: 1rem;
+  }
+
+  .hrz-card-text {
+    font-size: 0.9rem;
+  }
+
+  .hrz-visual-row {
+    padding: 22px 18px;
+    margin-bottom: 36px;
+    gap: 20px;
+  }
+
+  .hrz-visual-heading {
+    font-size: 1.1rem;
+  }
+
+  .hrz-visual-list li {
+    font-size: 0.9rem;
+  }
+
+  .hrz-cta-inner {
+    padding: 36px 20px;
+  }
+
+  .hrz-cta-title {
+    font-size: 1.15rem;
+  }
+
+  .hrz-cta-text {
+    font-size: 0.92rem;
+  }
+
+  .hrz-cta-btn {
+    font-size: 0.95rem;
+    padding: 13px 26px;
+    width: 100%;
+    justify-content: center;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
