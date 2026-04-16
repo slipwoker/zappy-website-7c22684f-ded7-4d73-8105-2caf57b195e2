@@ -254,7 +254,7 @@
       /* ========== MOBILE SUBMENU STYLES ========== */
       @media (max-width: 768px) {
         .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { position: static !important; transform: none !important; box-shadow: none !important; background: transparent !important; max-height: 0; overflow: hidden; opacity: 0; visibility: hidden; transition: max-height 0.3s ease, opacity 0.3s ease; padding: 0 !important; border-radius: 0 !important; }
-        .sub-menu.mobile-expanded { max-height: 60vh !important; overflow-y: auto !important; opacity: 1 !important; visibility: visible !important; padding: 8px 0 8px 16px !important; }
+        .navbar .sub-menu.mobile-expanded, .nav-menu .sub-menu.mobile-expanded, #navMenu .sub-menu.mobile-expanded { max-height: none !important; overflow-y: visible !important; opacity: 1 !important; visibility: visible !important; padding: 8px 0 8px 16px !important; }
         [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded { padding: 8px 16px 8px 0 !important; }
         /* Disable hover behavior on mobile */
         .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 0; visibility: hidden; pointer-events: none; }
@@ -267,7 +267,7 @@
         .mobile-submenu-toggle { display: flex !important; align-items: center !important; justify-content: center !important; width: 44px !important; height: auto !important; background: transparent !important; border: none !important; cursor: pointer !important; color: var(--text-light) !important; position: static !important; flex-shrink: 0 !important; align-self: stretch !important; z-index: 2 !important; padding: 0 !important; margin: 0 !important; }
         .mobile-submenu-toggle::after { content: '' !important; width: 0 !important; height: 0 !important; border-left: 6px solid transparent !important; border-right: 6px solid transparent !important; border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important; }
         .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
-        .sub-menu a { padding: 10px 0 !important; display: block !important; color: var(--text-light) !important; }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; color: var(--text-light) !important; white-space: normal !important; }
         .sub-menu .zappy-nav-child > a { padding-left: 28px !important; font-size: 0.9em !important; opacity: 0.85 !important; }
         [dir="rtl"] .sub-menu .zappy-nav-child > a, html[lang="he"] .sub-menu .zappy-nav-child > a, html[lang="ar"] .sub-menu .zappy-nav-child > a { padding-left: 0 !important; padding-right: 28px !important; }
         .sub-menu .zappy-nav-parent > a { font-weight: 600 !important; }
@@ -333,7 +333,7 @@
       <a href="/" class="logo-link">
         <img src="/assets/shine-fresh-logo.webp" alt="שיין פרש - Shine Fresh" class="logo">
       </a>
-    </div><ul class="nav-menu" id="navMenu"><li><a href="/services">שירותים</a></li><li><a href="/about">אודות</a></li><li class="menu-group-item"><span class="menu-group-title">איזורי השירות ניקי ספות</span><ul class="sub-menu"><li><a href="/sofa-cleaning-netanya">ניקוי ספות נתניה</a></li><li><a href="/sofa-cleaning-hadera">ניקוי ספות חדרה</a></li><li><a href="/sofa-cleaning-herzliya">ניקוי ספות הרצליה</a></li><li><a href="/sofa-cleaning-services" class="">ניקוי ספות רעננה</a></li><li><a href="/sofa-cleaning-serviceskfarsaba" class="">ניקוי ספות כפר סבא</a></li><li><a href="/sofa-cleaning-serviceshodhashron" class="">ניקוי ספות הוד השרון</a></li><li><a href="/sofa-cleaning-servicesroshhain" class="">ניקוי ספות ראש העין</a></li><li><a href="/sofa-cleaning-servicespetahtikva" class="">ניקוי ספות פתח תקווה</a></li><li><a href="/sofa-cleaning-servicesorakiva" class="">ניקוי ספות אור עקיבא</a></li><li><a href="/sofa-cleaning-harish" class="">ניקוי ספות חריש</a></li></ul></li><li class="menu-group-item"><span class="menu-group-title">שאלות לניקוי ספות</span><ul class="sub-menu"><li><a href="/sofa-cleaning-guide">איך לנקות ספות לבד</a></li><li><a href="/sofa-cleaning-price">מחיר לניקוי ספות</a></li><li><a href="/sofa-cleaning-services1">מדוע חשוב לנקות ספות</a></li><li><a href="/couch-cleaning-frequency" class="nav-link">כל כמה זמן מנקים ספות</a></li><li><a href="/dust-mite-bacteria-sofas" class="">קרדית האבק וחיידקים בספות</a></li><li><a href="/odor-removal-servicesd">איך מסירים ריח של שתן מספות?</a></li><li><a href="/sofa-cleaning-serviceclean" class="">מה מסתתר בתוך הספה שלכם?</a></li></ul></li><li><a href="/new-page-1776294782640" class="">New Page</a><ul class="sub-menu"><li><a href="/fabric-sofa-purchase">האם כדאי לקנות ספה מבד</a></li></ul></li><li style="display: none !important;" class="zappy-hidden-menu-item"><a href="/thank-you">Thank You | Shine Fresh</a></li><li><a href="/contact">צור קשר</a></li></ul></div>
+    </div><ul class="nav-menu" id="navMenu"><li><a href="/services">מה אנחנו עושים?</a></li><li><a href="/about">אודות</a></li><li class="menu-group-item"><span class="menu-group-title">איזורי השירות ניקי ספות</span><ul class="sub-menu"><li><a href="/sofa-cleaning-netanya">ניקוי ספות נתניה</a></li><li><a href="/sofa-cleaning-hadera">ניקוי ספות חדרה</a></li><li><a href="/sofa-cleaning-herzliya">ניקוי ספות הרצליה</a></li><li><a href="/sofa-cleaning-services" class="">ניקוי ספות רעננה</a></li><li><a href="/sofa-cleaning-serviceskfarsaba" class="">ניקוי ספות כפר סבא</a></li><li><a href="/sofa-cleaning-serviceshodhashron" class="">ניקוי ספות הוד השרון</a></li><li><a href="/sofa-cleaning-servicesroshhain" class="">ניקוי ספות ראש העין</a></li><li><a href="/sofa-cleaning-servicespetahtikva" class="">ניקוי ספות פתח תקווה</a></li><li><a href="/sofa-cleaning-servicesorakiva" class="">ניקוי ספות אור עקיבא</a></li><li><a href="/sofa-cleaning-harish" class="">ניקוי ספות חריש</a></li></ul></li><li class="menu-group-item"><span class="menu-group-title">שאלות לניקוי ספות</span><ul class="sub-menu"><li><a href="/sofa-cleaning-guide">איך לנקות ספות לבד</a></li><li><a href="/sofa-cleaning-price">מחיר לניקוי ספות</a></li><li><a href="/sofa-cleaning-services1">מדוע חשוב לנקות ספות</a></li><li><a href="/couch-cleaning-frequency" class="nav-link">כל כמה זמן מנקים ספות</a></li><li><a href="/dust-mite-bacteria-sofas" class="">קרדית האבק וחיידקים בספות</a></li><li><a href="/odor-removal-servicesd">איך מסירים ריח של שתן מספות?</a></li><li><a href="/sofa-cleaning-serviceclean" class="">מה מסתתר בתוך הספה שלכם?</a></li></ul></li><li><a href="/new-page-1776294782640" class="">New Page</a><ul class="sub-menu"><li><a href="/fabric-sofa-purchase">האם כדאי לקנות ספה מבד</a></li></ul></li><li style="display: none !important;" class="zappy-hidden-menu-item"><a href="/thank-you">Thank You | Shine Fresh</a></li><li><a href="/contact">צור קשר</a></li></ul></div>
 
     
 
@@ -889,7 +889,7 @@
           <p class="netanya-hero-desc">
             מחפשים ניקוי ספות איכותי בנתניה? <a href="/" style="color:#14B8A6;text-decoration:underline;font-weight:700;">שיין פרש</a> כאן בשבילכם — מנתניה הירוקה ועד עיר ימים, קריית השרון ורמות פולג. אנחנו מביאים אתנו ציוד תעשייתי מהשורה הראשונה, חומרים לא רעילים ובטוחים לכל המשפחה, ועובדים עד שהתוצאה מדהימה — בזמן קצר ובמחיר הוגן.
           </p>
-          <div class="netanya-hero-cta-row" style="">
+          <div class="netanya-hero-cta-row" >
             <a href="https://wa.me/972533331306" class="netanya-btn-primary" data-element-type="button" data-element-id="btn-1776253463660-etkhgakjo" data-native-element="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="outline: currentcolor; cursor: pointer;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"></path><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.853L.057 23.184a.75.75 0 0 0 .923.899l5.453-1.744A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.667-.497-5.202-1.368l-.374-.214-3.876 1.239 1.188-3.768-.232-.377A9.961 9.961 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"></path></svg>
               שלחו הודעה בוואטסאפ
@@ -1057,7 +1057,7 @@
           <div class="testi-avatar" aria-hidden="true">ר</div>
           <div class="testi-info">
             <cite class="testi-name">רחל כ.</cite>
-            <span class="testi-location" style="">
+            <span class="testi-location" >
               <span class="testi-location-icon" aria-hidden="true">📍</span>
               נתניה, רמת חן&nbsp;</span>
           </div>
@@ -1137,7 +1137,7 @@
           <div class="testi-avatar testi-avatar--green" aria-hidden="true">י</div>
           <div class="testi-info">
             <cite class="testi-name">יוסי ל.</cite>
-            <span class="testi-location" style="">
+            <span class="testi-location" >
               <span class="testi-location-icon" aria-hidden="true">📍</span>
               רמת פולג
             </span>
