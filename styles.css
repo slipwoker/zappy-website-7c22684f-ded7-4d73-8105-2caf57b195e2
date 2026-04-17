@@ -21296,6 +21296,10 @@ body .whatsapp-float {
     padding: 6px 16px;
   }
 }
+
+.ba-gallery-section {
+  padding-bottom: 40px !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
