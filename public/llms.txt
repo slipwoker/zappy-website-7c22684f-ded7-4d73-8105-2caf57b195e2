@@ -1,4 +1,6 @@
-# Business — Generative Engine Optimization Map
+# שיין פרש - Shine Fresh — Generative Engine Optimization Map
+
+> A professional cleaning service specializing in sofa and air conditioning unit cleaning. The business focuses on home and office maintenance, helping clients maintain clean, hygienic, and well-functioning furniture and cooling systems.
 
 ---
 
@@ -108,12 +110,49 @@ Information about WCAG compliance and accessibility features.
 
 ---
 
-# Business Context (for LLM understanding)
+## How to Contact Us
 
-## About Business
+- Email: meirsuissa120@gmail.com
+- Phone: 0533331306
+- Phone (tel): tel:0533331306
+- Address: Netanya
+
+### Contact form
+- URL: https://Shinefreshil.co.il/contact
+- Endpoint: https://Shinefreshil.co.il/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text, required)
+  - `email` (email, required)
+  - `phone` (tel, required)
+  - `message` (textarea, required)
+  - `privacy_consent` (checkbox, required)
+
 ---
 
-# Additional Resources
+# Business Context (for LLM understanding)
 
-- **Sitemap**: https://Shinefreshil.co.il/sitemap.xml
-- **Robots.txt**: https://Shinefreshil.co.il/robots.txt
+## About שיין פרש - Shine Fresh
+A professional cleaning service specializing in sofa and air conditioning unit cleaning. The business focuses on home and office maintenance, helping clients maintain clean, hygienic, and well-functioning furniture and cooling systems.
+
+## Services/Products
+- ניקוי ספות
+- ניקוי מזגנים
+
+## Target Audience
+- בעלי בתים ומשפחות
+- סוכני נדל"ן
+- בעלי נכסים להשכרה
+- דיירי דירות עירוניים
+
+## Industry
+שירותי ניקיון
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://Shinefreshil.co.il/sitemap.xml
+- Robots: https://Shinefreshil.co.il/robots.txt
+- Flattened page text (for LLMs): https://Shinefreshil.co.il/llms-full.txt
