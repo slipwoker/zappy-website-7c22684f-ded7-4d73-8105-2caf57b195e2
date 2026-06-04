@@ -299,17 +299,19 @@
       @media (max-width: 768px) {
         #mic-access-tool-general-button, .mic-access-tool-general-button,
         #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
-        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
-          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        ._access-icon { display: flex !important; visibility: visible !important; opacity: 1 !important; pointer-events: auto !important; }
+        #mic-access-tool-box.opened-mic-access-tool, .mic-access-tool-box.opened-mic-access-tool,
+        #mic-init-access-tool #mic-access-tool-box.opened-mic-access-tool {
+          visibility: visible !important; opacity: 1 !important; pointer-events: auto !important;
         }
       }
       @media (min-width: 769px) {
         #mic-access-tool-general-button, .mic-access-tool-general-button,
         #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
-        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
-          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        ._access-icon { display: flex !important; visibility: visible !important; opacity: 1 !important; pointer-events: auto !important; }
+        #mic-access-tool-box.opened-mic-access-tool, .mic-access-tool-box.opened-mic-access-tool,
+        #mic-init-access-tool #mic-access-tool-box.opened-mic-access-tool {
+          visibility: visible !important; opacity: 1 !important; pointer-events: auto !important;
         }
       }
     </style>
@@ -737,38 +739,7 @@
     
     console.log('[Navbar] Mobile menu initialized successfully');
     
-    // === WHATSAPP BUTTON VISIBILITY FIX ===
-    // Ensure WhatsApp floating button is hidden on desktop and visible on mobile
-    // IMPORTANT: Only target the floating button by its class, NOT generic wa.me links
-    const handleWhatsAppVisibility = function() {
-      const whatsappBtn = document.querySelector('.whatsapp-float');
-      if (whatsappBtn) {
-        const isDesktop = window.innerWidth >= 769;
-        if (isDesktop) {
-          whatsappBtn.style.setProperty('display', 'none', 'important');
-          whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
-          whatsappBtn.style.setProperty('opacity', '0', 'important');
-          whatsappBtn.style.setProperty('pointer-events', 'none', 'important');
-          console.log('[WhatsApp] Button hidden on desktop');
-        } else {
-          whatsappBtn.style.removeProperty('display');
-          whatsappBtn.style.removeProperty('visibility');
-          whatsappBtn.style.removeProperty('opacity');
-          whatsappBtn.style.removeProperty('pointer-events');
-          console.log('[WhatsApp] Button visible on mobile');
-        }
-      }
-    };
-    
-    // Run on load
-    handleWhatsAppVisibility();
-    
-    // Run on resize with debouncing
-    let resizeTimer;
-    window.addEventListener('resize', function() {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(handleWhatsAppVisibility, 100);
-    });
+    // WhatsApp visibility is now controlled via CSS (siteSettings)
   });
 })();
 
@@ -887,7 +858,7 @@
 
 
 
-<section class="index-services-section" data-layout-spec="בית-services" dir="rtl" id="index-services-section">
+<section class="index-services-section" data-layout-spec="בית-services" dir="rtl" id="index-services-section"><button title="תפריט נגישות" tabindex="1" id="mic-access-tool-general-button" class="mic-access-tool-general-button btn btn-ghost" data-element-type="button" data-element-id="btn-1780556383226-wba2zja8y" data-native-element="true" style="color: rgb(20, 184, 166) !important; border-color: transparent !important; background-color: transparent !important; background-image: none !important;"><div><span>CTRL+F2</span> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAA+VBMVEUAAAAuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHEuzHF74uanAAAAUnRSTlMAAQMEBwgKCwwNDg8QERIVGhscHR8gJicqLzU2OTpFRklKTE1QUVVWXF1kZmtscHFzdXt/goORmJqdnqOlqrm6vL7AwcfIytPa3ODi5Ojz9fn7dlsVJQAAAU5JREFUOMvt08lSwkAUheETwIGIoqKIE4oogwMKziKoKCCDA//7P4yLhEq00mFhlSvvqk/ypXP7piL9rHOAc02sNQBYmwhrDqz9Bs4MD5Nhr04eDaclSWWgV5oPPsx8uQeUJEmpOgDdgu3uWau5+9mFLgD1lPuYXfkEoJ2f8XWU7wDwWYn7+ozsvDq9PWWnJGkq23Lyazby80zphnOL5tVV01020oGTSVRH+GpUnTMOMZrzXC4aOm8PTvgw//Bvoe1BOxTmARIJgL1Q+AjUpXvgIczFAFakVYBYCNwGOpLUAbZC4B2wIUmbwK3ZRYA3S5KsNyBihBlg31keABkjvISR+wNER3BhctYHnI7DGbxbBpgCZschDiwb4Alce+kGjg1wAIteWoJ+sFuAlj8/w0IgLMK6P69DIRC26X87pjXgJXjH/u73C7l+0TTIkPgFhXx2Xm9a0zIAAAAASUVORK5CYII=" alt="תפריט נגישות"></div></button>
   <div class="index-services-container">
 
     <!-- Section Intro -->
@@ -903,7 +874,7 @@
       <!-- Sofa Cleaning Card -->
       <article class="index-services-card" data-grid-item-index="0">
         <div class="index-services-card-image-wrap">
-          <div data-zappy-zoom-wrapper="true" data-element-id="img-1776154818528-i0h3jcwob" data-element-type="image" style="position: relative !important; overflow: hidden !important; width: 356px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 237px !important; display: block !important; padding-bottom: 0px !important;" data-zappy-zoom-wrapper-width="356px" data-zappy-zoom-wrapper-height="237px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img data-placeholder="index-services-image-1" data-context="Professional sofa cleaning service in a bright Israeli living room — a technician uses a steam extraction machine on a large light-gray fabric sofa, with visible suds and clean result on one half. Natural light, tidy home setting, realistic and trustworthy." width="600" height="400" src="/assets/site-index-services-image-1-1780556045619-33tq0d.webp?v=1780556048119" alt="ניקוי ספה מקצועי בבית" class="index-services-card-img" data-element-type="image" data-element-id="img-1776154818528-i0h3jcwob" style="object-position: 50% 50% !important; margin: 0px !important; left: -1% !important; top: -7.455696% !important; width: 102% !important; height: 114.911392% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1.02" data-zappy-original-width="356" data-zappy-original-height="237.328125" data-zappy-object-position="50% 50%"></div>
+          <div data-zappy-zoom-wrapper="true" data-element-id="img-1776154818528-i0h3jcwob" data-element-type="image" style="position: relative !important; overflow: hidden !important; width: 356px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 237px !important; display: block !important; padding-bottom: 0px !important;" data-zappy-zoom-wrapper-width="356px" data-zappy-zoom-wrapper-height="237px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img data-placeholder="index-services-image-1" data-context="Professional sofa cleaning service in a bright Israeli living room — a technician uses a steam extraction machine on a large light-gray fabric sofa, with visible suds and clean result on one half. Natural light, tidy home setting, realistic and trustworthy." width="600" height="400" src="/assets/site-index-services-image-1-1780556045619-33tq0d.webp?v=1780556048119" alt="ניקוי ספה מקצועי בבית" class="index-services-card-img" data-element-type="image" data-element-id="img-1776154818528-i0h3jcwob" style="object-position: 50% 50% !important; margin: 0px !important; left: 0px !important; top: 0px !important; width: 100% !important; height: 100% !important; max-width: 100% !important; max-height: none !important; display: block !important; object-fit: cover !important; position: absolute !important;" data-zappy-zoom="1.02" data-zappy-original-width="356" data-zappy-original-height="237.328125" data-zappy-object-position="50% 50%"></div>
         </div>
         <div class="index-services-card-body">
           <div class="index-services-card-icon">
@@ -939,7 +910,7 @@
       <!-- AC Cleaning Card -->
       <article class="index-services-card" data-grid-item-index="1">
         <div class="index-services-card-image-wrap">
-          <div data-zappy-zoom-wrapper="true" data-element-id="img-1776154818528-pixqezdad" data-element-type="image" style="position: relative !important; overflow: hidden !important; width: 356px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 237px !important; display: block !important; padding-bottom: 0px !important;" data-zappy-zoom-wrapper-width="356px" data-zappy-zoom-wrapper-height="237px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img data-placeholder="index-services-image-2" data-context="Professional air conditioning unit cleaning in an Israeli home — a technician in uniform cleaning the interior filters and vents of a wall-mounted split AC unit, with removed dusty filter visible. Clean, clinical, trustworthy atmosphere with natural light." width="600" height="400" src="/assets/site-index-services-image-2-1780556107393-0fpn5u.webp?v=1780556109594" alt="ניקוי מזגן מקצועי" class="index-services-card-img" data-element-type="image" data-element-id="img-1776154818528-pixqezdad" style="object-position: 50% 50% !important; display: block; object-fit: cover; margin: 0px !important; left: -1.030775% !important; top: -1% !important; width: 102.06155% !important; height: 102% !important; max-width: none !important; max-height: none !important;" data-zappy-zoom="1.02" data-zappy-original-width="356" data-zappy-original-height="237.328125" data-zappy-object-position="50% 50%"></div>
+          <div data-zappy-zoom-wrapper="true" data-element-id="img-1776154818528-pixqezdad" data-element-type="image" style="position: relative !important; overflow: hidden !important; width: 356px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 237px !important; display: block !important; padding-bottom: 0px !important;" data-zappy-zoom-wrapper-width="356px" data-zappy-zoom-wrapper-height="237px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img data-placeholder="index-services-image-2" data-context="Professional air conditioning unit cleaning in an Israeli home — a technician in uniform cleaning the interior filters and vents of a wall-mounted split AC unit, with removed dusty filter visible. Clean, clinical, trustworthy atmosphere with natural light." width="600" height="400" src="/assets/site-index-services-image-2-1780556107393-0fpn5u.webp?v=1780556109594" alt="ניקוי מזגן מקצועי" class="index-services-card-img" data-element-type="image" data-element-id="img-1776154818528-pixqezdad" style="display: block !important; object-fit: cover !important; object-position: 50% 50% !important; margin: 0px !important; left: 0px !important; top: 0px !important; width: 100% !important; height: 100% !important; max-width: 100% !important; max-height: none !important; position: absolute !important;" data-zappy-zoom="1.02" data-zappy-original-width="356" data-zappy-original-height="237.328125" data-zappy-object-position="50% 50%"></div>
         </div>
         <div class="index-services-card-body">
           <div class="index-services-card-icon">
